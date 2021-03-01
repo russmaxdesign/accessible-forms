@@ -216,3 +216,14 @@ legend {
   color: red;
   font-weight: bold;
 }
+
+.details {
+  margin: 2em 0;
+  padding: 1em;
+  background: #eee;
+  font-size: .9em;
+}
+
+.details h2 {
+  margin-top: 0;
+}

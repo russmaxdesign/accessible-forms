@@ -12,23 +12,19 @@
   <h2>Example</h2>
   <form action="#">
     <fieldset>
-      <legend>Add optional benefits to your quote</legend>
+      <legend>What type of cars do you like?</legend>
       <fieldset>
-        <legend>Add optional benefits (hidden)</legend>
+        <legend>Size</legend>
         <ul>
-          <li><input type="checkbox" id="excess"><label for="excess">No excess</label></li>
+          <li><input type="checkbox" id="large"><label for="large">Large</label></li>
+          <li><input type="checkbox" id="small"><label for="small">Small</label></li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Add optional benefits (hidden)</legend>
+        <legend>Type</legend>
         <ul>
-          <li><input type="checkbox" id="hire"><label for="hire">Hire car</label></li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Add optional benefits (hidden)</legend>
-        <ul>
-          <li><input type="checkbox" id="repairer"><label for="repairer">Choose any repairer</label></li>
+          <li><input type="checkbox" id="sedan"><label for="sedan">Sedan</label></li>
+          <li><input type="checkbox" id="wagon"><label for="wagon">Wagon</label></li>
         </ul>
       </fieldset>
     </fieldset>
@@ -36,31 +32,30 @@
   <h2>Code</h2>
 <!-- start code -->
 <pre><code>&lt;fieldset&gt;
-  &lt;legend&gt;Add optional benefits to your quote&lt;/legend&gt;
+  &lt;legend&gt;What type of cars do you like?&lt;/legend&gt;
   &lt;fieldset&gt;
-    &lt;legend&gt;Add optional benefits (hidden)&lt;/legend&gt;
+    &lt;legend&gt;Size&lt;/legend&gt;
     &lt;ul&gt;
       &lt;li&gt;
-        &lt;input type="checkbox" id="excess"&gt;
-        &lt;label for="excess"&gt;No excess&lt;/label&gt;
+        &lt;input type="checkbox" id="large"&gt;
+        &lt;label for="large"&gt;Large&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input type="checkbox" id="small"&gt;
+        &lt;label for="small"&gt;Small&lt;/label&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/fieldset&gt;
   &lt;fieldset&gt;
-    &lt;legend&gt;Add optional benefits (hidden)&lt;/legend&gt;
+    &lt;legend&gt;Type&lt;/legend&gt;
     &lt;ul&gt;
       &lt;li&gt;
-        &lt;input type="checkbox" id="hire"&gt;
-        &lt;label for="hire"&gt;Hire car&lt;/label&gt;
+        &lt;input type="checkbox" id="sedan"&gt;
+        &lt;label for="sedan"&gt;Sedan&lt;/label&gt;
       &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/fieldset&gt;
-  &lt;fieldset&gt;
-    &lt;legend&gt;Add optional benefits (hidden)&lt;/legend&gt;
-    &lt;ul&gt;
       &lt;li&gt;
-        &lt;input type="checkbox" id="repairer"&gt;
-        &lt;label for="repairer"&gt;Choose any repairer&lt;/label&gt;
+        &lt;input type="checkbox" id="wagon"&gt;
+        &lt;label for="wagon"&gt;Wagon&lt;/label&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/fieldset&gt;
@@ -70,27 +65,27 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> No excess. Unticked. Tick box. List. 1 item. <span class="red">[Neither of the legends are announced]</span></li>
+      <li><b>Chrome:</b> Large. Unticked. Tick box. List. 1 item. <span class="red">[Neither of the legends are announced]</span></li>
       <li><b>Firefox:</b> <span class="red">[Not announced]</span></li>
-      <li><b>Safari:</b> No excess. Unticked. Checkbox. Add optional benefits (hidden). List 1 item <span class="red">[Outer legend not announced]</span></li>
+      <li><b>Safari:</b> Large. Unticked. Checkbox. Size. List 1 item <span class="red">[Outer legend not announced]</span></li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Add optional benefits to your quote. Grouping. Add optional benefits (hidden). Grouping. List with 1 item. No excess. Checkbox. Not checked.</li>
-      <li><b>Firefox:</b> Add optional benefits to your quote. Grouping. Add optional benefits (hidden). Grouping. List with 1 item. No excess. Checkbox. Not checked.</li>
-      <li><b>Edge:</b> Add optional benefits to your quote. Grouping. Add optional benefits (hidden). Grouping. List with 1 item. No excess. Checkbox. Not checked.</li>
+      <li><b>Chrome:</b> What type of cars do you like? Grouping. Size. Grouping. List with 1 item. Large. Checkbox. Not checked.</li>
+      <li><b>Firefox:</b> What type of cars do you like? Grouping. Size. Grouping. List with 1 item. Large. Checkbox. Not checked.</li>
+      <li><b>Edge:</b> What type of cars do you like? Grouping. Size. Grouping. List with 1 item. Large. Checkbox. Not checked.</li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Add optional benefits to your quote. Group. Add optional benefits (hidden). Group. List with 1 item. No excess. Checkbox. Not checked. To check press space bar.</li>
+      <li><b>Chrome:</b> What type of cars do you like? Group. Size. Group. List with 1 item. Large. Checkbox. Not checked. To check press space bar.</li>
 
-      <li><b>Firefox:</b> Add optional benefits to your quote. Add optional benefits (hidden). No excess. Checkbox. Not checked. To check press space bar.</li>
+      <li><b>Firefox:</b> What type of cars do you like? Size. Large. Checkbox. Not checked. To check press space bar.</li>
 
-      <li><b>Edge:</b> Add optional benefits to your quote. Group. Add optional benefits (hidden). Group. List with 1 item. No excess. Checkbox. Not checked. To check press space bar.</li>
+      <li><b>Edge:</b> What type of cars do you like? Group. Size. Group. List with 1 item. Large. Checkbox. Not checked. To check press space bar.</li>
     </ul>
   </div>
   <p><a href="index.html">Return to main list</a></p>
