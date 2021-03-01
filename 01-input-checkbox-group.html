@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>input type="checkbox" (group)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>input type="checkbox" (group)</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <h2>Example</h2>
+  <form action="#">
+    <fieldset>
+      <legend>Favourite animal</legend>
+      <ul class="form-list">
+        <li>
+          <input type="checkbox" id="dog">
+          <label for="dog">Dog</label>
+        </li>
+        <li>
+          <input type="checkbox" id="cat">
+          <label for="cat">Cat</label>
+        </li>
+        <li>
+          <input type="checkbox" id="rabbit">
+          <label for="rabbit">Rabbit</label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Favourite animal&lt;/legend&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;input type="checkbox" id="dog"&gt;
+      &lt;label for="dog"&gt;Dog&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="checkbox" id="cat"&gt;
+      &lt;label for="cat"&gt;Cat&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="checkbox" id="rabbit"&gt;
+      &lt;label for="rabbit"&gt;Rabbit&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Dog. Unticked. Tick box. List 3 items. <span class="red">[Legend not announced]</span></li>
+      <li><b>Firefox:</b> Dog. Unticked. Checkbox. List 3 items. <span class="red">[Legend not announced]</span></li>
+      <li><b>Safari:</b> Dog. Unticked. Checkbox. Favourite animal. Favourite animal. Group.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Favourite animal. Grouping. List with 3 items. Dog. Checkbox. Not checked.</li>
+      <li><b>Firefox:</b> Favourite animal. Grouping. List with 3 items. Dog. Checkbox. Not checked.</li>
+      <li><b>Edge:</b> Favourite animal. Grouping. List with 3 items. Dog. Checkbox. Not checked.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Favourite animal. Group. List with 3 items. Dog. Checkbox. Not checked.</li>
+      <li><b>Firefox:</b> Favourite animal. Dog. Checkbox. Not checked.</li>
+      <li><b>Edge:</b> Favourite animal. Group. List with 3 items. Dog. Checkbox. Not checked.</li>
+    </ul>
+  </div>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
