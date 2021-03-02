@@ -59,6 +59,7 @@ pre {
   color:#fff;
   padding: 1em;
   margin: 1em 0 36px;
+  overflow: auto;
 }
 
 pre code {
@@ -174,7 +175,7 @@ legend {
 }
 
 .main-list {
-  margin: 0;
+  margin: 0 0 2em;
   padding: 0;
   list-style: none;
 }
@@ -227,3 +228,23 @@ legend {
 .details h2 {
   margin-top: 0;
 }
+
+.date {
+  color: #666;
+  font-size: .8em;
+}
+
+.required {
+  display: inline-block;
+  padding: 0 0 0 .3em;
+  color: red;
+  font-size: .9em;
+}
+
+.labelledby {
+  display: block;
+  margin: 1em 0 0;
+  font-size: .9em;
+  font-style: italic;
+}
+

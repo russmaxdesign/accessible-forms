@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>input with no accessible name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>input with no accessible name</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <h2>Example</h2>
+  <p>The purpose this test is to show the cascade order of how accessible names are applied in the accessibility tree for inputs. The priority order from highest to lowest is:</p>
+  <ol>
+    <li>If present, use "aria-labelledby" value.</b></li>
+    <li>Otherwise, if present, use "aria-label" value.</li>
+    <li>Otherise, if present, use "label" value.</li>
+    <li>Otherwise, if present, use "title" value.</li>
+    <li><b>If none of the above are provided, there is no accessible name (as per the example below).</b></li>
+  </ol>
+  <p>This example should not be considered proper practice. Where possible the contents of the label should be used to define the accessible name.</p>
+  <form action="#">
+    <div class="form-group">
+      <input class="input" type="text">
+    </div>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;input type="text"&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Edit text. Blank.</li>
+      <li><b>Firefox:</b> Edit text. Blank.</li>
+      <li><b>Safari:</b> Edit text. Blank.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Edit. Blank.</li>
+      <li><b>Firefox:</b> Edit. Has autocomplete. Blank.</li>
+      <li><b>Edge:</b> Edit. Blank.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Edit. Type in text.</li>
+      <li><b>Firefox:</b> Edit. Type in text.</li>
+      <li><b>Edge:</b> Edit. Type in text.</li>
+    </ul>
+  </div>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>

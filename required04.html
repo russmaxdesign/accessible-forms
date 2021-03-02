@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>input with visual "required" indicator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>input with visual "required" indicator</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <h2>Example</h2>
+  <form action="#">
+    <div class="form-group">
+      <label class="label" for="name">Full name <span class="required">(Required)</span></label>
+      <input required class="input" type="text" id="name">
+    </div>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div&gt;
+  &lt;label for="name"&gt;Full name (Required)&lt;/label&gt;
+  &lt;input required type="text" id="name"&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Full name. Required. Required. Invalid data. Edit text.</li>
+      <li><b>Firefox:</b> Full name. Required. Required. Invalid data. Edit text.</li>
+      <li><b>Safari:</b> Full name. Required. Required. Edit text.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Full name. Required. Edit. Required. Invalid entry. Blank.</li>
+      <li><b>Firefox:</b> Full name. Required. Edit. Required. Invalid entry. Has autocomplete. Blank.</li>
+      <li><b>Edge:</b> Full name. Required. Edit. Required. Invalid entry. Blank.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Full name. Left parent. Required. Right parent. Edit. Required. Invalid entry. Type in text.</li>
+      <li><b>Firefox:</b> Full name. Left parent. Required. Right parent. Edit. Required. Invalid entry. Type in text.</li>
+      <li><b>Edge:</b> Full name. Left parent. Required. Right parent. Edit. Required. Invalid entry. Type in text.</li>
+    </ul>
+  </div>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
