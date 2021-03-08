@@ -9,6 +9,7 @@
 <body>
   <h1>input with help text as an aria-label</h1>
   <p><a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine how help information is applied directly to the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-input-element"><code>input</code></a> via the <a href="https://www.w3.org/TR/wai-aria/#aria-label"><code>aria-label</code></a> attribute, is announced by various screen readers.</p>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
@@ -22,7 +23,11 @@
 <pre><code>&lt;div&gt;
   &lt;label for="name"&gt;Name&lt;/label&gt;
   &lt;span&gt;Make sure to include full name&lt;/span&gt;
-  &lt;input type="text" id="name" aria-label="Name. Make sure to include full name"&gt;
+  &lt;input
+    type="text"
+    id="name"
+    aria-label="Name. Make sure to include full name"
+  &gt;
 &lt;/div&gt;</code></pre>
 <!-- end code -->
   <h2>Assistive technologies</h2>

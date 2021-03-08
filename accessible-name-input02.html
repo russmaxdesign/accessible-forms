@@ -9,7 +9,6 @@
 <body>
   <h1>input where "aria-label" should be accessible name</h1>
   <p><a href="index.html">Return to main list</a></p>
-  <h2>Example</h2>
   <p>The purpose this test is to show the cascade order of how accessible names are applied in the accessibility tree for inputs. The priority order from highest to lowest is:</p>
   <ol>
     <li>If present, use "aria-labelledby" value.</li>
@@ -19,6 +18,7 @@
     <li>If none of the above are provided, there is no accessible name.</li>
   </ol>
   <p>This example should not be considered proper practice. Where possible the contents of the label should be used to define the accessible name.</p>
+  <h2>Example</h2>
   <form action="#">
     <div class="form-group">
       <label class="label" for="fish">Fish</label>
