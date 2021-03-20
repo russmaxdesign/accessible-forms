@@ -78,7 +78,7 @@
   </ul>
 
   <h2 id="invalid">aria-invalid tests<span class="date"> - Added 06/03/2021</span></h2>
-  <p>Tests to determine how "aria-invalid" is announced.</p>
+  <p>Tests to determine how the "aria-invalid" attribute is announced.</p>
   <ul class="main-list">
     <li><a href="invalid01.html">input with "aria-invalid" attribute</a></li>
   </ul>
@@ -104,6 +104,21 @@
     <li><a href="01-input-checkbox-group-without-list.html">input type="checkbox" (group) without a list</a></li>
     <li><a href="01-input-radio-group-without-list.html">input type="radio" (group) without a list</a></li>
     <li><a href="07-nested-fieldset-without-list.html">Nested fieldset without list</a></li>
+  </ul>
+
+  <h2 id="disabled">disabled tests<span class="date"> - Added 20/03/2021</span></h2>
+  <p>Tests to determine how the boolean "disabled" attribute is announced. Disabled attributes cannot receive focus, so the only way to test how these attributes are announced is via:</p>
+  <ul>
+    <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
+    <li><b>NVDA and JAWS</b>: Announce next line: <kbd>DOWN ARROW</kbd></li>
+  </ul>
+  <ul class="main-list">
+    <li><a href="disabled01.html">button with "disabled" attribute</a></li>
+    <li><a href="disabled02.html">input with "disabled" attribute</a></li>
+    <li><a href="disabled03.html">textarea with "disabled" attribute</a></li>
+    <li><a href="disabled04.html">select with "disabled" attribute</a></li>
+    <li><a href="disabled05.html">option with "disabled" attribute</a></li>
+    <li><a href="disabled06.html">fieldset with "disabled" attribute</a></li>
   </ul>
 
   <div class="details">

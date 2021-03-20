@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>textarea with "disabled" attribute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>textarea with "disabled" attribute</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/html52/sec-forms.html#enabling-and-disabling-form-controls-the-disabled-attribute"><code>disabled</code></a> attribute, applied to the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-textarea-element"><code>textarea</code></a> element, is announced by various screen readers.</p>
+  <p>Disabled attributes cannot receive focus, so the only way to test how these attributes are announced is via:</p>
+  <ul>
+    <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
+    <li><b>NVDA and JAWS</b>: Announce next line: <kbd>DOWN ARROW</kbd></li>
+  </ul>
+  <h2>Example</h2>
+  <form action="#">
+    <div class="form-group">
+      <label class="label" for="comment">Add a comment</label>
+      <textarea class="input" id="comment" rows="10" disabled></textarea>
+    </div>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div&gt;
+  &lt;label for="comment"&gt;Add a comment&lt;/label&gt;
+  &lt;textarea id="comment" disabled&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Add a comment. Dimmed. Clickable. Text.</li>
+      <li><b>Firefox:</b> Add a comment. Dimmed. Edit text.</li>
+      <li><b>Safari:</b> Add a comment. Dimmed. Edit text.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> [Label] Add a comment. [Textarea] Edit. Unavailable. Multiline.</li>
+      <li><b>Firefox:</b> [Label] Clickable. Add a comment. [Textarea]Edit. Unavailable. Multiline.</li>
+      <li><b>Edge:</b> [Label] Add a comment. [Textarea]Edit. Unavailable. Multiline.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> [Label] Add a comment. [Textarea] Edit. Unavailable.</li>
+      <li><b>Firefox:</b> <span class="red">[Unable to read next item]</span></li>
+      <li><b>Edge:</b> [Label] Add a comment. [Textarea] Edit. Unavailable. Multiline.</li>
+    </ul>
+  </div>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
