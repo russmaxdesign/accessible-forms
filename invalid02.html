@@ -2,51 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>input with aria-invalid="true" attribute</title>
+  <title>input with aria-invalid="false" attribute</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>input with aria-invalid="true" attribute</h1>
+  <h1>input with aria-invalid="false" attribute</h1>
   <p><a href="index.html">Return to main list</a></p>
   <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/wai-aria/#aria-invalid"><code>aria-invalid</code></a> attribute, applied to the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-input-element"><code>input</code></a> element, is announced by various screen readers.</p>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
       <label class="label" for="name">Name</label>
-      <input class="input" type="text" id="name" aria-invalid="true">
+      <input class="input" type="text" id="name" aria-invalid="false">
     </div>
   </form>
   <h2>Code</h2>
 <!-- start code -->
 <pre><code>&lt;div&gt;
   &lt;label for="name"&gt;Name&lt;/label&gt;
-  &lt;input type="text" id="name" aria-invalid="true"&gt;
+  &lt;input type="text" id="name" aria-invalid="false"&gt;
 &lt;/div&gt;</code></pre>
 <!-- end code -->
   <h2>Assistive technologies</h2>
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Name. Invalid data. Edit text.</li>
-      <li><b>Firefox:</b> Name. Invalid data. Edit text.</li>
-      <li><b>Safari:</b> Name. Invalid data. Edit text.</li>
+      <li><b>Chrome:</b> Name. Edit text.</li>
+      <li><b>Firefox:</b> Name. Edit text.</li>
+      <li><b>Safari:</b> Name. Edit text.</li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Name. Invalid entry. Blank.</li>
-      <li><b>Firefox:</b> Name. Invalid entry. Has autocomplete. Blank.</li>
-      <li><b>Edge:</b> Name. Invalid entry. Blank.</li>
+      <li><b>Chrome:</b> Name. Edit. Blank.</li>
+      <li><b>Firefox:</b> Name. Edit. Has autocomplete. Blank.</li>
+      <li><b>Edge:</b> Name. Edit. Blank.</li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Name. Edit. Invalid entry. Type in text.</li>
-      <li><b>Firefox:</b> Name. Edit. Invalid entry. Type in text.</li>
-      <li><b>Edge:</b> Name. Edit. Invalid entry. Type in text.</li>
+      <li><b>Chrome:</b> Name. Edit. Type in text.</li>
+      <li><b>Firefox:</b> Name. Edit. Type in text.</li>
+      <li><b>Edge:</b> Name. Edit. Type in text.</li>
     </ul>
   </div>
   <p><a href="index.html">Return to main list</a></p>
