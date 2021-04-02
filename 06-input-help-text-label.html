@@ -12,6 +12,7 @@
   <p>This is a test case designed to determine how help information is applied directly to the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-input-element"><code>input</code></a> via the <a href="https://www.w3.org/TR/wai-aria/#aria-label"><code>aria-label</code></a> attribute, is announced by various screen readers.</p>
   <h2>Example</h2>
   <form action="#">
+    <button>Test</button>
     <div class="form-group">
       <label class="label" for="name">Name</label>
       <span class="help-text">Make sure to include full name</span>
@@ -35,7 +36,7 @@
     <h3>VoiceOver</h3>
     <ul class="browser-list">
       <li><b>Chrome:</b> Name. Make sure to include full name. Edit text.</li>
-      <li><b>Firefox:</b> Name. Edit text.</li>
+      <li><b>Firefox:</b> Name. Edit text. <span class="red">[aria-label not announced]</span></li>
       <li><b>Safari:</b> Name. Make sure to include full name. Edit text.</li>
     </ul>
   </div>
