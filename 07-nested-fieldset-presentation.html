@@ -2,35 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nested fieldset without list</title>
+  <title>Nested fieldset, with role="presentation"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Nested fieldset without list</h1>
+  <h1>Nested fieldset, with role="presentation"</h1>
   <p><a href="index.html">Return to main list</a></p>
-  <p>This is a test case designed to determine how nested <a href="https://www.w3.org/TR/html52/sec-forms.html#the-fieldset-element"><code>fieldset</code></a> and <a href="https://www.w3.org/TR/html52/sec-forms.html#the-legend-element"><code>legend</code></a> elements are announced by various screen readers. In this test, the radio/label combos are not presented inside a list.</p>
+  <p>This is a test case designed to determine how nested <a href="https://www.w3.org/TR/html52/sec-forms.html#the-fieldset-element"><code>fieldset</code></a> and <a href="https://www.w3.org/TR/html52/sec-forms.html#the-legend-element"><code>legend</code></a> elements are announced by various screen readers.</p>
   <h2>Example</h2>
   <form action="#">
     <fieldset>
       <legend>What type of cars do you like?</legend>
       <fieldset>
         <legend>Size</legend>
-        <div class="form-group">
-          <input type="checkbox" id="large"><label for="large">Large</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" id="small"><label for="small">Small</label>
-        </div>
+        <ul role="presentation">
+          <li><input type="checkbox" id="large"><label for="large">Large</label></li>
+          <li><input type="checkbox" id="small"><label for="small">Small</label></li>
+        </ul>
       </fieldset>
       <fieldset>
         <legend>Type</legend>
-        <div class="form-group">
-          <input type="checkbox" id="sedan"><label for="sedan">Sedan</label>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" id="wagon"><label for="wagon">Wagon</label>
-        </div>
+        <ul role="presentation">
+          <li><input type="checkbox" id="sedan"><label for="sedan">Sedan</label></li>
+          <li><input type="checkbox" id="wagon"><label for="wagon">Wagon</label></li>
+        </ul>
       </fieldset>
     </fieldset>
   </form>
@@ -40,25 +36,29 @@
   &lt;legend&gt;What type of cars do you like?&lt;/legend&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Size&lt;/legend&gt;
-    &lt;div class="form-group"&gt;
-      &lt;input type="checkbox" id="large"&gt;
-      &lt;label for="large"&gt;Large&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class="form-group"&gt;
-      &lt;input type="checkbox" id="small"&gt;
-      &lt;label for="small"&gt;Small&lt;/label&gt;
-    &lt;/div&gt;
+    &lt;ul role="presentation"&gt;
+      &lt;li&gt;
+        &lt;input type="checkbox" id="large"&gt;
+        &lt;label for="large"&gt;Large&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input type="checkbox" id="small"&gt;
+        &lt;label for="small"&gt;Small&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/fieldset&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Type&lt;/legend&gt;
-    &lt;div class="form-group"&gt;
-      &lt;input type="checkbox" id="sedan"&gt;
-      &lt;label for="sedan"&gt;Sedan&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class="form-group"&gt;
-      &lt;input type="checkbox" id="wagon"&gt;
-      &lt;label for="wagon"&gt;Wagon&lt;/label&gt;
-    &lt;/div&gt;
+    &lt;ul role="presentation"&gt;
+      &lt;li&gt;
+        &lt;input type="checkbox" id="sedan"&gt;
+        &lt;label for="sedan"&gt;Sedan&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;input type="checkbox" id="wagon"&gt;
+        &lt;label for="wagon"&gt;Wagon&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/fieldset&gt;
 &lt;/fieldset&gt;</code></pre>
 <!-- end code -->
@@ -66,8 +66,8 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Large. Unticked. Tick box. Size. Group. <span class="red">[Outer legends not announced]</span></li>
-      <li><b>Firefox:</b> Large. Unticked. Checkbox. Size. Group. <span class="red">[Outer legends not announced]</span></li>
+      <li><b>Chrome:</b> Large. Unticked. Tick box. Size. Group <span class="red">[Outer legend not announced]</span></li>
+      <li><b>Firefox:</b> Large. Unticked. Checkbox. Size. Group <span class="red">[Outer legend not announced]</span></li>
       <li><b>Safari:</b> Large. Unticked. Tick box. Size. Size. Group. <span class="red">[Outer legend not announced]</span></li>
     </ul>
   </div>

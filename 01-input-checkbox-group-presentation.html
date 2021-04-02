@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>input type="checkbox" (group)</title>
+  <title>input type="checkbox" (group), with role="presentation"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>input type="checkbox" (group)</h1>
+  <h1>input type="checkbox" (group), with role="presentation"</h1>
   <p><a href="index.html">Return to main list</a></p>
-  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-fieldset-element"><code>fieldset</code></a> and <a href="https://www.w3.org/TR/html52/sec-forms.html#the-legend-element"><code>legend</code></a> elements are announced in relation to a checkbox group by various screen readers.</p>
+  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-fieldset-element"><code>fieldset</code></a> and <a href="https://www.w3.org/TR/html52/sec-forms.html#the-legend-element"><code>legend</code></a> elements are announced in relation to a checkbox group by various screen readers. In this test, the radio/label combos are presented inside a list but the list has been set with <a href="https://www.w3.org/TR/wai-aria/#presentation"><code>role="presentation"</code></a></p>
   <h2>Example</h2>
   <form action="#">
     <fieldset>
       <legend>Favourite animal</legend>
-      <ul class="form-list">
+      <ul class="form-list" role="presentation">
         <li>
           <input type="checkbox" id="dog">
           <label for="dog">Dog</label>
@@ -34,7 +34,7 @@
 <!-- start code -->
 <pre><code>&lt;fieldset&gt;
   &lt;legend&gt;Favourite animal&lt;/legend&gt;
-  &lt;ul&gt;
+  &lt;ul role="presentation"&gt;
     &lt;li&gt;
       &lt;input type="checkbox" id="dog"&gt;
       &lt;label for="dog"&gt;Dog&lt;/label&gt;
@@ -54,25 +54,25 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Dog. Unticked. Tick box. List 3 items. <span class="red">[Legend not announced]</span></li>
-      <li><b>Firefox:</b> Dog. Unticked. Checkbox. List 3 items. <span class="red">[Legend not announced]</span></li>
+      <li><b>Chrome:</b> Dog. Unticked. Tick box. Favourite animal. Group.</li>
+      <li><b>Firefox:</b> Dog. Unticked. Checkbox. Favourite animal. Group.</li>
       <li><b>Safari:</b> Dog. Unticked. Tick box. Favourite animal. Favourite animal. Group.</li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Favourite animal. Grouping. List with 3 items. Dog. Checkbox. Not checked.</li>
-      <li><b>Firefox:</b> Favourite animal. Grouping. List with 3 items. Dog. Checkbox. Not checked.</li>
-      <li><b>Edge:</b> Favourite animal. Grouping. List with 3 items. Dog. Checkbox. Not checked.</li>
+      <li><b>Chrome:</b> Favourite animal. Grouping. Dog. Checkbox. Not checked.</li>
+      <li><b>Firefox:</b> Favourite animal. Grouping. Dog. Checkbox. Not checked.</li>
+      <li><b>Edge:</b> Favourite animal. Grouping. Dog. Checkbox. Not checked.</li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Favourite animal. Group. List with 3 items. Dog. Checkbox. Not checked.</li>
+      <li><b>Chrome:</b> Favourite animal. Group. Dog. Checkbox. Not checked.</li>
       <li><b>Firefox:</b> Favourite animal. Dog. Checkbox. Not checked.</li>
-      <li><b>Edge:</b> Favourite animal. Group. List with 3 items. Dog. Checkbox. Not checked.</li>
+      <li><b>Edge:</b> Favourite animal. Group. Dog. Checkbox. Not checked.</li>
     </ul>
   </div>
   <p><a href="index.html">Return to main list</a></p>
