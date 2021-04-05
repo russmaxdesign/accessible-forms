@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>optgroup within select</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>optgroup within select</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-optgroup-element"><code>optgroup</code></a> element is announced by various screen readers.</p>
+  <h2>Example</h2>
+  <form action="#">
+    <div class="form-group">
+      <label class="label" for="suburb">Suburb</label>
+      <select class="input" id="suburb">
+        <option value="">Choose an option</option>
+        <optgroup label="Suburbs beginning with A">
+          <option value="Abbotsbury">Abbotsbury</option>
+          <option value="Abbotsford">Abbotsford</option>
+          <option value="AcaciaGardens">Acacia Gardens</option>
+        </optgroup>
+        <optgroup label="Suburbs beginning with B">
+          <option value="BadgerysCreek">Badgerys Creek</option>
+          <option value="Balgowlah">Balgowlah</option>
+          <option value="BalgowlahHeights">Balgowlah Heights</option>
+        </optgroup>
+      </select>
+    </div>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div&gt;
+  &lt;label for="suburb"&gt;Suburb&lt;/label&gt;
+  &lt;select id="suburb"&gt;
+    &lt;option value=""&gt;Choose an option&lt;/option&gt;
+    &lt;optgroup label="Suburbs beginning with A"&gt;
+      &lt;option value="Abbotsbury"&gt;Abbotsbury&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Suburbs beginning with B"&gt;
+      &lt;option value="BadgerysCreek"&gt;Badgerys Creek&lt;/option&gt;
+    &lt;/optgroup&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Suburb beginning with A. Dimmed.</li>
+      <li><b>Firefox:</b> <span class="red">[Optgroup not announced]</span></li>
+      <li><b>Safari:</b> Suburb beginning with A. Dimmed.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> <span class="red">[Optgroup not announced]</span></li>
+      <li><b>Firefox:</b> Suburbs beginning with A. Grouping. Abbotsbury. 1 of 3. Level 2. [Optgroup only announced with select expanded, and when choosing an option directly below]</li>
+      <li><b>Edge:</b> <span class="red">[Optgroup not announced]</span></li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> <span class="red">[Optgroup not announced]</span></li>
+      <li><b>Firefox:</b> Abbotsbury. Suburbs beginning with A. [Optgroup only announced with select expanded, and when choosing an option directly below]</li>
+      <li><b>Edge:</b> <span class="red">[Optgroup not announced]</span></li>
+    </ul>
+  </div>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
