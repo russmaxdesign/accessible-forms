@@ -49,7 +49,9 @@ a:active {
 }
 
 hr {
-  margin: 1em 0 3em;
+  margin: 3em 0 3em;
+  background: none;
+  border-top: 2px solid #aaa;
 }
 
 pre {
@@ -226,6 +228,33 @@ legend {
 }
 
 .main-list a:active {
+  background: red;
+}
+
+.page-contents-list {
+  margin: 1em 0 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.page-contents-list li {
+  margin: 0 0 .5em;
+}
+
+.page-contents-list a {
+  display: inline-block;
+}
+
+.page-contents-list a:focus {
+  background: black;
+  outline: none;
+}
+
+.page-contents-list a:hover {
+  background: green;
+}
+
+.page-contents-list a:active {
   background: red;
 }
 
