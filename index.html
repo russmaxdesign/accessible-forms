@@ -10,8 +10,8 @@
   <h1>HTML test cases</h1>
   <p><a href="https://github.com/russmaxdesign/accessible-forms">Git repository</a></p>
 
-  <h2 id="basic">Basic form tests<span class="date"> - Added 01/03/2021</span></h2>
-  <p>Tests to determine how form controls and their associated labels/legends are announced.</p>
+  <h2 id="basic">Basic form controls and labels<span class="date"> - Added 01/03/2021</span></h2>
+  <p>Tests to determine how form controls and their associated labels/legends are announced. In some cases, the form element does not require or should not have a label.</p>
   <ul class="main-list">
     <li><a href="01-input-button.html">input type="button"</a></li>
     <li><a href="01-input-checkbox.html">input type="checkbox"</a></li>
@@ -47,19 +47,27 @@
     <li><a href="04-button.html">button</a></li>
   </ul>
 
-  <h2 id="complex">More complex form tests<span class="date"> - Added 01/03/2021</span></h2>
-  <p>Tests to determine how other content can be associated with form controls, and how nested fieldsets are announced.</p>
+  <h2 id="complex">Help text and error messages associated with form controls<span class="date"> - Added 01/03/2021</span></h2>
+  <p>Tests to determine how help text and error messages can be associated with form controls.</p>
+  <h3>Help text</h3>
   <ul class="main-list">
     <li><a href="05-input-help-text-aria-describedby.html">input with help text using aria-describedby</a></li>
     <li><a href="05-input-help-text-wrapped-label.html">input with help text wrapped inside label</a></li>
     <li><a href="05-input-help-text-aria-label.html">input with help text as an aria-label</a></li>
+  </ul>
 
+  <h3>Error messages</h3>
+  <ul class="main-list">
     <li><a href="06-input-error-message-aria-describedby.html">input with error message using aria-describedby</a></li>
     <li><a href="06-input-error-message-wrapped-label.html">input with error message wrapped inside label</a></li>
+  </ul>
 
-    <li><a href="07-nested-fieldset.html">Nested fieldset</a></li>
-    <li><a href="07-nested-fieldset-presentation.html">Nested fieldset, with role="presentation"</a></li>
-    <li><a href="07-nested-fieldset-without-list.html">Nested fieldset without list</a></li>
+  <h2 id="complex">Nested fieldsets<span class="date"> - Added 01/03/2021</span></h2>
+  <p>Tests to determine how nested fieldsets are announced.</p>
+  <ul class="main-list">
+    <li><a href="nested-fieldset.html">Nested fieldset</a></li>
+    <li><a href="nested-fieldset-presentation.html">Nested fieldset, with role="presentation"</a></li>
+    <li><a href="nested-fieldset-without-list.html">Nested fieldset without list</a></li>
   </ul>
 
   <h2 id="required">Required field tests<span class="date"> - Added 03/03/2021</span></h2>
@@ -74,6 +82,7 @@
 
   <h2 id="accessible">Accessible names tests<span class="date"> - Added 03/03/2021</span></h2>
   <p>The purpose these tests is to show the cascade order of how accessible names are applied in the accessibility tree for buttons and inputs. <em>These examples should not be considered proper practice</em>.</p>
+  <h3>Button</h3>
   <ul class="main-list">
     <li><a href="accessible-name-button01.html">button where "aria-labelledby" should be accessible name</a></li>
     <li><a href="accessible-name-button02.html">button where "aria-label" should be accessible name</a></li>
@@ -81,6 +90,8 @@
     <li><a href="accessible-name-button04.html">button where "title" should be accessible name</a></li>
     <li><a href="accessible-name-button05.html">button with no accessible name</a></li>
   </ul>
+
+  <h3>Link</h3>
   <ul class="main-list">
     <li><a href="accessible-name-link01.html">link where "aria-labelledby" should be accessible name</a></li>
     <li><a href="accessible-name-link02.html">link where "aria-label" should be accessible name</a></li>
@@ -88,6 +99,8 @@
     <li><a href="accessible-name-link04.html">link where "title" should be accessible name</a></li>
     <li><a href="accessible-name-link05.html">link with no accessible name</a></li>
   </ul>
+
+  <h3>Input</h3>
   <ul class="main-list">
     <li><a href="accessible-name-input01.html">input where "aria-labelledby" should be accessible name</a></li>
     <li><a href="accessible-name-input02.html">input where "aria-label" should be accessible name</a></li>

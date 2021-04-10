@@ -16,13 +16,13 @@ h1 {
 }
 
 h2 {
-  margin: 1em 0;
-  font-size: 130%;
+  margin: 2em 0 1em;
+  font-size: 1.4em;
 }
 
 h3 {
   margin: 0 0 .5em;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 a:link {
