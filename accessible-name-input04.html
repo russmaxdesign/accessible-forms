@@ -16,14 +16,15 @@
     <li><a href="accessible-name-input02.html">Otherwise, if present, use <code>aria-label</code> value.</a></li>
     <li><a href="accessible-name-input03.html">Otherise, if present, use "label" value.</a></li>
     <li><b>Otherwise, if present, use "title" value (as per the "Rabbit" value below).</b></li>
-    <li><a href="accessible-name-input05.html">If none of the above are provided, there is no accessible name.</a></li>
+    <li><a href="accessible-name-input05.html">Otherwise, if present, use <code>placeholder</code> value</a>.</li>
+    <li><a href="accessible-name-input06.html">If none of the above are provided, there is no accessible name.</a></li>
   </ol>
   <p>In examples 1 - 3, the <code>title</code> value of "Rabbit" is announced as a description rather than a name, which is why is announced at the end of each string. In example 4, the title is announced as  the accessible name as no other accessible name is provided.</p>
   <p>This example should not be considered proper practice. Where possible the contents of the label should be used to define the accessible name.</p>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
-      <input class="input" type="text" title="rabbit">
+      <input class="input" type="text" title="rabbit" placeholder="fox">
     </div>
   </form>
   <h2>Code</h2>
@@ -31,31 +32,62 @@
 <pre><code>&lt;input
   type="text"
   title="rabbit"
+  placeholder="fox"
 &gt;</code></pre>
 <!-- end code -->
   <h2>Assistive technologies</h2>
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Rabbit. Edit text.</li>
-      <li><b>Firefox:</b> Rabbit. Edit text.</li>
-      <li><b>Safari:</b> Rabbit. Edit text.</li>
+      <li>
+        <b>Chrome:</b> Fox. Edit text. Rabbit.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Firefox:</b> Fox. Edit text. Rabbit.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Safari:</b> Rabbit. Edit text. Fox.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Rabbit. Edit. Blank.</li>
-      <li><b>Firefox:</b> Rabbit. Edit. Has autocomplete. Blank.</li>
-      <li><b>Edge:</b> Rabbit. Edit. Blank.</li>
+      <li>
+        <b>Chrome:</b> Fox. Edit. Rabbit. Blank.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Firefox:</b> Fox. Edit. Has autocomplete. Rabbit. Blank.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Edge:</b> Fox. Edit. Rabbit. Blank.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Rabbit. Edit. Type in text.</li>
-      <li><b>Firefox:</b> Rabbit. Edit. Type in text.</li>
-      <li><b>Edge:</b> Rabbit. Edit. Type in text.</li>
+      <li><b>Chrome:</b> Fox. Edit. Rabbit. Type in text.</li>
+      <li><b>Firefox:</b> Fox. Edit. Rabbit. Type in text.</li>
+      <li><b>Edge:</b> Fox. Edit. Rabbit. Type in text.</li>
     </ul>
   </div>
   <p><a href="index.html">Return to main list</a></p>

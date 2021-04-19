@@ -16,15 +16,15 @@
     <li><a href="accessible-name-input02.html">Otherwise, if present, use <code>aria-label</code> value.</a></li>
     <li><a href="accessible-name-input03.html">Otherise, if present, use "label" value.</a></li>
     <li><a href="accessible-name-input04.html">Otherwise, if present, use <code>title</code> value</a>.</li>
-    <li><a href="accessible-name-input05.html">If none of the above are provided, there is no accessible name.</a></li>
+    <li><a href="accessible-name-input05.html">Otherwise, if present, use <code>placeholder</code> value</a>.</li>
+    <li><a href="accessible-name-input06.html">If none of the above are provided, there is no accessible name.</a></li>
   </ol>
-  <p>In examples 1 - 3, the <code>title</code> value of "Rabbit" is announced as a description rather than a name, which is why is announced at the end of each string. In example 4, the title is announced as  the accessible name as no other accessible name is provided.</p>
   <p>This example should not be considered proper practice. Where possible the contents of the label should be used to define the accessible name.</p>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
       <label class="label" for="fish">Fish</label>
-      <input class="input" type="text" id="fish" aria-labelledby="cat" aria-label="dog" title="rabbit">
+      <input class="input" type="text" id="fish" aria-labelledby="cat" aria-label="dog" title="rabbit" placeholder="fox">
       <div class="labelledby" id="cat">Cat</div>
     </div>
   </form>
@@ -37,6 +37,7 @@
   aria-labelledby="cat"
   aria-label="dog"
   title="rabbit"
+  placeholder="fox"
 &gt;
 &lt;div id="cat"&gt;
   Cat
@@ -46,17 +47,52 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Cat. Edit text. Rabbit.</li>
-      <li><b>Firefox:</b> Cat. Edit text. Rabbit.</li>
-      <li><b>Safari:</b> Cat. Edit text. Rabbit.</li>
+      <li>
+        <b>Chrome:</b> Cat. Edit text. Fox. Rabbit.
+        <ul>
+          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Firefox:</b> Cat. Edit text. Rabbit.
+        <ul>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Safari:</b> Cat. Edit text. Fox. Rabbit.
+        <ul>
+          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+     </li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Cat. Edit. Rabbit. Blank.</li>
-      <li><b>Firefox:</b> Cat. Edit. Has autcomplete. Rabbit. Blank.</li>
-      <li><b>Edge:</b> Cat. Edit. Rabbit. Blank.</li>
+      <li>
+        <b>Chrome:</b> Cat. Edit. Rabbit. Fox. Blank.
+        <ul>
+          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Firefox:</b> Cat. Edit. Has autcomplete. Rabbit. Fox. Blank.
+        <ul>
+          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
+      <li>
+        <b>Edge:</b> Cat. Edit. Rabbit. Fox. Blank.
+        <ul>
+          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
+          <li><span class="green">[Title value ("Rabbit") announced as description]</span></li>
+        </ul>
+      </li>
     </ul>
   </div>
   <div class="note">
