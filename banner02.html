@@ -10,11 +10,12 @@
 <body>
   <h1>role="banner"</h1>
   <p><a href="index.html">Return to main list</a></p>
-  <p>These test cases are designed to determine how the <code>header</code> element and elements with a <code>role</code> of <code>banner</code> are announced by various screen readers, in specific situations.</p>
+  <p>This test case is designed to determine how <code>role="banner"</code> is announced by various screen readers.</p>
+  <p>In this case, the element <b>should be announced</b> as a <code>banner</code> landmark.</p>
   <p>By default, the element being tested does not receive focus, so the only way to test how it is announced is via:</p>
   <ul>
-    <li>VoiceOver: Announce next item: VO + Right Arrow</li>
-    <li>NVDA and JAWS: Announce next line: DOWN ARROW</li>
+    <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
+    <li><b>NVDA and JAWS</b>: Announce next line: <kbd>DOWN ARROW</kbd></li>
   </ul>
   <h2>Example</h2>
   <div class="example">
