@@ -11,7 +11,7 @@
   <h1>&lt;header&gt; descendant of role="region"</h1>
   <p><a href="index.html">Return to main list</a></p>
   <p>This test case is designed to determine how the <code>&lt;header&gt;</code> element will be announced by various screen readers when it is a descendant of an element with <code>role="region"</code>.</p>
-  <p>In this case, the element <b>should not be announced</b> as a <code>banner</code> landmark, as it is not scoped to the <code>&lt;body&gt;</code> element.</p>
+  <p>In this case, the element <b>should be announced</b> as a <code>banner</code> landmark.</p>
   <p>By default, the element being tested does not receive focus, so the only way to test how it is announced is via:</p>
   <ul>
     <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
@@ -39,25 +39,25 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Banner. [Stop] Test content. [Stop]. End of banner. <span class="red">[Banner incorrectly announced]</span></li>
-      <li><b>Firefox:</b> Banner. [Stop] Test content. [Stop]. End of banner. <span class="red">[Banner incorrectly announced]</span></li>
-      <li><b>Safari:</b> Banner. [Stop] Test content. [Stop]. End of banner. <span class="red">[Banner incorrectly announced]</span></li>
+      <li><b>Chrome:</b> Banner. [Stop] Test content. [Stop]. End of banner.</li>
+      <li><b>Firefox:</b> Banner. [Stop] Test content. [Stop]. End of banner.</li>
+      <li><b>Safari:</b> Banner. [Stop] Test content. [Stop]. End of banner.</li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> xxx</li>
-      <li><b>Firefox:</b> xxx</li>
-      <li><b>Edge:</b> xxx</li>
+      <li><b>Chrome:</b> Banner landmark. Test content.</li>
+      <li><b>Firefox:</b> Banner landmark. Test content.</li>
+      <li><b>Edge:</b> Banner landmark. Test content.</li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> xxx</li>
-      <li><b>Firefox:</b> xxx</li>
-      <li><b>Edge:</b> xxx</li>
+      <li><b>Chrome:</b> Test content. <span class="red">[Banner not announced]</span></li>
+      <li><b>Firefox:</b> Test content. <span class="red">[Banner not announced]</span></li>
+      <li><b>Edge:</b> Test content. <span class="red">[Banner not announced]</span></li>
     </ul>
   </div>
   <p><a href="index.html">Return to main list</a></p>

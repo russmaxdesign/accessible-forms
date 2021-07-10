@@ -178,68 +178,37 @@
   <hr>
 
   <h2 id="banner">ARIA banner tests<span class="date"> - Added 10/07/2021</span></h2>
-  <p>When the <code>&lt;header&gt;</code> or an element with <code>role=banner"</code> is scoped to the <code>&lt;body&gt;</code> element, it represents introductory content for the page as a whole. In these cases, the element will have an implicit ARIA role of <code>banner</code>.</p>
+  <p>When the <code>&lt;header&gt;</code> is scoped to the <code>&lt;body&gt;</code> element, it represents introductory content for the page as a whole. In these cases, the element will have an implicit ARIA role of <code>banner</code>.</p>
   <p>The element will not have an implicit role of <code>banner</code> if it is a descendant of:</p>
   <ul>
-    <li><code>&lt;article&gt;</code> or <code>role="article"</code></li>
-    <li><code>&lt;aside&gt;</code> or <code>role="complementary</code></li>
-    <li><code>&lt;main&gt;</code> or <code>role="main"</code></li>
-    <li><code>&lt;nav&gt;</code> or <code>role="navigation"</code></li>
-    <li><code>&lt;section&gt;</code> or <code>role="region"</code></li>
+    <li><code>&lt;article&gt;</code></li>
+    <li><code>&lt;aside&gt;</code></li>
+    <li><code>&lt;main&gt;</code></li>
+    <li><code>&lt;nav&gt;</code></li>
+    <li><code>&lt;section&gt;</code></li>
   </ul>
   <p>These test cases are designed to test the situations listed above.</p>
-  <h3>No descendant</h3>
   <ul class="main-list">
     <li>&rarr; <a href="banner01.html">&lt;header&gt;</a></li>
     <li>&rarr; <a href="banner02.html">role="banner"</a></li>
-  </ul>
-  <h3>Descendant of <code>&lt;article&gt;</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner03.html">&lt;header&gt; descendant of &lt;article&gt;</a></li>
     <li>&rarr; <a href="banner04.html">role="banner" descendant of &lt;article&gt;</a></li>
-  </ul>
-  <h3>Descendant of <code>role="article"</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner05.html">&lt;header&gt; descendant of role="article"</a></li>
     <li>&rarr; <a href="banner06.html">role="banner" descendant of role="article"</a></li>
-  </ul>
-  <h3>Descendant of <code>&lt;aside&gt;</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner07.html">&lt;header&gt; descendant of &lt;aside&gt;</a></li>
     <li>&rarr; <a href="banner08.html">role="banner" descendant of &lt;aside&gt;</a></li>
-  </ul>
-  <h3>Descendant of <code>role="complementary"</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner09.html">&lt;header&gt; descendant of role="complementary"</a></li>
     <li>&rarr; <a href="banner10.html">role="banner" descendant of role="complementary"</a></li>
-  </ul>
-  <h3>Descendant of <code>&lt;main&gt;</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner11.html">&lt;header&gt; descendant of &lt;main&gt;</a></li>
     <li>&rarr; <a href="banner12.html">role="banner" descendant of &lt;main&gt;</a></li>
-  </ul>
-  <h3>Descendant of <code>role="main"</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner13.html">&lt;header&gt; descendant of role="main"</a></li>
     <li>&rarr; <a href="banner14.html">role="banner" descendant of role="main"</a></li>
-  </ul>
-  <h3>Descendant of <code>&lt;nav&gt;</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner15.html">&lt;header&gt; descendant of &lt;nav&gt;</a></li>
     <li>&rarr; <a href="banner16.html">role="banner" descendant of &lt;nav&gt;</a></li>
-  </ul>
-  <h3>Descendant of <code>role="navigation"</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner17.html">&lt;header&gt; descendant of role="navigation"</a></li>
     <li>&rarr; <a href="banner18.html">role="banner" descendant of role="navigation"</a></li>
-  </ul>
-  <h3>Descendant of <code>&lt;section&gt;</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner19.html">&lt;header&gt; descendant of &lt;section&gt;</a></li>
     <li>&rarr; <a href="banner20.html">role="banner" descendant of &lt;section&gt;</a></li>
-  </ul>
-  <h3>Descendant of <code>role="region"</code></h3>
-  <ul class="main-list">
     <li>&rarr; <a href="banner21.html">&lt;header&gt; descendant of role="region"</a></li>
     <li>&rarr; <a href="banner22.html">role="banner" descendant of role="region"</a></li>
   </ul>
