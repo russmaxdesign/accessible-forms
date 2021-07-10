@@ -8,18 +8,18 @@
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>button with no accessible name</h1>
+  <h1>&lt;button&gt; with no accessible name</h1>
   <p><a href="index.html">Return to main list</a></p>
   <p>The purpose this test is to show the cascade order of how accessible names are applied in the accessibility tree for buttons. The priority order from highest to lowest is:</p>
   <ol>
     <li><a href="accessible-name-button01.html">If present, use <code>aria-labelledby</code> value.</a></li>
     <li><a href="accessible-name-button02.html">Otherwise, if present, use <code>aria-label</code> value.</a></li>
-    <li><a href="accessible-name-button03.html">Otherise, if present, use button content.</a></li>
+    <li><a href="accessible-name-button03.html">Otherise, if present, use <code>&lt;button&gt;</code> content.</a></li>
     <li><a href="accessible-name-button04.html">Otherwise, if present, use <code>title</code> value</a>.</li>
     <li><b>If none of the above are provided, there is no accessible name (as per the example below).</b></li>
   </ol>
   <p>In examples 1 - 3, the <code>title</code> value of "Rabbit" is announced as a description rather than a name, which is why is announced at the end of each string. In example 4, the title is announced as  the accessible name as no other accessible name is provided.</p>
-  <p>This example should not be considered proper practice. Where possible content within the <code>button</code> should be used to define the accessible name.</p>
+  <p>This example should not be considered proper practice. Where possible content within the <code>&lt;button&gt;</code> should be used to define the accessible name.</p>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">

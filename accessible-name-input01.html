@@ -8,18 +8,18 @@
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>input where "aria-labelledby" should be accessible name</h1>
+  <h1>&lt;input&gt; where "aria-labelledby" should be accessible name</h1>
   <p><a href="index.html">Return to main list</a></p>
   <p>The purpose this test is to show the cascade order of how accessible names are applied in the accessibility tree for inputs. The priority order from highest to lowest is:</p>
   <ol>
     <li><b>If present, use <code>aria-labelledby</code> value (as per the "Cat" value below).</b></li>
     <li><a href="accessible-name-input02.html">Otherwise, if present, use <code>aria-label</code> value.</a></li>
-    <li><a href="accessible-name-input03.html">Otherise, if present, use <code>label</code> value.</a></li>
+    <li><a href="accessible-name-input03.html">Otherise, if present, use <code>&lt;label&gt;</code> value.</a></li>
     <li><a href="accessible-name-input04.html">Otherwise, if present, use <code>title</code> value</a>.</li>
     <li><a href="accessible-name-input05.html">Otherwise, if present, use <code>placeholder</code> value</a>.</li>
     <li><a href="accessible-name-input06.html">If none of the above are provided, there is no accessible name.</a></li>
   </ol>
-  <p>This example should not be considered proper practice. Where possible the contents of the <code>label</code> should be used to define the accessible name.</p>
+  <p>This example should not be considered proper practice. Where possible the contents of the <code>&lt;label&gt;</code> should be used to define the accessible name.</p>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
