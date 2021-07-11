@@ -200,7 +200,7 @@
   <hr>
 
   <h2 id="header">Header scope tests<span class="date"> - Added 10/07/2021</span></h2>
-  <p>When <code>&lt;header&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>banner</code>. Similarly, when <code>&lt;footer&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>contentinfo</code>.</p>
+  <p>When the <code>&lt;header&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>banner</code>. Similarly, when the <code>&lt;footer&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>contentinfo</code>.</p>
   <p>However, these two elements will not have implicit ARIA roles if they are descendants of the following elements:</p>
   <ul>
     <li><code>&lt;article&gt;</code></li>
@@ -209,18 +209,27 @@
     <li><code>&lt;nav&gt;</code></li>
     <li><code>&lt;section&gt;</code></li>
   </ul>
-  <p>These test cases are designed to test the situations listed above.</p>
+  <p>These cases are designed to test whether the <code>&lt;header&gt;</code> element's implicit ARIA role is announced.</p>
+  <h3>&lt;header&gt; scoped to the &lt;body&gt; element - implicit ARIA role should be present</h3>
   <ul class="main-list">
-    <li>&rarr; <a href="landmarks-banner03.html">&lt;header&gt; descendant of &lt;article&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner01.html">&lt;header&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner02.html">role="banner"</a></li>
     <li>&rarr; <a href="landmarks-banner05.html">&lt;header&gt; descendant of role="article"</a></li>
-    <li>&rarr; <a href="landmarks-banner07.html">&lt;header&gt; descendant of &lt;aside&gt;</a></li>
     <li>&rarr; <a href="landmarks-banner09.html">&lt;header&gt; descendant of role="complementary"</a></li>
-    <li>&rarr; <a href="landmarks-banner11.html">&lt;header&gt; descendant of &lt;main&gt;</a></li>
     <li>&rarr; <a href="landmarks-banner13.html">&lt;header&gt; descendant of role="main"</a></li>
-    <li>&rarr; <a href="landmarks-banner15.html">&lt;header&gt; descendant of &lt;nav&gt;</a></li>
     <li>&rarr; <a href="landmarks-banner17.html">&lt;header&gt; descendant of role="navigation"</a></li>
-    <li>&rarr; <a href="landmarks-banner19.html">&lt;header&gt; descendant of &lt;section&gt;</a></li>
     <li>&rarr; <a href="landmarks-banner21.html">&lt;header&gt; descendant of role="region"</a></li>
+  </ul>
+  <h3>&lt;header&gt; scoped to other elements - implicit ARIA role should be absent</h3>
+  <ul class="main-list">
+    <li>&rarr; <a href="landmarks-banner03.html">&lt;header&gt; descendant of &lt;article&gt;</a> scoped to the <code>&lt;article&gt;</code> element</li>
+    <li>&rarr; <a href="landmarks-banner07.html">&lt;header&gt; descendant of &lt;aside&gt;</a> scoped to the <code>&lt;aside&gt;</code> element</li>
+    <li>&rarr; <a href="landmarks-banner11.html">&lt;header&gt; descendant of &lt;main&gt;</a> scoped to the <code>&lt;main&gt;</code> element</li>
+    <li>&rarr; <a href="landmarks-banner15.html">&lt;header&gt; descendant of &lt;nav&gt;</a> scoped to the <code>&lt;nav&gt;</code> element</li>
+    <li>&rarr; <a href="landmarks-banner19.html">&lt;header&gt; descendant of &lt;section&gt;</a>scoped to the <code>&lt;section&gt;</code> element</li>
+  </ul>
+
+
   </ul>
   <hr>
 
