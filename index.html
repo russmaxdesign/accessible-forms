@@ -23,7 +23,8 @@
     <li>&darr; <a href="#invalid">Aria-invalid tests</a></li>
     <li>&darr; <a href="#attributes">Form-based attribute tests</a></li>
     <li>&darr; <a href="#disabled">Disabled field tests</a></li>
-    <li>&darr; <a href="#banner">ARIA banner tests</a></li>
+    <li>&darr; <a href="#landmark">ARIA landmark tests</a></li>
+    <li>&darr; <a href="#header">Header scope tests</a></li>
     <li>&darr; <a href="#technology">Technology details</a></li>
   </ul>
   <hr>
@@ -177,9 +178,30 @@
   </ul>
   <hr>
 
-  <h2 id="banner">ARIA banner tests<span class="date"> - Added 10/07/2021</span></h2>
-  <p>When the <code>&lt;header&gt;</code> is scoped to the <code>&lt;body&gt;</code> element, it represents introductory content for the page as a whole. In these cases, the element will have an implicit ARIA role of <code>banner</code>.</p>
-  <p>The element will not have an implicit role of <code>banner</code> if it is a descendant of:</p>
+  <h2 id="landmark">ARIA landmark tests<span class="date"> - Added 10/07/2021</span></h2>
+  <p>Tests to determine how various landmarks are announced.</p>
+  <ul class="main-list">
+    <li>&rarr; <a href="landmarks-article.html">&lt;article&gt;</a></li>
+    <li>&rarr; <a href="landmarks-aside01.html">&lt;aside&gt;</a></li>
+    <li>&rarr; <a href="landmarks-aside02.html">role="complementary"</a></li>
+    <li>&rarr; <a href="landmarks-footer01.html">&lt;footer&gt;</a></li>
+    <li>&rarr; <a href="landmarks-footer02.html">role="contentinfo"</a></li>
+    <li>&rarr; <a href="landmarks-form.html">role="form"</a></li>
+    <li>&rarr; <a href="landmarks-banner01.html">&lt;header&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner02.html">role="banner"</a></li>
+    <li>&rarr; <a href="landmarks-main01.html">&lt;main&gt;</a></li>
+    <li>&rarr; <a href="landmarks-main02.html">role="main"</a></li>
+    <li>&rarr; <a href="landmarks-nav01.html">&lt;nav&gt;</a></li>
+    <li>&rarr; <a href="landmarks-nav02.html">role="navigation"</a></li>
+    <li>&rarr; <a href="landmarks-search.html">role="search"</a></li>
+    <li>&rarr; <a href="landmarks-section01.html">&lt;section&gt;</a></li>
+    <li>&rarr; <a href="landmarks-section02.html">role="region"</a></li>
+  </ul>
+  <hr>
+
+  <h2 id="header">Header scope tests<span class="date"> - Added 10/07/2021</span></h2>
+  <p>When <code>&lt;header&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>banner</code>. Similarly, when <code>&lt;footer&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>contentinfo</code>.</p>
+  <p>However, these two elements will not have implicit ARIA roles if they are descendants of the following elements:</p>
   <ul>
     <li><code>&lt;article&gt;</code></li>
     <li><code>&lt;aside&gt;</code></li>
@@ -189,28 +211,16 @@
   </ul>
   <p>These test cases are designed to test the situations listed above.</p>
   <ul class="main-list">
-    <li>&rarr; <a href="banner01.html">&lt;header&gt;</a></li>
-    <li>&rarr; <a href="banner02.html">role="banner"</a></li>
-    <li>&rarr; <a href="banner03.html">&lt;header&gt; descendant of &lt;article&gt;</a></li>
-    <li>&rarr; <a href="banner04.html">role="banner" descendant of &lt;article&gt;</a></li>
-    <li>&rarr; <a href="banner05.html">&lt;header&gt; descendant of role="article"</a></li>
-    <li>&rarr; <a href="banner06.html">role="banner" descendant of role="article"</a></li>
-    <li>&rarr; <a href="banner07.html">&lt;header&gt; descendant of &lt;aside&gt;</a></li>
-    <li>&rarr; <a href="banner08.html">role="banner" descendant of &lt;aside&gt;</a></li>
-    <li>&rarr; <a href="banner09.html">&lt;header&gt; descendant of role="complementary"</a></li>
-    <li>&rarr; <a href="banner10.html">role="banner" descendant of role="complementary"</a></li>
-    <li>&rarr; <a href="banner11.html">&lt;header&gt; descendant of &lt;main&gt;</a></li>
-    <li>&rarr; <a href="banner12.html">role="banner" descendant of &lt;main&gt;</a></li>
-    <li>&rarr; <a href="banner13.html">&lt;header&gt; descendant of role="main"</a></li>
-    <li>&rarr; <a href="banner14.html">role="banner" descendant of role="main"</a></li>
-    <li>&rarr; <a href="banner15.html">&lt;header&gt; descendant of &lt;nav&gt;</a></li>
-    <li>&rarr; <a href="banner16.html">role="banner" descendant of &lt;nav&gt;</a></li>
-    <li>&rarr; <a href="banner17.html">&lt;header&gt; descendant of role="navigation"</a></li>
-    <li>&rarr; <a href="banner18.html">role="banner" descendant of role="navigation"</a></li>
-    <li>&rarr; <a href="banner19.html">&lt;header&gt; descendant of &lt;section&gt;</a></li>
-    <li>&rarr; <a href="banner20.html">role="banner" descendant of &lt;section&gt;</a></li>
-    <li>&rarr; <a href="banner21.html">&lt;header&gt; descendant of role="region"</a></li>
-    <li>&rarr; <a href="banner22.html">role="banner" descendant of role="region"</a></li>
+    <li>&rarr; <a href="landmarks-banner03.html">&lt;header&gt; descendant of &lt;article&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner05.html">&lt;header&gt; descendant of role="article"</a></li>
+    <li>&rarr; <a href="landmarks-banner07.html">&lt;header&gt; descendant of &lt;aside&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner09.html">&lt;header&gt; descendant of role="complementary"</a></li>
+    <li>&rarr; <a href="landmarks-banner11.html">&lt;header&gt; descendant of &lt;main&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner13.html">&lt;header&gt; descendant of role="main"</a></li>
+    <li>&rarr; <a href="landmarks-banner15.html">&lt;header&gt; descendant of &lt;nav&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner17.html">&lt;header&gt; descendant of role="navigation"</a></li>
+    <li>&rarr; <a href="landmarks-banner19.html">&lt;header&gt; descendant of &lt;section&gt;</a></li>
+    <li>&rarr; <a href="landmarks-banner21.html">&lt;header&gt; descendant of role="region"</a></li>
   </ul>
   <hr>
 
