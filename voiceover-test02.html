@@ -14,22 +14,22 @@
   <h2>Example</h2>
   <div class="example">
     <header role="banner" class="inner-example">
-      1. Header content
+      <h4>1. Header content</h4>
     </header>
     <main class="inner-example">
-      2. Main content
+      <h3>2. Main content</h3>
     </main>
     <aside class="inner-example">
-      3. Aside content
+      <h3>3. Aside content</h3>
     </aside>
     <nav class="inner-example">
-      4. Nav content
+      <h3>4. Nav content</h3>
     </nav>
     <article class="inner-example">
-      5. Article content
+      <h3>5. Article content</h3>
     </article>
     <footer role="contentinfo" class="inner-example">
-      6. Footer content
+      <h4>6. Footer content</h4>
     </footer>
   </div>
   <h2>Results</h2>
@@ -38,46 +38,53 @@
       <tr>
         <th>HTML element</th>
         <th>Announced</th>
-        <th>Role displayed in Rotor</th>
-        <th>PASS/FAIL</th>
+        <th>Chrome Rotor</th>
+        <th>Firefox Rotor</th>
+        <th>Sarafi Rotor</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><code>&lt;header role="banner"&gt;</code></td>
         <td>"Banner", "End of banner"</td>
-        <td>"banner"</td>
-        <td><span class="green">PASS</span></td>
+        <td><span class="green">"banner"</span></td>
+        <td><span class="green">"banner"</span></td>
+        <td><span class="green">"banner"</span></td>
       </tr>
       <tr>
         <td><code>&lt;"main"&gt;</code></td>
         <td>"Main", "End of main"</td>
-        <td>"main"</td>
-        <td><span class="green">PASS</span></td>
+        <td><span class="green">"main"</span></td>
+        <td><span class="green">"main"</span></td>
+        <td><span class="green">"main"</span></td>
       </tr>
       <tr>
         <td><code>&lt;aside&gt;</code></td>
-         <td>"Complementary", "End of complementary"</td>
-       <td>"complementary"</td>
-        <td><span class="green">PASS</span></td>
+        <td>"Complementary", "End of complementary"</td>
+        <td><span class="green">"complementary"</span></td>
+        <td><span class="green">"complementary"</span></td>
+        <td><span class="green">"complementary"</span></td>
       </tr>
       <tr>
         <td><code>&lt;nav&gt;</code></td>
-         <td>"Navigation", "End of navigation"</td>
-        <td>"navigation"</td>
-        <td><span class="green">PASS</span></td>
+        <td>"Navigation", "End of navigation"</td>
+        <td><span class="green">"navigation"</span></td>
+        <td><span class="green">"navigation"</span></td>
+        <td><span class="green">"navigation"</span></td>
       </tr>
       <tr>
         <td><code>&lt;article&gt;</code></td>
-         <td>"Article", "End of article"</td>
-        <td>"article"</td>
-        <td><span class="green">PASS</span></td>
+        <td>"Article", "End of article"</td>
+        <td><span class="green">"article"</span></td>
+        <td><span class="green">"article"</span></td>
+        <td><span class="red">Not displayed</span></td>
       </tr>
       <tr>
         <td><code>&lt;footer role="contentinfo"&gt;</code></td>
-         <td>"Footer", "End of footer"</td>
-        <td>"footer"</td>
-        <td><span class="green">PASS</span></td>
+        <td>"Footer", "End of footer"</td>
+        <td><span class="green">"contentinfo"</span></td>
+        <td><span class="red">Not displayed</span></td>
+        <td><span class="green">"contentinfo"</span></td>
       </tr>
     </tbody>
   </table>
