@@ -102,6 +102,18 @@ ol li {
   margin-bottom: .5em;
 }
 
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #666;
+  padding: .5em 1em;
+  text-align: left;
+}
+
 form {
   margin: 2em 0;
   padding: 1em;
@@ -350,7 +362,7 @@ legend {
   background: #fff;
 }
 
-header.inner-example,
+.inner-example,
 [role="banner"] {
   border: 1px solid red;
 }

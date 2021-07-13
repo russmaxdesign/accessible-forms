@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VoiceOver test 02 - with ARIA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>VoiceOver test 02 - with ARIA</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <p>This test case is designed to determine how landmark elements are displayed in VoiceOver's Rotor Landmark list.</p>
+  <h2>Example</h2>
+  <div class="example">
+    <header role="banner" class="inner-example">
+      1. Header content
+    </header>
+    <main class="inner-example">
+      2. Main content
+    </main>
+    <aside class="inner-example">
+      3. Aside content
+    </aside>
+    <nav class="inner-example">
+      4. Nav content
+    </nav>
+    <article class="inner-example">
+      5. Article content
+    </article>
+    <footer role="contentinfo" class="inner-example">
+      6. Footer content
+    </footer>
+  </div>
+  <h2>Results</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>HTML element</th>
+        <th>Role displayed in Rotor</th>
+        <th>PASS/FAIL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>&lt;header role="banner"&gt;</code></td>
+        <td>"banner"</td>
+        <td><span class="green">PASS</span></td>
+      </tr>
+      <tr>
+        <td><code>&lt;"main"&gt;</code></td>
+        <td>"main"</td>
+        <td><span class="green">PASS</span></td>
+      </tr>
+      <tr>
+        <td><code>&lt;aside&gt;</code></td>
+        <td>"complementary"</td>
+        <td><span class="green">PASS</span></td>
+      </tr>
+      <tr>
+        <td><code>&lt;nav&gt;</code></td>
+        <td>"navigation"</td>
+        <td><span class="green">PASS</span></td>
+      </tr>
+      <tr>
+        <td><code>&lt;article&gt;</code></td>
+        <td>"article"</td>
+        <td><span class="green">PASS</span></td>
+      </tr>
+      <tr>
+        <td><code>&lt;footer role="contentinfo"&gt;</code></td>
+        <td>"contentinfo"</td>
+        <td><span class="green">PASS</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;header role="banner"&gt;
+  1. Header content
+&lt;/header&gt;
+&lt;main&gt;
+  2. Main content
+&lt;/main&gt;
+&lt;aside&gt;
+  3. Aside content
+&lt;/aside&gt;
+&lt;nav&gt;
+  4. Nav content
+&lt;/nav&gt;
+&lt;article&gt;
+  5. Article content
+&lt;/article&gt;
+&lt;footer role="contentinfo"&gt;
+  6. Footer content
+&lt;/footer&gt;
+</code></pre>
+<!-- end code -->
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
