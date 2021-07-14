@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Landmark support chart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="examples.css" rel="stylesheet">
+  <style>
+    body {
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #aaa;
+    }
+
+    tr.section {
+      border-top: 2px solid black;
+    }
+
+    .announced {
+      background: rgba(0, 255, 0, .3);
+    }
+
+    .not-announced {
+      background: rgba(255, 0, 0, .2);
+    }
+
+    .partial-announced {
+      background: rgba(255, 100, 0, .4);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Landmark support chart</h1>
+  <table>
+    <thead>
+     <tr>
+        <th>&nbsp;</th>
+        <th>VoiceOver Chrome</th>
+        <th>VoiceOver Firefox</th>
+        <th>VoiceOver Safari</th>
+        <th>NVDA Chrome</th>
+        <th>NVDA Firefox</th>
+        <th>NVDA Edge</th>
+        <th>JAWS Edge</th>
+        <th>JAWS Firefox</th>
+        <th>JAWS Edge</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr class="section">
+        <th>&lt;article&gt;</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>&lt;article&gt; with aria-labelledby</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>&lt;article&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr class="section">
+        <th>&lt;aside&gt;</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>role="complementary"</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;aside&gt; with aria-labelledby</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;aside&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr class="section">
+        <th>&lt;footer&gt;</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>role="contentinfo"</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;footer&gt; with aria-labelledby</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;footer&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr class="section">
+        <th>&lt;header&gt;</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>role="banner"</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;header&gt; with aria-labelledby</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;header&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr class="section">
+        <th>&lt;main&gt;</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>role="main"</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>&lt;main&gt; with aria-labelledby</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>&lt;main&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr class="section">
+        <th>&lt;nav&gt;</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>role="navigation"</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>&lt;nav&gt; with aria-labelledby</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr>
+        <th>&lt;nav&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+      </tr>
+      <tr class="section">
+        <th>&lt;section&gt;</th>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>role="region"</th>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;section&gt; with aria-labelledby</th>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="announced">announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="partial-announced">Label not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th>&lt;section&gt; with aria-label</th>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="announced">announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
