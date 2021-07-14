@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>role="search"</title>
+  <title>role="search" with label</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>role="search"</h1>
+  <h1>role="search" with label</h1>
   <p><a href="index.html">Return to main list</a></p>
-  <p>This test case is designed to determine how <code>role="search"</code> is announced by various screen readers.</p>
+  <p>This test case is designed to determine how <code>role="search"</code> and an associated label are announced by various screen readers.</p>
   <p>By default, the element being tested does not receive focus, so the only way to test how it is announced is via:</p>
   <ul>
     <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
@@ -18,7 +18,7 @@
   </ul>
   <h2>Example</h2>
   <div class="example">
-    <div role="search" class="inner-example">
+    <div role="search" class="inner-example" aria-label="Search the site">
       <form action="#">
         Test content
       </form>
@@ -26,7 +26,7 @@
   </div>
   <h2>Code</h2>
 <!-- start code -->
-<pre><code>&lt;div role="search"&gt;
+<pre><code>&lt;div role="search" aria-label="Search the site"&gt;
   &lt;form action="#"&gt;
     Test content
   &lt;/form&gt;
