@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>section</title>
+  <title>section with aria-label</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>&lt;section&gt;</h1>
+  <h1>&lt;section&gt; with aria-label</h1>
   <p><a href="index.html">Return to main list</a></p>
-  <p>This test case is designed to determine how the <code>&lt;section&gt;</code> element is announced by various screen readers.</p>
+  <p>This test case is designed to determine how the <code>&lt;section&gt;</code> element and associated aria-label are announced by various screen readers.</p>
   <p>By default, the element being tested does not receive focus, so the only way to test how it is announced is via:</p>
   <ul>
     <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
@@ -18,13 +18,13 @@
   </ul>
   <h2>Example</h2>
   <div class="example">
-    <section class="inner-example">
+    <section class="inner-example" aria-label="Comments">
       <h4>Test content</h4>
     </section>
   </div>
   <h2>Code</h2>
 <!-- start code -->
-<pre><code>&lt;section&gt;
+<pre><code>&lt;section aria-label="Comments"&gt;
   &lt;h4&gt;Test content&lt;/h4&gt;
 &lt;/section&gt;</code></pre>
 <!-- end code -->
@@ -32,17 +32,17 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Heading level 4. Test content. <span class="red">[Section not announced]</span></li>
-      <li><b>Firefox:</b> Heading level 4. Test content. <span class="red">[Section not announced]</span></li>
-      <li><b>Safari:</b> Heading level 4. Test content. <span class="red">[Section not announced]</span></li>
+      <li><b>Chrome:</b> <span class="green">Comments. Region</span>. [Stop] Heading level 4. Test content. [Stop] <span class="green">End of Comments. Region</span>.</li>
+      <li><b>Firefox:</b> <span class="green">Comments. Region</span>. [Stop] Heading level 4. Test content. [Stop] <span class="green">End of Comments. Region</span>.</li>
+      <li><b>Safari:</b> <span class="green">Comments. Region</span>. [Stop] Heading level 4. Test content. [Stop] <span class="green">End of Comments. Region</span>.</li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Heading level 4. Test content. <span class="red">[Section not announced]</span></li>
-      <li><b>Firefox:</b> Heading level 4. Test content. <span class="red">[Section not announced]</span></li>
-      <li><b>Edge:</b> Heading level 4. Test content. <span class="red">[Section not announced]</span></li>
+      <li><b>Chrome:</b> <span class="green">Comments. Region</span>. Heading level 4. Test content.</li>
+      <li><b>Firefox:</b> <span class="green">Comments. Region</span>. Heading level 4. Test content.</li>
+      <li><b>Edge:</b> <span class="green">Comments. Region</span>. Heading level 4. Test content.</li>
     </ul>
   </div>
   <div class="note">

@@ -60,7 +60,7 @@ kbd {
   font-size: .9em;
   line-height: 1.3;
   font-family: monaco, courier, monospace;
-  color: green;
+  color: #006000;
 }
 
 pre code {
@@ -206,7 +206,7 @@ legend {
 }
 
 .note {
-  background: #ffe6e6;
+  background: #ffeeee;
   padding: 1em;
   margin: 1em 0;
 }
@@ -310,13 +310,18 @@ legend {
   margin: 0 0 .3em;
 }
 
+.inner-list {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .red {
-  color: red;
+  color: #DB0000;
   font-weight: bold;
 }
 
 .green {
-  color: green;
+  color: #008000;
   font-weight: bold;
 }
 
