@@ -425,6 +425,16 @@ legend {
   background: rgba(255, 100, 0, .2);
 }
 
+.rotor {
+  color: #fff;
+  background: #000;
+}
+
+.rotor-no {
+  color: #fff;
+  background: #700;
+}
+
 .small {
   font-size: .9em;
 }

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VoiceOver test with ARIA roles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>VoiceOver test with ARIA roles</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <p>This test case is designed to determine how landmark elements are displayed in VoiceOver's Rotor Landmark list.</p>
+  <h2>Example</h2>
+  <div class="example">
+    <header role="banner" class="inner-example">
+      <h4>Red</h4>
+    </header>
+    <main role="main" class="inner-example">
+      <h4>Orange</h4>
+    </main>
+    <aside role="complementary" class="inner-example">
+      <h4>Yellow</h4>
+    </aside>
+    <nav role="navigation" class="inner-example">
+      <h4>Green</h4>
+    </nav>
+    <article class="inner-example">
+      <h4>Blue</h4>
+    </article>
+    <footer role="contentinfo" class="inner-example">
+      <h4>Violet</h4>
+    </footer>
+  </div>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;header role="banner"&gt;
+  &lt;h4&gt;Red&lt;/h4&gt;
+&lt;/header&gt;
+&lt;main role="main"&gt;
+  &lt;h4&gt;Orange&lt;/h4&gt;
+&lt;/main&gt;
+&lt;aside role="complementary"&gt;
+  &lt;h4&gt;Yellow&lt;/h4&gt;
+&lt;/aside&gt;
+&lt;nav role="navigation"&gt;
+  &lt;h4&gt;Green&lt;/h4&gt;
+&lt;/nav&gt;
+&lt;article&gt;
+  &lt;h4&gt;Blue&lt;/h4&gt;
+&lt;/article&gt;
+&lt;footer role="contentinfo"&gt;
+  &lt;h4&gt;Violet&lt;/h4&gt;
+&lt;/footer&gt;</code></pre>
+<!-- end code -->
+  <p><a class="button-secondary small" href="support-voiceover-rotor.htm">VoiceOver Rotor support chart</a></p>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>

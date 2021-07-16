@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VoiceOver test with aria-labelledby</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>VoiceOver test with aria-labelledby</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <p>This test case is designed to determine how landmark elements are displayed in VoiceOver's Rotor Landmark list.</p>
+  <h2>Example</h2>
+  <div class="example">
+    <header class="inner-example" aria-labelledby="red">
+      <h4 id="red">Red</h4>
+    </header>
+    <main class="inner-example" aria-labelledby="orange">
+      <h4 id="orange">Orange</h4>
+    </main>
+    <aside class="inner-example" aria-labelledby="yellow">
+      <h4 id="yellow">Yellow</h4>
+    </aside>
+    <nav class="inner-example" aria-labelledby="green">
+      <h4 id="green">Green</h4>
+    </nav>
+    <article class="inner-example" aria-labelledby="blue">
+      <h4 id="blue">Blue</h4>
+    </article>
+    <footer class="inner-example" aria-labelledby="violet">
+      <h4 id="violet">Violet</h4>
+    </footer>
+  </div>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;header aria-labelledby="red"&gt;
+  &lt;h4 id="red"&gt;Red&lt;/h4&gt;
+&lt;/header&gt;
+&lt;main aria-labelledby="orange"&gt;
+  &lt;h4 id="orange"&gt;Orange&lt;/h4&gt;
+&lt;/main&gt;
+&lt;aside aria-labelledby="yellow"&gt;
+  &lt;h4 id="yellow"&gt;Yellow&lt;/h4&gt;
+&lt;/aside&gt;
+&lt;nav aria-labelledby="green"&gt;
+  &lt;h4 id="green"&gt;Green&lt;/h4&gt;
+&lt;/nav&gt;
+&lt;article aria-labelledby="blue"&gt;
+  &lt;h4 id="blue"&gt;Blue&lt;/h4&gt;
+&lt;/article&gt;
+&lt;footer aria-labelledby="violet"&gt;
+  &lt;h4 id="violet"&gt;Violet&lt;/h4&gt;
+&lt;/footer&gt;</code></pre>
+<!-- end code -->
+  <p><a class="button-secondary small" href="support-voiceover-rotor.htm">VoiceOver Rotor support chart</a></p>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
