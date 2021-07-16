@@ -13,6 +13,10 @@ body {
   font-family: helvetica, arial, sans-serif;
 }
 
+body.body-wide {
+  width: 100%;
+}
+
 h1,
 h2,
 h3 {
@@ -107,9 +111,13 @@ table {
   border-collapse: collapse;
 }
 
+tr.section {
+  border-top: 2px solid black;
+}
+
 th,
 td {
-  border: 1px solid #666;
+  border: 1px solid #999;
   padding: .5em 1em;
   text-align: left;
 }
@@ -197,6 +205,39 @@ legend {
 .button[disabled] {
   color: #fff;
   background: #aaa;
+}
+
+.button-secondary {
+  display: inline-block;
+  padding: .75em 1em;
+  border: 0;
+  background: #fff;
+  color: blue;
+  border-radius: .2em;
+  font-size: 1em;
+  line-height: 1;
+  border:  1px solid #666;
+  font-family: helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+
+.button-secondary:focus {
+  background: #000;
+  color: #fff;
+  outline: none;
+  border:  1px solid #000;
+}
+
+.button-secondary:hover {
+  background: green;
+  color: #fff;
+  border:  1px solid green;
+}
+
+.button-secondary:active {
+  background: red;
+  color: #fff;
+  border:  1px solid red;
 }
 
 .form-list {
@@ -370,4 +411,24 @@ legend {
 .inner-example,
 [role="banner"] {
   border: 1px solid red;
+}
+
+.announced {
+  background: rgba(0, 255, 0, .2);
+}
+
+.not-announced {
+  background: rgba(255, 0, 0, .3);
+}
+
+.partial-announced {
+  background: rgba(255, 100, 0, .2);
+}
+
+.small {
+  font-size: .9em;
+}
+
+.float-right {
+  float:  right;
 }
