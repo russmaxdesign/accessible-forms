@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Radio group with role="presentation"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Radio group with role="presentation"</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-fieldset-element"><code>&lt;fieldset&gt;</code></a> and <a href="https://www.w3.org/TR/html52/sec-forms.html#the-legend-element"><code>&lt;legend&gt;</code></a> elements are announced in relation to a radio group by various screen readers. In this test, the radio group is presented inside a list, which has been set with <a href="https://www.w3.org/TR/wai-aria/#presentation"><code>role="presentation"</code></a>.
+  <h2>Example</h2>
+  <form action="#">
+    <fieldset>
+      <legend>Do you like boats?</legend>
+      <ul class="form-list" role="presentation">
+        <li>
+          <input type="radio" id="boats-y" name="boats">
+          <label for="boats-y">Yes</label>
+        </li>
+        <li>
+          <input type="radio" id="boats-n" name="boats">
+          <label for="boats-n">No</label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Do you like boats?&lt;/legend&gt;
+  &lt;ul role="presentation"&gt;
+    &lt;li&gt;
+      &lt;input type="radio" id="boats-y" name="boats"&gt;
+      &lt;label for="boats-y"&gt;Yes&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="radio" id="boats-n" name="boats"&gt;
+      &lt;label for="boats-n"&gt;No&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Yes. Radio button. 1 of 2. <span class="green">Do you like boats?</span> <span class="green">Group</span>.</li>
+      <li><b>Firefox:</b> Yes. Radio button. 1 of 2. <span class="green">Do you like boats?</span> <span class="green">Group</span>.</li>
+      <li><b>Safari:</b> Yes. Radio button. 1 of 2. <span class="red">Do you like boats?</span> <span class="green">Do you like boats?</span> <span class="green">Group</span>. <span class="red">[Legend announced twice]</span></li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> <span class="green">Do you like boats?</span> <span class="green">Grouping</span>. Yes. Radio button. Not checked. 1 of 2.</li>
+      <li><b>Firefox:</b> <span class="green">Do you like boats?</span> <span class="green">Grouping</span>. Yes. Radio button. Not checked. 1 of 2.</li>
+      <li><b>Edge:</b> <span class="green">Do you like boats?</span> <span class="green">Grouping</span>. Yes. Radio button. Not checked. 1 of 2.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> <span class="green">Do you like boats?</span> <span class="green">Group</span>. Yes. Radio button. Not checked. 1 of 2.</li>
+      <li><b>Firefox:</b> To change the selection use the up or down arrow. <span class="green">Do you like boats?</span> Yes. Radio button. Not checked. Yes. Radio button. Not checked. 1 of 2.</li>
+      <li><b>Edge:</b> <span class="green">Do you like boats?</span> <span class="green">Group</span>. Yes. Radio button. Not checked. 1 of 2.</li>
+    </ul>
+  </div>
+  <p><a href="index.html">Return to main list</a></p>
+</body>
+</html>
