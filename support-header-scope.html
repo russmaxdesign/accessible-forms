@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Header scope support chart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body class="body-wide">
+  <h1>Header scope support chart</h1>
+  <p><a href="index.html">Return to main list</a></p>
+  <table>
+    <thead>
+     <tr>
+        <th>&nbsp;</th>
+        <th>VoiceOver Chrome</th>
+        <th>VoiceOver Firefox</th>
+        <th>VoiceOver Safari</th>
+        <th>NVDA Chrome</th>
+        <th>NVDA Firefox</th>
+        <th>NVDA Edge</th>
+        <th>JAWS Edge</th>
+        <th>JAWS Firefox</th>
+        <th>JAWS Edge</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><a href="landmarks-banner01.html">&lt;header&gt;</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner02.html">role="banner"</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner05.html">&lt;header&gt; descendant of role="article"</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner09.html">&lt;header&gt; descendant of role="complementary"</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner13.html">&lt;header&gt; descendant of role="main"</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner17.html">&lt;header&gt; descendant of role="navigation"</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner21.html">&lt;header&gt; descendant of role="region"</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+        <td class="not-announced">Banner not announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner03.html">&lt;header&gt; descendant of &lt;article&gt; scoped to the <code>&lt;article&gt;</code> element</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner07.html">&lt;header&gt; descendant of &lt;aside&gt; scoped to the <code>&lt;aside&gt;</code> element</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner incorrectly announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner11.html">&lt;header&gt; descendant of &lt;main&gt; scoped to the <code>&lt;main&gt;</code> element</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner incorrectly announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner15.html">&lt;header&gt; descendant of &lt;nav&gt; scoped to the <code>&lt;nav&gt;</code> element</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Banner incorrectly announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+      </tr>
+      <tr>
+        <th><a href="landmarks-banner19.html">&lt;header&gt; descendant of &lt;section&gt; scoped to the <code>&lt;section&gt;</code> element</a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
