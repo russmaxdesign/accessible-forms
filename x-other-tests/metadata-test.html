@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Metadata validation test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+
+    <meta name="description" content="IAG CTP Insurance">
+    <meta name="keywords" content="CTP, Insurance">
+    <meta name="author" content="IAG">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+  </head>
+  <body>
+    <main>
+      <h1>Metadata validation test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This test is to determine which IAG metadata elements are valid.</p>
+      <hr>
+
+      <h2>Example</h2>
+<pre><code>&lt;meta name="description" content="IAG CTP Insurance"&gt;
+&lt;meta name="keywords" content="CTP, Insurance"&gt;
+&lt;meta name="author" content="IAG"&gt;
+&lt;meta name="viewport" content="width=device-width"&gt;
+&lt;meta http-equiv="expires" content="0"&gt;
+&lt;meta http-equiv="Pragma" content="no-cache"&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>These two should be removed:</p>
+<pre><code>&lt;meta <span>http-equiv="expires"</span> content="0"&gt;
+&lt;meta <span>http-equiv="Pragma"</span> content="no-cache"&gt;</code></pre>
+      <p>The <code>http-equiv</code> only <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-http-equiv" target="_blank">allows thw following values</a>:</p>
+      <ul>
+        <li><code>content-security-policy</code></li>
+        <li><code>content-type</code></li>
+        <li><code>default-style</code></li>
+        <li><code>x-ua-compatible</code></li>
+        <li><code>refresh</code></li>
+      </ul>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

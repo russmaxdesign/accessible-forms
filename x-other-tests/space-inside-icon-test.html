@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Space inside icon test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Space inside icon test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This test is to determine if a non-breaking space inside an icon is announced to screen readers.</p>
+      <hr>
+
+      <h2>Example 01: icon with space</h2>
+      <p>Some text before icon: <i class="button">&nbsp;</i></p>
+      <h3>Code</h3>
+<pre><code>Some text before icon: &lt;i&gt;&nbsp;&lt;/i&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 01: icon with space</h2>
+      <p>Some text before icon: <i class="button" aria-hidden="true">&nbsp;</i></p>
+      <h3>Code</h3>
+<pre><code>Some text before icon: &lt;i <span>aria-hidden="true"</span>&gt;&nbsp;&lt;/i&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <ul>
+        <li><b>Windows/NVDA</b>: Using read mode, the icon is <i>not announced</i>, so this does not present issues.</li>
+        <li><b>Windows/JAWS</b>: Using read mode, the icon is <i>announced as a silent character</i>, which could be confusing.</li>
+        <li><b>OSX/Voiceover</b>: Using read mode, the icon is <i>announced as "Group"</i>, which could be confusing </li>
+      </ul>
+      <p>Recommendation: Apply <code>aria-hidden="true"</code> to hide the element from the Accessibility Tree.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Datalist, meter, progress and output tests</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1><code>&lt;datalist&gt;</code>, <code>&lt;meter&gt;</code> <code>&lt;progress&gt;</code> and <code>&lt;output&gt;</code> tests</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>These tests are to show the <code>&lt;datalist&gt;</code>, <code>&lt;meter&gt;</code>, <code>&lt;progress&gt;</code> and <code>&lt;output&gt;</code> in action.</p>
+      <hr>
+
+      <h2>The <code>&lt;datalist&gt;</code> element</h2>
+      <p>This element contains a set of <code>&lt;option&gt;</code> elements that represent the permissible or recommended options available to choose from within other controls.</p>
+      <form action="#">
+        <label class="label" for="abc">Choose a flavor:</label>
+        <input class="input" id="abc" list="xyz">
+        <datalist id="xyz">
+          <option value="Chocolate"></option>
+          <option value="Coconut"></option>
+          <option value="Mint"></option>
+          <option value="Strawberry"></option>
+          <option value="Vanilla"></option>
+        </datalist>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;label for="abc"&gt;Choose a flavor:&lt;/label&gt;
+  &lt;input id="abc" <span>list="xyz"</span>&gt;
+  <span>&lt;datalist id="xyz"&gt;</span>
+    &lt;option value="Chocolate"&gt;&lt;/option&gt;
+    &lt;option value="Coconut"&gt;&lt;/option&gt;
+    &lt;option value="Mint"&gt;&lt;/option&gt;
+    &lt;option value="Strawberry"&gt;&lt;/option&gt;
+    &lt;option value="Vanilla"&gt;&lt;/option&gt;
+  <span>&lt;/datalist&gt;</span>
+&lt;/form&gt;
+</code></pre>
+      <p><a href="#">Dummy link before</a></p>
+      <hr>
+
+      <h2>The <code>&lt;meter&gt;</code> element</h2>
+      <p>This element represents either a scalar value within a known range or a fractional value.</p>
+      <form action="">
+        <label class="label" for="fuel">Fuel level:</label>
+        <meter id="fuel"
+          min="0"
+          max="100"
+          low="33"
+          high="66"
+          optimum="80"
+          value="50">
+        at 50/100
+        </meter>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action=""&gt;
+  &lt;label for="fuel"&gt;Fuel level:&lt;/label&gt;
+  <span>&lt;meter
+    id="fuel"
+    min="0"
+    max="100"
+    low="33"
+    high="66"
+    optimum="80"
+    value="50"
+  &gt;</span>
+  at 50/100
+  <span>&lt;/meter&gt;</span>
+&lt;/form&gt;
+</code></pre>
+      <p><a href="#">Dummy link before</a></p>
+      <hr>
+
+      <h2>The <code>&lt;progress&gt;</code> element</h2>
+      <p>This element displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</p>
+      <form action="">
+        <label class="label" for="file">File progress:</label>
+        <progress id="file" max="100" value="70">70%</progress>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action=""&gt;
+  &lt;label for="file"&gt;File progress:&lt;/label&gt;
+  <span>&lt;progress id="file" max="100" value="70"&gt;</span>70%<span>&lt;/progress&gt;</span>
+&lt;/form&gt;</code></pre>
+        <p><a href="#">Dummy link before</a></p>
+      <hr>
+
+      <h2>The <code>&lt;output&gt;</code> element</h2>
+      <p>This element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.</p>
+      <form action="">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action=""&gt;
+  &lt;input type="range" id="b" name="b" value="50" /&gt; +
+  &lt;input type="number" id="a" name="a" value="10" /&gt; =
+  <span>&lt;output for="b a"&gt;</span>60<span>&lt;/output&gt;</span>
+&lt;/form&gt;</code></pre>
+      <p>&larr; <a href="index.html">Index page</a></p>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Chroma FormGroup error message tests</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Chroma <code>FormGroup</code> error message tests</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This test is to determine if the aria-label associated with the error-message component is over-riding the error message contents.</p>
+      <hr>
+
+      <h2>Example 01: <code>FormGroup</code> component with <code>aria-label</code> on message</h2>
+      <div class="p-form-group" aria-live="polite">
+        <label class="c-label" id="wgevm6nyd8_label" for="aaa">Full name</label>
+        <input id="aaa" class="c-input is-invalid" name="" required="" type="text" placeholder="" aria-invalid="true" aria-describedby="ErrorMessage1" value="">
+        <div class="c-message u-mar-t--2" role="alert" id="ErrorMessage1" aria-label="error message">
+          <i class="c-icon u-mar-r--1 u-font--16 i-times-circle u-text--red" aria-label="error Icon" aria-hidden="true"></i>
+          <div class="c-message__content">
+            <div>
+              <p class="c-text  u-text--red">This is error message 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li>Accessible name: "Full name"</li>
+        <li>Description: "error message"</li>
+      </ul>
+<pre><code>&lt;div class="p-form-group" aria-live="polite"&gt;
+  &lt;label for="aaa"&gt;Full name&lt;/label&gt;
+  &lt;input id="aaa" type="text" aria-invalid="true" <span>aria-describedby="e1"</span>&gt;
+  &lt;div role="alert" <span>id="e1" aria-label="error message"</span>&gt;
+    &lt;i aria-label="error Icon" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;div class="c-message__content"&gt;
+      &lt;div&gt;
+        &lt;p&gt;This is error message 1&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: <code>FormGroup</code> component without <code>aria-label</code> on message</h2>
+      <div class="p-form-group" aria-live="polite">
+        <label class="c-label" id="wgevm6nyd8_label" for="bbb">Full name</label>
+        <input id="bbb" class="c-input is-invalid" name="" required="" type="text" placeholder="" aria-invalid="true" aria-describedby="ErrorMessage2" value="">
+        <div class="c-message u-mar-t--2" role="alert" id="ErrorMessage2">
+          <i class="c-icon u-mar-r--1 u-font--16 i-times-circle u-text--red" aria-label="error Icon" aria-hidden="true"></i>
+          <div class="c-message__content">
+            <div>
+              <p class="c-text  u-text--red">This is error message 2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li>Accessible name: "Full name"</li>
+        <li>Description: "This is error message 2"</li>
+      </ul>
+<pre><code>&lt;div class="p-form-group" aria-live="polite"&gt;
+  &lt;label for="bbb"&gt;Full name&lt;/label&gt;
+  &lt;input id="bbb" type="text" aria-invalid="true" <span>aria-describedby="e2"</span>&gt;
+  &lt;div role="alert" <span>id="e2"</span>&gt;
+    &lt;i aria-label="error Icon" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;div class="c-message__content"&gt;
+      &lt;div&gt;
+        &lt;p&gt;This is error message 2&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>In the first case, the input references the message container via the <code>aria-describedby</code>, but the accessible name for the message container is being taken from the <code>aria-label</code> rather than the message container content.</p>
+      <p>In the second case, the input references the message container via the <code>aria-describedby</code>, and the message container content is used as the accessible name.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

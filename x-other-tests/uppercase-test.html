@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Uppercase conversion in form controls test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+<script>
+"use strict"
+var convertMe; //Captures  what was entered into the input fieldthe 
+var myUpper; //used with the toUpper function
+function convert2upper() {
+//Called when the Submit button is pressed
+  convertMe = document.getElementById ("ref1").value;
+  //Stores contents of the first input field
+  myUpper = convertMe.toUpperCase();
+  //Receives contents after conversion to uppercase
+  document.getElementById("myanswer").innerHTML = myUpper;
+  //The entry in the first input field (converted if necessary) is displayed
+}
+function upperCase() {
+//Called by onblur in the second input field
+  convertMe = document.getElementById ("ref2").value;
+  //Stores contents of the second  input field
+  myUpper = convertMe.toUpperCase();
+  //Receives contents after conversion to uppercase
+  document.forms[0].ref2.value = myUpper;
+  //Contents of myUpper is written to the second input field
+}
+</script>
+  </head>
+  <body>
+    <main>
+      <h1>Uppercase conversion in form controls test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This is Andrew's quick and nasty lower to uppercase conversion to determine if screen readers announce uppercase lettering. The second input will change all characters to uppercase onchange.</p>
+      <hr>
+
+      <h2>Example</h2>
+      <form id="123" action="%20" method="get">
+        <div class="form-container">
+          <label class="label" for="ref1">What is your reference number? </label> 
+          <input class="input" id="ref1" type="text" name="my-reference" value="" />
+        </div>
+        <div class="form-container">
+          <label class="label" for="ref2">What is your new reference number? </label> 
+          <input class="input" id="ref2" type="text" name="my-reference" value="" onblur = "upperCase()" />
+        </div>
+        <button class="button" type="button" onclick="convert2upper()">Submit</button>
+      </form>
+      <p id="myanswer"></p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

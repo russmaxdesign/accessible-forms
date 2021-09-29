@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>autocomplete attribute test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1><code>autocomplete</code> attribute test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>The autocomplete attribute specifies whether a form or an input field should have autocomplete on or off. Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.</p>
+      <p>This test is to determine whether the autocomplete values are announced with each field.</p>
+      <hr>
+
+      <h2>Example 01: <code>autocomplete="name"</code></h2>
+      <form action="#">
+        <div class="form-container">
+          <label class="label" for="form-name">Name</label>
+          <input class="input" id="form-name" type="text" autocomplete="name">
+        </div>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;div class="form-container"&gt;
+    &lt;label for="form-name"&gt;Name&lt;/label&gt;
+    &lt;input id="form-name" type="text" <span>autocomplete="name"</span>&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: <code>autocomplete="email"</code></h2>
+      <form action="#">
+        <div class="form-container">
+          <label class="label" for="form-email">Email</label>
+          <input class="input" id="form-email" type="text" autocomplete="email">
+        </div>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;div class="form-container"&gt;
+    &lt;label for="form-email"&gt;Email&lt;/label&gt;
+    &lt;input id="form-email" type="text" <span>autocomplete="email"</span>&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 03 - <code>autocomplete="country"</code></h2>
+      <form action="#">
+        <div class="form-container">
+          <label class="label" for="form-country">Country</label>
+          <input class="input" id="form-country" type="text" autocomplete="country">
+        </div>
+      </form>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete" target="_blank">4.10.18.7.1 Autofilling form controls: the autocomplete attribute</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" target="_blank">The HTML autocomplete attribute</a>
+        </li>
+      </ul>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

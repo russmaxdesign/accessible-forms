@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Non-native dropdown test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Non-native dropdown test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>These tests are to determine how different online examples mark up non-native dropdown lists.</p>
+      <hr>
+
+      <h2>Example 01: <code>&lt;li&gt;</code> items</h2>
+      <button class="button" aria-haspopup="listbox" aria-labelledby="aaa bbb" id="aaa">Choose a fruit</button>
+      <ul
+        role="listbox"
+        aria-activedescendant="bbb"
+      >
+        <li id="bbb" role="option" aria-selected="true">Apple</li>
+        <li id="ccc" role="option">Banana</li>
+      </ul>
+      <h3>Code</h3>
+<pre><code>&lt;button
+  aria-haspopup="listbox"
+  aria-labelledby="aaa bbb"
+  id="aaa"
+&gt;
+  Choose a fruit
+&lt;/button&gt;
+&lt;ul role="listbox" aria-activedescendant="bbb"&gt;
+  &lt;li id="bbb" role="option" aria-selected="true"&gt;Apple&lt;/li&gt;
+  &lt;li id="ccc" role="option"&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: <code>&lt;a&gt;</code> items</h2>
+      <button class="button" role="combobox">Choose a fruit</button>
+      <ul role="presentation">
+        <li><a role="option" aria-selected="true" href="#">Apple</a></li>
+        <li><a role="option" href="#">Banana</a></li>
+      </ul>
+      <h3>Code</h3>
+<pre><code>&lt;button role="combobox"&gt;Choose a fruit&lt;/button&gt;
+&lt;ul role="presentation"&gt;
+  &lt;li&gt;&lt;a role="option" aria-selected="true" href="#"&gt;Apple&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a role="option" href="#"&gt;Banana&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+</body>
+</html>

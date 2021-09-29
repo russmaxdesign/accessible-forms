@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>aria-hidden="true", hidden and display:none tests</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1><code>aria-hidden="true"</code>, <code>hidden</code> and <code>display:none</code> tests</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>These tests are to determine how <code>aria-hidden="true"</code> and <code>hidden</code> attributes, as well as the <code>display: none</code> CSS property are applied visually as well as how they are announced to screen readers.</p>
+      <hr>
+
+      <h2>The <code>aria-hidden="true"</code> attribute</h2>
+      <p>The following information should be visible on screen but not announced to screen readers.</p>
+      <p class="u-text--red"><span aria-hidden="true">Green spider</span>.</p>
+      <h3>Code</h3>
+<pre><code>&lt;span <span>aria-hidden="true"</span>&gt;Green spider&lt;/span&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>The <code>hidden</code> attribute</h2>
+      <p>The following information should not be visible on screen and not announced to screen readers.</p>
+      <p class="u-text--red"><span hidden>Yellow frog</span>.</p>
+      <h3>Code</h3>
+<pre><code>&lt;span <span>hidden</span>&gt;Yellow frog&lt;/span&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>The <code>display:none</code> CSS property/value</h2>
+      <p>The following information should not be visible on screen and not announced to screen readers.</p>
+      <p class="u-text--red"><span style="display: none;">Red wolf</span>.</p>
+      <h3>Code</h3>
+<pre><code>&lt;span <span>style="display: none;</span>"&gt;Red wolf&lt;/span&gt;</code></pre>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

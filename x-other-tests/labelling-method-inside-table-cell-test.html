@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Labelling method inside table cell test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Labelling method inside table cell test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>These tests are to determine whether the <code>aria-label</code> or the <code>&lt;label&gt;</code> element would be the most accessible solution for form controls within table cells.</p>
+      <hr>
+
+      <h2>Example 01: using <code>aria-labelledby</code></h2>
+      <form action="#">
+        <table role="none">
+          <thead>
+            <tr>
+              <th></th>
+              <th id="sound">Sound</th>
+              <th id="reaction">Reaction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="news-notification">News Notification</td>
+              <td>
+                <select class="select" aria-labelledby="news-notification sound">
+                  <option>Choose</option>
+                  <option value="alert01-mp3">Alert01.mp3</option>
+                  <option value="alert02-mp3">Alert02.mp3</option>
+                  <option value="alert03-mp3">Alert03.mp3</option>
+                </select>
+              </td>
+              <td>
+                <select class="select" aria-labelledby="news-notification reaction">
+                  <option>Choose</option>
+                  <option value="on-next-change">On next change</option>
+                  <option value="next-day">Next day</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;table role="none"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th <span>id="sound"</span>&gt;Sound&lt;/th&gt;
+        &lt;th <span>id="reaction"</span>&gt;Reaction&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td <span>id="news-notification"</span>&gt;News Notification&lt;/td&gt;
+        &lt;td&gt;
+          &lt;select <span>aria-labelledby="news-notification sound"</span>&gt;
+            &lt;option&gt;Choose&lt;/option&gt;
+            &lt;option value="alert01-mp3"&gt;Alert01.mp3&lt;/option&gt;
+            &lt;option value="alert02-mp3"&gt;Alert02.mp3&lt;/option&gt;
+            &lt;option value="alert03-mp3"&gt;Alert03.mp3&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;select <span>aria-labelledby="news-notification reaction"</span>&gt;
+            &lt;option&gt;Choose&lt;/option&gt;
+            &lt;option value="on-next-change"&gt;On next change&lt;/option&gt;
+            &lt;option value="next-day"&gt;Next day&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: using a hidden <code>&lt;label&gt;</code></h2>
+      <form action="#">
+        <table role="none">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Sound</th>
+              <th>Reaction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>News Notification</td>
+              <td>
+                <label for="one" class="hidden">News notication sound</label>
+                <select class="select" id="one">
+                  <option>Choose</option>
+                  <option value="alert01-mp3">Alert01.mp3</option>
+                  <option value="alert02-mp3">Alert02.mp3</option>
+                  <option value="alert03-mp3">Alert03.mp3</option>
+                </select>
+              </td>
+              <td>
+                <label for="two" class="hidden">News notication reaction</label>
+                <select class="select" id="two">
+                  <option>Choose</option>
+                  <option value="on-next-change">On next change</option>
+                  <option value="next-day">Next day</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;table role="none"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;
+        &lt;th&gt;Sound&lt;/th&gt;
+        &lt;th&gt;Reaction&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;News Notification&lt;/td&gt;
+        &lt;td&gt;
+          <span>&lt;label for="one" class="hidden"&gt;News notication sound&lt;/label&gt;</span>
+          &lt;select <span>id="one"</span>&gt;
+            &lt;option&gt;Choose&lt;/option&gt;
+            &lt;option value="alert01-mp3"&gt;Alert01.mp3&lt;/option&gt;
+            &lt;option value="alert02-mp3"&gt;Alert02.mp3&lt;/option&gt;
+            &lt;option value="alert03-mp3"&gt;Alert03.mp3&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          <span>&lt;label for="two" class="hidden"&gt;News notication reaction&lt;/label&gt;</span>
+          &lt;select <span>id="two"</span>&gt;
+            &lt;option&gt;Choose&lt;/option&gt;
+            &lt;option value="on-next-change"&gt;On next change&lt;/option&gt;
+            &lt;option value="next-day"&gt;Next day&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/form&gt;</code></pre>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

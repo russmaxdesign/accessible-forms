@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Information associated with radio buttons test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Information associated with radio buttons test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This test to to determine the best way to present both yearly and monthly information on screen, and to screen readers.</p>
+      <hr>
+
+      <h2>Example 1: radio group inside table</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Choose your preferred basic excess</legend>
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <th>Excess</th>
+                <th>Yearly Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" aria-describedby="one1 one2" name="excess-options"></td>
+                <td><span id="one1"><span class="red">Option 1</span> $350 <span class="red">Excess</span></span></td>
+                <td><span id="one2"><span class="red">and</span> $1400 <span class="red">Yearly Premium</span></span></td>
+              </tr>
+              <tr>
+                <td><input type="radio" aria-describedby="two1 two2" name="excess-options"></td>
+                <td><span id="two1"><span class="red">Option 2</span> $650 <span class="red">Excess</span></span></td>
+                <td><span id="two2"><span class="red">and</span> $1800 <span class="red">Yearly Premium</span></span></td>
+              </tr>
+              <tr>
+                <td><input type="radio" aria-describedby="three1 three2" name="excess-options"></td>
+                <td><span id="three1"><span class="red">Option 3</span> $850 <span class="red">Excess</span></span></td>
+                <td><span id="three2"><span class="red">and</span> $2100 <span class="red">Yearly Premium</span></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </form>
+      <p><a href="#">Dummy link between</a></p>
+      <hr>
+
+      <h2>Example 2: simple radio group</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Choose your preferred basic excess</legend>
+          <ul>
+            <li><input type="radio" id="four1" name="excess-options2"><label class="bold" for="four1">$350 <span class="small">Excess /</span> $1400 <span class="small">Yearly Premium</span></label></li>
+            <li><input type="radio" id="four2" name="excess-options2"><label class="bold" for="four2">$650 <span class="small">Excess /</span> $1800 <span class="small">Yearly Premium</span></label></li>
+            <li><input type="radio" id="four3" name="excess-options2"><label class="bold" for="four3">$850 <span class="small">Excess /</span> $2100 <span class="small">Yearly Premium</span></label></li>
+          </ul>
+        </fieldset>
+      </form>
+      <p><a href="#">Dummy link between</a></p>
+      <hr>
+
+      <h2>Example 3: simple radio group</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Choose your preferred basic excess</legend>
+          <ul>
+            <li><input type="radio" id="five1" name="excess-options2"><label for="five1"><span class="bold">$350</span> <span class="small">($1400 Yearly Premium)</span></label></li>
+            <li><input type="radio" id="five2" name="excess-options2"><label for="five2"><span class="bold">$650</span> <span class="small">($1800 Yearly Premium)</span></label></li>
+            <li><input type="radio" id="five3" name="excess-options2"><label for="five3"><span class="bold">$850</span> <span class="small">($2100 Yearly Premium)</span></label></li>
+          </ul>
+        </fieldset>
+      </form>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

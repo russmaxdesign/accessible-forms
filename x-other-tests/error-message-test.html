@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Error message test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Error message test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>The KANA system does not allow separate error messages as per the Chroma system. Errors are flagged with strong red text, but nothing programatic for screen readers. These two tests are to determine if and where an error message can be presented to screen readers</p>
+      <hr>
+
+      <h2>Example 01: <code>aria-label</code> applied to the<code>&lt;label&gt;</code> element</h2>
+      <form action="#">
+        <div class="form-container">
+          <label class="label" for="two" aria-label="Error: What is the time">Address</label>
+          <input class="input" type="text" id="two">
+        </div>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;div class="form-container"&gt;
+    &lt;label for="two" <span>aria-label="Error: What is the time"</span>&gt;Address&lt;/label&gt;
+    &lt;input class="input" type="text" id="two"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: Hidden information inside <code>&lt;label&gt;</code> element</h2>
+      <form action="#">
+        <div class="form-container">
+          <label class="label" for="three">
+            <span class="sr-only">Error:</span>
+            Email
+          </label>
+          <input class="input" type="text" id="three">
+        </div>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  &lt;div class="form-container"&gt;
+    &lt;label class="label" for="three"&gt;
+      <span>&lt;span class="sr-only"&gt;Error:&lt;/span&gt;</span>
+      Email
+    &lt;/label&gt;
+    &lt;input class="input" type="text" id="three"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>The first example works in all browser/screen reader combinations EXCEPT Chroma/VoiceOver. Adding an <code>aria-label</code> to the label means that the <code>&lt;label&gt;</code> is completely ignored in this browser/screen reader combination.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

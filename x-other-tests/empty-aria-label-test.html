@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Empty aria-label test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Empty <code>aria-label</code> test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>To determine if an empty <code>aria-label</code> attribute is announced to assistive technologies.</p>
+      <hr>
+
+      <h2>Example 01: <code>id</code> and <code>name</code> attributes without values</h2>
+      <button class="button" aria-label="">Test one</button>
+      <h3>Code</h3>
+<pre><code>&lt;button <span>aria-label=""</span>&gt;Test one&lt;/button&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <ul>
+        <li>All browser / screen reader combinations currently ignore empty <code>aria-label</code> attributes.</li>
+        <li>An empty <code>aria-label</code> is not defined in the Chrome Accessibility Tree.</li>
+      </ul>
+      <p></p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

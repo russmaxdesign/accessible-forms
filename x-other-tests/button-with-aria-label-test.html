@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Button with aria-label test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1><code>&lt;button&gt;</code> with <code>aria-label</code> test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>To determine if <code>aria-label</code> should be applied to the <code>&lt;button&gt;</code> or icon inside the <code>&lt;button&gt;</code>.</p>
+      <hr>
+
+      <h2>Example 01: <code>aria-label</code> and <code>aria-hidden</code> applied to the icon</h2>
+      <button class="button SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1" type="button">
+        <i class="c-icon i-calendar-alt" aria-label="Open calendar" aria-hidden="true"></i>Dummy
+      </button>
+      <h3>Code</h3>
+<pre><code>&lt;button&gt;
+  &lt;i <span>aria-label="Open calendar" aria-hidden="true"</span>&gt;&lt;/i&gt;Dummy
+&lt;/button&gt;</code></pre>
+      <p><a href="#">Dummy link between</a></p>
+      <hr>
+
+      <h2>Example 02: <code>aria-label</code> applied to the icon</h2>
+      <button class="button SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1" type="button">
+        <i class="c-icon i-calendar-alt" aria-label="Open calendar"></i>Dummy
+      </button>
+      <h3>Code</h3>
+<pre><code>&lt;button&gt;
+  &lt;i <span>aria-label="Open calendar"</span>&gt;&lt;/i&gt;Dummy
+&lt;/button&gt;</code></pre>
+      <p><a href="#">Dummy link between</a></p>
+      <hr>
+
+      <h2>Example 03: <code>aria-label</code> applied to the <code>&lt;button&gt;</code></h2>
+      <button class="button SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1" type="button" aria-label="Open calendar">
+        <i class="c-icon i-calendar-alt" aria-hidden="true"></i>Dummy
+      </button>
+      <h3>Code</h3>
+<pre><code>&lt;button <span>aria-label="Open calendar"</span>&gt;
+  &lt;i aria-hidden="true"&gt;&lt;/i&gt;Dummy
+&lt;/button&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>The first method fails as the <code>aria-label</code> is not announced to assistive technologies. This is due to the icon also having <code>aria-hidden</code> applied.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Empty id and name attributes tests</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Empty <code>id</code> and <code>name</code> attributes tests</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>To determine if <code>id</code> and <code>name</code> attributes are considered invalid if written as boolean attributes, or attributes with blank values.</p>
+      <hr>
+
+      <h2>Example 01: <code>id</code> and <code>name</code> attributes without values</h2>
+      <button class="button" id name aria-label="">Test one</button>
+      <h3>Code</h3>
+<pre><code>&lt;button <span>id name</span> aria-label=""&gt;Test one&lt;/button&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: empty <code>id</code> and <code>name</code> attributes</h2>
+      <button class="button" id="" name="" aria-label="">Test two</button>
+      <h3>Code</h3>
+<pre><code>&lt;button <span>id="" name=""</span> aria-label=""&gt;Test two&lt;/button&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>Both methods are considered invalid.</p>
+      <ul>
+        <li>An <code>ID</code> must not be the empty string.</li>
+        <li>The <code>name</code> value must not be empty.</li>
+        <li><code>ID</code> attributes with empty strings are also not considered unique.</li>
+      </ul>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

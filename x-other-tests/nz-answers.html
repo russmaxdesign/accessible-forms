@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>NZ questions and answers</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>NZ questions and answers</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <hr>
+
+      <h2>Question 1:</h2>
+      <p>1. Does duplicate ids confuse the screen readers? does all elements need ids?</p>
+      <h3>Answer</h3>
+      <p>All HTML markup should be well formed and valid as defined by the <a href="https://validator.w3.org/">W3C Markup Validation Service</a>.</p>
+      <p>In an HTML page, all ID values must be unique in order for the document to pass validation.</p>
+      <p>In specific instances, duplicate ID values could cause issues for screen readers. A short list of examples where this could present issues include:</p>
+      <ul>
+        <li>for/id</li>
+        <li>aria-describedby/id</li>
+        <li>aria-labelledby/id</li>
+        <li>aria-owns/id</li>
+        <li>aria-controls/id</li>
+      </ul>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 2:</h2>
+      <p>Inputs like DOB (3 fields) have only one label. is the best accessibility practice to still have one label per input on those scenario, assuming they are off-screen?</p>
+      <h3>Answer</h3>
+      <fieldset>
+        <legend>Date of birth</legend>
+        <div>
+          <label for="dobd">Day (DD format)</label>
+          <input id="dobd" type="text">
+        </div>
+        <div>
+          <label for="dobm">Month (MM format)</label>
+          <input id="dobm" type="text">
+        </div>
+        <div>
+          <label for="doby">Year (YYYY format)</label>
+          <input id="doby" type="text">
+        </div>
+      </fieldset>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 3:</h2>
+      <p>Links with JavaScript onclick to open dialogs/popup that are not navigating to a different page are acceptable? </p>
+      <h3>Answer</h3>
+      <p>As was mentioned by one of your team:</p>
+      <ul>
+        <li>BUTTON should be used for actions</li>
+        <li>LINKS should be used to send users to locations</li>
+      </ul>
+      <p>For this reason, the trigger for modals should be the BUTTON element.</p>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 4:</h2>
+      <p>Is there any application/site/script we can use to identify how many accessibility issues we have in our portal just to make sure we are not accidentally increasing the number of problems as we progress with the changes?</p>
+      <h3>Answer</h3>
+      <p><a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh">WAVE</a></p>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 5:</h2>
+      <p>Testing accessibility changes. How do we do that?</p>
+      <h3>Answer</h3>
+      <p>Tag me in all Jira tickets.</p>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 6:</h2>
+      <p>We should make sure that every input field has a label (visible or hidden) that accurately describes the field (FOR). About hidden labels it was suggested in the last meeting we can set the fields outside the visible area including "absolute" position. Setting "absolute" position will remove the label from the DOM position where is placed, will the screen reader be able to "link" the input with the label even though its not in the DOM as a normal label? </p>
+      <h3>Answer</h3>
+      <p>In very specific circumstances, it is allowable to hide the LABEL element off-screen, but only when the purpose of the form control is clear and obvious to sighted users.</p>
+      <p>Hiding the LABEL off-screen is acceptable as long as it is absolutely positioned, and does not use display: none, as this will remove the element from the accessibility tree.</p>
+<pre><code>.sr-only {
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+}</code></pre>
+
+<pre><code>&lt;form action="#"&gt;
+  &lt;div class="form-container"&gt;
+    &lt;label for="name" class="sr-only"&gt;Name&lt;/label&gt;
+    &lt;input id="name" type="text"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 7:</h2>
+      <p>Should a input label and the input placeholder have ALWAYS the same value? </p>
+      <h3>Answer</h3>
+      <p>The placeholder attribute should be AVOIDED COMPLETELY as it presents a range of accessibility issues.</p>
+      <ol>
+        <li>Colour contrast - especially for users who set their controls to high.</li>
+        <li>Congnitive impaired and users who are not tech savy  - the placeholder information is wiped as soon as the user begins typing.</li>
+        <li>Screen reader users - the placeholder is often announced AS WELL AS any label, which means duplicate information is presented to users.</li>
+      </ol>
+      <p>You can see this in this <a href="https://russmaxdesign.github.io/accessible-forms/accessible-name-input03.html">test case:</a></p>
+      <p>The word "Fox" should not be announced to users at all, unless there is no label or title present. Instead, the placeholder is announced as well as the label and title if present.</p>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Question 8:</h2>
+      <p>What would be the best approach to "link" a label with FOR attribute to the radio buttons for the example in the image in the notes.  have 1 invisible label for each of the radio options? and add the "Adjust your policy excess" for attribute relating to the fieldset id?</p>
+      <h3>Answer</h3>
+      <p>This should be standard fieldset/legend markup. Note that the paragraph can be associated with the first input so that it is announced when the radio recieves focus.</p>
+      <fieldset>
+        <legend>Adjust your policy excess</legend>
+        <p id="explanation">The excess is the amount you will need to pay if you make a claim.</p>
+        <ul class="form-list">
+          <li>
+            <input id="option1" type="radio" aria-describedby="explanation">
+            <label for="option1">$250</label>
+          </li>
+          <li>
+            <input id="option2" type="radio">
+            <label for="option2">$500</label>
+          </li>
+          <li>
+            <input id="option3" type="radio">
+            <label for="option3">$1000</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+</body>
+</html>

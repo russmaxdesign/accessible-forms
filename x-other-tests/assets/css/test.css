@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  max-width: 35em;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  background: #eee;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 .5em;
+  color: #040;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 1em 0 .5em;
+  color: #050;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 2em 0 .5em;
+  color: #050;
+}
+
+p {
+  line-height: 1.4;
+  margin: 1em 0 1.5em;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 0 0 0 1.5em;
+}
+
+ul li {
+  margin: 0 0 .3em;
+}
+
+hr {
+  margin: 2em 0 3em;
+  border-top: 2px solid #ddd;
+}
+
+a:link {
+  color: blue;
+  background: #fff;
+}
+
+a:link code {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+  background: #fff;
+}
+
+a:visited code {
+  color: purple;
+}
+
+a:hover {
+  color: green;
+  background: #fff;
+}
+
+a:hover code {
+  color: green;
+}
+
+a:focus {
+  color: #fff;
+  outline: none;
+  background: #000;
+}
+
+a:focus code {
+  color: #fff;
+}
+
+a:active {
+  color: red;
+  background: #fff;
+}
+
+a:active code {
+  color: red;
+}
+
+main {
+  width: 700px;
+  padding: 30px;
+  background: #fff;
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  color: green;
+}
+
+pre {
+  background: #000;
+  padding: 1em;
+  margin: 1em 0;
+  line-height: 1.5;
+  overflow: auto;
+  font-size: .9em;
+}
+
+pre code {
+  color: #ccc;
+}
+
+pre code span {
+  color: yellow;
+}
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: .5em 1em;
+  text-align: left;
+  border: 1px solid #999;
+}
+
+fieldset {
+  border: 1px solid #aaa;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+fieldset li {
+  margin: 0 0 .5em;
+}
+
+fieldset li input {
+  margin: 0 .5em 0 0;
+}
+
+.form-container,
+.p-form-group {
+  margin: 0 0 1.5em;
+}
+
+.form-list {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none;
+}
+
+.label,
+.c-label {
+  display: block;
+  margin: 0 0 .5em;
+  font-weight: bold;
+}
+
+.input,
+.c-input {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  width: 100%;
+  padding: .5em;
+  color: #333;
+  border: 1px solid #444;
+  background: #fff;
+}
+
+.select {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+  display: block;
+  padding: .5em;
+  width: 100%;
+  color: #000;
+  color: #333;
+  border: 1px solid #444;
+  background: #fff;
+}
+
+.input:focus,
+.select:focus {
+  color: #000;
+  outline: 2px solid #000;
+}
+
+.button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: .5em 1em;
+  color: #fff;
+  border: 1px solid #fff;
+  background: #333;
+}
+
+.button:hover {
+  color: #fff;
+  background: green;
+}
+
+.button:focus {
+  color: #fff;
+  outline: 2px solid #000;
+  background: #000;
+}
+
+.button:active {
+  color: #fff;
+  background: red;
+}
+
+.c-text {
+  margin: .3em 0 1em;
+}
+
+.u-text--red {
+  color: red;
+  font-size: .9em;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-weight: normal;
+  font-size: 14px;
+  color: #666;
+}
+
+.hidden,
+.sr-only {
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+}
+

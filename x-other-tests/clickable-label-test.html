@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Clickable label test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Clickable <code>&lt;label&gt;</code> test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>These tests are to determine whether the <code>&lt;label&gt;</code> contents are clickable as well as the form control itself when the <code>&lt;label&gt;</code> is wrapped or unwrapped.</p>
+      <h2></h2>
+
+      <h2>Example 01: Unwrapped <code>&lt;label&gt;</code></h2>
+      <form action="#">
+        <input id="one" type="checkbox">
+        <label for="one">Subscribe</label>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  <span>&lt;input id="one" type="checkbox"&gt;</span>
+  &lt;label for="one"&gt;Subscribe&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Example 02: Wrapped <code>&lt;label&gt;</code></h2>
+      <form action="#">
+        <label for="two">
+          <input id="two" type="checkbox">
+          Subscribe
+        </label>
+      </form>
+      <h3>Code</h3>
+<pre><code>&lt;form action="#"&gt;
+  <span>&lt;label for="two"&gt;</span>
+    &lt;input id="two" type="checkbox"&gt;
+    Subscribe
+  <span>&lt;/label&gt;</span>
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>All modern browsers include the <code>&lt;label&gt;</code> and checkbox as triggers to change the state of the checkbox.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

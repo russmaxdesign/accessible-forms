@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Line break inside a Legend test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Line break inside a <code>&lt;legend&gt;</code> test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This test is to determine if line breaks are allowed inside the <code>&lt;legend&gt;</code> element. This is based on the <a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-content-model" target="_blank">W3C content model</a>, which defines content that must be included as children and descendants of the element.</p>
+      <hr>
+
+      <h2>Example</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Something<br>Another thing</legend>
+        </fieldset>
+      </form>
+<pre><code>&lt;form action="#"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Something<span>&lt;br&gt;</span> Another thing&lt;/legend&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>The <code>&lt;legend&gt;</code> element can contain <a href="https://html.spec.whatwg.org/#phrasing-content-2" target="_blankhttps://html.spec.whatwg.org/#phrasing-content-2">phrasing content</a>, optionally intermixed with <a href="https://html.spec.whatwg.org/#heading-content-2" target="_blank">heading content</a>.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>

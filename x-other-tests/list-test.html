@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Paragraph inside list item test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Paragraph inside list item test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <p>This test is to determine if the <code>&lt;p&gt;</code> element is considered valid when placed inside an <code>&lt;li&gt;</code> element. This is based on the <a href="https://html.spec.whatwg.org/multipage/dom.html#concept-element-content-model" target="_blank">W3C content model</a>, which defines content that must be included as children and descendants of the element.</p>
+      <hr>
+
+      <h2>Example</h2>
+      <ul>
+        <li>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum deserunt itaque, amet ipsam placeat ad rerum consequuntur quaerat iste error et reprehenderit ex exercitationem tempore molestiae porro rem eveniet incidunt.</p>
+        </li>
+        <li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloribus voluptatum, perspiciatis dolores neque cum molestias officiis voluptates debitis optio provident dolorum possimus ipsam vero alias, quaerat nemo, soluta officia?</p>
+        </li>
+      </ul>
+      <h3>Code</h3>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;
+    <span>&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</span>
+  &lt;/li&gt;
+  &lt;li&gt;
+    <span>&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</span>
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <p><a href="#">Dummy link after</a></p>
+      <hr>
+
+      <h2>Results</h2>
+      <p>The <code>&lt;li&gt;</code> element can contain any <a href="https://html.spec.whatwg.org/multipage/dom.html#flow-content-2" target="_blank">flow content</a>.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>
