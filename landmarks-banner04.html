@@ -8,8 +8,8 @@
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>role="banner" descendant of &lt;article&gt;</h1>
-  <p><a href="index.html">Return to main list</a></p>
+  <h1><code>role="banner"</code> descendant of <code>&lt;article&gt;</code></h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
   <p>This test case is designed to determine how the <code>role="banner"</code> will be announced by various screen readers when it is a descendant of the <code>&lt;article&gt;</code> element.</p>
   <p>In this case, the element <b>should be announced</b> as a <code>banner</code> landmark.</p>
   <p>By default, the element being tested does not receive focus, so the only way to test how it is announced is via:</p>
@@ -60,6 +60,6 @@
       <li><b>Edge:</b> Test content. <span class="red">[Banner role not announced]</span></li>
     </ul>
   </div>
-  <p><a href="index.html">Return to main list</a></p>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
 </body>
 </html>
