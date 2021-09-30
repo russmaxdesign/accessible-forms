@@ -1,0 +1,418 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"na",
+				"navigation"
+			],
+			[
+				"landmarks-foo",
+				"landmarks-footer03.html"
+			],
+			[
+				"landmarks-as",
+				"landmarks-aside02.html"
+			],
+			[
+				"co",
+				"collapse"
+			],
+			[
+				"code",
+				"codeHighlight\t iag.css"
+			],
+			[
+				"ex",
+				"exercise02-start.html"
+			],
+			[
+				"ass",
+				"assets/"
+			],
+			[
+				"va",
+				"vertical-align\tproperty"
+			],
+			[
+				"border-c",
+				"border-collapse\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"b",
+				"bold\tfont-weight"
+			],
+			[
+				"disa",
+				"disabled01.html"
+			],
+			[
+				"accessi",
+				"accessible-name-button01.html"
+			],
+			[
+				"acc",
+				"accessible-name-button05.html"
+			],
+			[
+				"access",
+				"accessible-name-button02.html"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"i",
+				"italic\tfont-style"
+			],
+			[
+				"in",
+				"inline-block\tdisplay"
+			],
+			[
+				"c",
+				"collapse\tborder-collapse"
+			],
+			[
+				"ry",
+				"ryan_6_close.mp3"
+			],
+			[
+				"rya",
+				"ryan_5_optimistic.mp3"
+			],
+			[
+				"ka",
+				"karen_5_end.mp3"
+			],
+			[
+				"kar",
+				"karen_4_opening_box.mp3"
+			],
+			[
+				"a",
+				"ammar_3_only_we_can_save_us.mp3"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control:  ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms"
+	],
+	"file_history":
+	[
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-button.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/index.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/input-error-message-aria-describedby.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/input-error-message-aria-errormessage.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/input-error-message-wrapped-label.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/input-help-text-aria-describedby.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/input-help-text-aria-label.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/input-help-text-wrapped-label.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/disabled01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/disabled02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/disabled03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/disabled04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/disabled05.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/disabled06.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes05.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes06.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes07.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes08.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes09.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/attributes10.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-link05.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-checkbox-group-presentation.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-checkbox-group-without-list.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-checkbox-group.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-checkbox.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-color.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-date.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-datetime-local.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-email.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-file.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-month.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-number.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-password.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-radio-group-presentation.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-radio-group-without-list.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-radio-group.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-radio.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-range.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-reset.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-search.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-submit.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-tel.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-text-group.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-text.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-time.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-url.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/01-input-week.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/02-select-multiple.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/02-select-optgroup.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/02-select.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/03-textarea.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/04-button.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-button01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-button02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-button03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-button04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-button05.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-input01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-input02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-input03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-input04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-input05.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-input06.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-link01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-link02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-link03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/accessible-name-link04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/voiceover01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/2021/07/2021-07-16-standup.md",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/voiceover02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/voiceover03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/voiceover04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/examples.css",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-section04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-voiceover-rotor.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-aside04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/voiceover-test02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/voiceover-test01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-header-scope.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-form-attributes.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-help-error-messages.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-nested-fieldsets.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-fieldsets.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-landmarks.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/support-basic-form-controls.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/2021/07/marc.md",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/2021/07/2021-07-14-standup.md",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/accessibility-roadmap.md",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/credit-card-process.md",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/chroma-accessibility.md",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/brand.md",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/austin.md",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmark-support-chart.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-footer04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmark-support-chart2.htm",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-banner24.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-banner23.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-nav04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-main04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-footer03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-aside03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-article03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-section03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-nav03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-main03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-article02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-section01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-aside02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/standup/2021/07/2021-07-13-standup.md",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/required04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/required01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/required02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/required03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/required05.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/nested-fieldset-presentation.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/nested-fieldset-without-list.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/nested-fieldset.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/invalid04.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/invalid01.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/invalid02.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/invalid03.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-banner07.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-banner08.html",
+		"/Users/s96115/OneDrive - IAG/Documents/html-examples/accessible-forms/landmarks-banner15.html"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 208.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 79.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "x-accessible-forms.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
