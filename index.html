@@ -16,19 +16,19 @@
     <h2>Page contents</h2>
     <ul class="page-contents-list" aria-label="Page contents">
       <li>&darr; <a href="#basic">Basic form control and label tests</a></li>
-      <li>&darr; <a href="#fieldset">Fieldset tests</a></li>
-      <li>&darr; <a href="#fieldset-error">Fieldsets with errors tests</a> <span class="badge">Added: 18/07/2021</span></li>
-      <li>&darr; <a href="#nested">Nested fieldset tests</a></li>
+      <li>&darr; <a href="#fieldset"><code>&lt;fieldset&gt;</code> tests</a></li>
+      <li>&darr; <a href="#fieldset-error"><code>&lt;fieldset&gt;</code> with errors tests</a> <span class="badge">Added: 18/07/2021</span></li>
+      <li>&darr; <a href="#nested">Nested <code>&lt;fieldset&gt;</code> tests</a></li>
       <li>&darr; <a href="#help">Help text and error messages associated with form control tests</a></li>
       <li>&darr; <a href="#required">Required field tests</a></li>
-      <li>&darr; <a href="#accessible-button">Button accessible name tests</a></li>
+      <li>&darr; <a href="#accessible-button"><code>&lt;button&gt;</code> accessible name tests</a></li>
       <li>&darr; <a href="#accessible-link">Link accessible name tests</a></li>
-      <li>&darr; <a href="#accessible-input">Input accessible name tests</a></li>
-      <li>&darr; <a href="#invalid">Aria-invalid tests</a></li>
+      <li>&darr; <a href="#accessible-input"><code>&lt;input&gt;</code> accessible name tests</a></li>
+      <li>&darr; <a href="#invalid"><code>aria-invalid</code> tests</a></li>
       <li>&darr; <a href="#attributes">Form-based attribute tests</a></li>
-      <li>&darr; <a href="#disabled">Disabled field tests</a></li>
+      <li>&darr; <a href="#disabled"><code>disabled</code> attribute tests</a></li>
       <li>&darr; <a href="#landmark">ARIA landmark tests</a> <span class="badge">Added: 10/07/2021</span></li>
-      <li>&darr; <a href="#header">Header scope tests</a> <span class="badge">Added: 10/07/2021</span></li>
+      <li>&darr; <a href="#header"><code>&lt;header&gt;</code> scope tests</a> <span class="badge">Added: 10/07/2021</span></li>
       <li>&darr; <a href="#rotor">VoiceOver Rotor tests</a> <span class="badge">Added: 17/07/2021</span></li>
       <li>&darr; <a href="#technology">Technology details</a></li>
     </ul>
@@ -40,49 +40,55 @@
     <p>Tests to determine how form controls and their associated <code>&lt;label&gt;</code> and <code>&lt;legend&gt;</code> elements are announced. In some cases, the form element does not require or should not have a <code>&lt;label&gt;</code>.</p>
     <h3>Inputs</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="01-input-button.html">&lt;input type="button"&gt;</a></li>
-      <li>&rarr; <a href="01-input-checkbox.html">&lt;input type="checkbox"&gt;</a></li>
-      <li>&rarr; <a href="01-input-color.html">&lt;input type="color"&gt;</a></li>
-      <li>&rarr; <a href="01-input-date.html">&lt;input type="date"&gt;</a></li>
-      <li>&rarr; <a href="01-input-datetime-local.html">&lt;input type="datetime-local"&gt;</a></li>
-      <li>&rarr; <a href="01-input-email.html">&lt;input type="email"&gt;</a></li>
-      <li>&rarr; <a href="01-input-file.html">&lt;input type="file"&gt;</a></li>
-      <li>&rarr; <a href="01-input-month.html">&lt;input type="month"&gt;</a></li>
-      <li>&rarr; <a href="01-input-number.html">&lt;input type="number"&gt;</a></li>
-      <li>&rarr; <a href="01-input-password.html">&lt;input type="password"&gt;</a></li>
-      <li>&rarr; <a href="01-input-radio.html">&lt;input type="radio"&gt;</a></li>
-      <li>&rarr; <a href="01-input-range.html">&lt;input type="range"&gt;</a></li>
-      <li>&rarr; <a href="01-input-reset.html">&lt;input type="reset"&gt;</a></li>
-      <li>&rarr; <a href="01-input-search.html">&lt;input type="search"&gt;</a></li>
-      <li>&rarr; <a href="01-input-submit.html">&lt;input type="submit"&gt;</a></li>
-      <li>&rarr; <a href="01-input-tel.html">&lt;input type="tel"&gt;</a></li>
-      <li>&rarr; <a href="01-input-text.html">&lt;input type="text"&gt;</a></li>
-      <li>&rarr; <a href="01-input-time.html">&lt;input type="time"&gt;</a></li>
-      <li>&rarr; <a href="01-input-url.html">&lt;input type="url"&gt;</a></li>
-      <li>&rarr; <a href="01-input-week.html">&lt;input type="week"&gt;</a></li>
+      <li>&rarr; <a href="01-input-button.html"><code>&lt;input type="button"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-checkbox.html"><code>&lt;input type="checkbox"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-color.html"><code>&lt;input type="color"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-date.html"><code>&lt;input type="date"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-datetime-local.html"><code>&lt;input type="datetime-local"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-email.html"><code>&lt;input type="email"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-file.html"><code>&lt;input type="file"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-month.html"><code>&lt;input type="month"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-number.html"><code>&lt;input type="number"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-password.html"><code>&lt;input type="password"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-radio.html"><code>&lt;input type="radio"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-range.html"><code>&lt;input type="range"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-reset.html"><code>&lt;input type="reset"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-search.html"><code>&lt;input type="search"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-submit.html"><code>&lt;input type="submit"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-tel.html"><code>&lt;input type="tel"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-text.html"><code>&lt;input type="text"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-time.html"><code>&lt;input type="time"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-url.html"><code>&lt;input type="url"&gt;</code></a></li>
+      <li>&rarr; <a href="01-input-week.html"><code>&lt;input type="week"&gt;</code></a></li>
     </ul>
     <h3>Other elements</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="04-button.html">&lt;button&gt;</a></li>
-      <li>&rarr; <a href="02-select.html">&lt;select&gt;</a></li>
-      <li>&rarr; <a href="02-select-multiple.html">&lt;select&gt; with "multiple" attribute</a></li>
-      <li>&rarr; <a href="02-select-optgroup.html">&lt;optgroup&gt; within &lt;select&gt;</a></li>
-      <li>&rarr; <a href="03-textarea.html">&lt;textarea&gt;</a></li>
+      <li>&rarr; <a href="04-button.html"><code>&lt;button&gt;</code></a></li>
+      <li>&rarr; <a href="02-select.html"><code>&lt;select&gt;</code></a></li>
+      <li>&rarr; <a href="02-select-multiple.html"><code>&lt;select&gt;</code> with <code>multiple</code></a></li>
+      <li>&rarr; <a href="02-select-optgroup.html"><code>&lt;optgroup&gt;</code> within <code>&lt;select&gt;</code></a></li>
+      <li>&rarr; <a href="03-textarea.html"><code>&lt;textarea&gt;</code></a></li>
     </ul>
     <p><a class="button-secondary small" href="support-basic-form-controls.html">Basic form controls support chart</a></p>
   </section>
   <hr>
 
   <section id="fieldset">
-    <h2>Fieldset tests</h2>
+    <h2><code>&lt;fieldset&gt;</code> tests</h2>
     <p>Tests to determine how <code>&lt;fieldset&gt;</code> elements are announced.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="fieldset.html">&lt;fieldset&gt; and &lt;legend&gt;</a></li>
+      <li>&rarr; <a href="fieldset.html">Basic <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code></a></li>
+    </ul>
+    <h3>Checkboxes</h3>
+    <ul class="main-list">
       <li>&rarr; <a href="fieldset-checkbox-group.html">Checkbox group</a></li>
-      <li>&rarr; <a href="fieldset-checkbox-group-presentation.html">Checkbox group with role="presentation"</a></li>
+      <li>&rarr; <a href="fieldset-checkbox-group-presentation.html">Checkbox group with <code>role="presentation"</code></a></li>
       <li>&rarr; <a href="fieldset-checkbox-group-without-list.html">Checkbox group without a list</a></li>
+    </ul>
+    <h3>Radio buttons</h3>
+    <ul class="main-list">
       <li>&rarr; <a href="fieldset-radio-group.html">Radio group</a></li>
-      <li>&rarr; <a href="fieldset-radio-group-presentation.html">Radio group with role="presentation"</a></li>
+      <li>&rarr; <a href="fieldset-radio-group-presentation.html">Radio group with <code>role="presentation"</code></a></li>
       <li>&rarr; <a href="fieldset-radio-group-without-list.html">Radio group without a list</a></li>
     </ul>
     <p><a class="button-secondary small" href="support-fieldsets.html">Fieldset support chart</a></p>
@@ -90,27 +96,27 @@
   <hr>
 
   <section id="fieldset-error">
-    <h2>Fieldsets with errors tests</h2>
+    <h2><code>&lt;fieldset&gt;</code> with errors tests</h2>
     <p>Tests to determine how error messages associated with radio groups are announced.</p>
     <ul class="main-list">
       <li>&rarr; <a href="fieldset-error01.html">Radio group with error - no programmatic association</a></li>
-      <li>&rarr; <a href="fieldset-error02.html">Radio group with error - aria-labelledby applied to fieldset element</a></li>
-      <li>&rarr; <a href="fieldset-error03.html">Radio group with error - aria-labelledby applied to legend element</a></li>
-      <li>&rarr; <a href="fieldset-error04.html">Radio group with error - aria-labelledby applied to input elements</a></li>
-      <li>&rarr; <a href="fieldset-error05.html">Radio group with error - aria-label applied to fieldset element</a></li>
-      <li>&rarr; <a href="fieldset-error06.html">Radio group with error - aria-label applied to input elements</a></li>
+      <li>&rarr; <a href="fieldset-error02.html">Radio group with error - <code>aria-labelledby</code> applied to <code>&lt;fieldset&gt;</code></a></li>
+      <li>&rarr; <a href="fieldset-error03.html">Radio group with error - <code>aria-labelledby</code> applied to <code>&lt;legend&gt;</code></a></li>
+      <li>&rarr; <a href="fieldset-error04.html">Radio group with error - <code>aria-labelledby</code> applied to <code>&lt;input&gt;</code></a></li>
+      <li>&rarr; <a href="fieldset-error05.html">Radio group with error - <code>aria-label</code> applied to <code>&lt;fieldset&gt;</code></a></li>
+      <li>&rarr; <a href="fieldset-error06.html">Radio group with error - <code>aria-label</code> applied to <code>&lt;input&gt;</code></a></li>
     </ul>
     <p><a class="button-secondary small" href="support-fieldset-errors.html">Fieldsets with errors support chart</a></p>
   </section>
   <hr>
 
   <section id="nested">
-    <h2>Nested fieldset tests</h2>
+    <h2>Nested <code>&lt;fieldset&gt;</code> tests</h2>
     <p>Tests to determine how nested <code>&lt;fieldset&gt;</code> elements are announced.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="nested-fieldset.html">Nested &lt;fieldset&gt;</a></li>
-      <li>&rarr; <a href="nested-fieldset-presentation.html">Nested &lt;fieldset&gt;, with role="presentation"</a></li>
-      <li>&rarr; <a href="nested-fieldset-without-list.html">Nested &lt;fieldset&gt; without list</a></li>
+      <li>&rarr; <a href="nested-fieldset.html">Nested <code>&lt;fieldset&gt;</code></a></li>
+      <li>&rarr; <a href="nested-fieldset-presentation.html">Nested <code>&lt;fieldset&gt;</code>, with <code>role="presentation</code>"</a></li>
+      <li>&rarr; <a href="nested-fieldset-without-list.html">Nested <code>&lt;fieldset&gt;</code> without list</a></li>
     </ul>
     <p><a class="button-secondary small" href="support-nested-fieldsets.html">Nested fieldset support chart</a></p>
   </section>
@@ -121,15 +127,17 @@
     <p>Tests to determine how help text and error messages can be associated with form controls.</p>
     <h3>Help text</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="input-help-text-aria-describedby.html">&lt;input&gt; with help text using "aria-describedby"</a></li>
-      <li>&rarr; <a href="input-help-text-wrapped-label.html">&lt;input&gt; with help text wrapped inside &lt;label&gt;</a></li>
-      <li>&rarr; <a href="input-help-text-aria-label.html">&lt;input&gt; with help text as an "aria-label"</a></li>
+      <li>&rarr; <a href="input-help-text-aria-describedby.html"><code>&lt;input&gt;</code> with help text using <code>aria-describedby</code></a></li>
+      <li>&rarr; <a href="input-help-text-wrapped-label.html"><code>&lt;input&gt;</code> with help text wrapped inside <code>&lt;label&gt;</code></a></li>
+      <li>&rarr; <a href="input-help-text-aria-label.html"><code>&lt;input&gt;</code> with help text as an <code>aria-label</code></a></li>
     </ul>
     <h3>Error messages</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="input-error-message-wrapped-label.html">&lt;input&gt; with error message wrapped inside &lt;label&gt;</a></li>
-      <li>&rarr; <a href="input-error-message-aria-describedby.html">&lt;input&gt; with error message using "aria-describedby"</a></li>
-      <li>&rarr; <a href="input-error-message-aria-errormessage.html">&lt;input&gt; with error message using "aria-errormessage"</a></li>
+      <li>&rarr; <a href="input-error-message-wrapped-label.html"><code>&lt;input&gt;</code> with error message wrapped inside <code>&lt;label&gt;</code></a></li>
+      <li>&rarr; <a href="input-error-message-aria-describedby.html"><code>&lt;input&gt;</code> with error message using <code>aria-describedby</code></a></li>
+      <li>&rarr; <a href="input-error-message-aria-errormessage.html"><code>&lt;input&gt;</code> with error message using <code>aria-errormessage</code></a></li>
+      <li>&rarr; <a href="input-error-message-title.html"><code>&lt;input&gt;</code> with error message using <code>title</code></a> - IN PROGRESS</li>
+      <li>&rarr; <a href="input-error-message-title-aria-describedby.html"><code>&lt;input&gt;</code> with error message using <code>aria-describedby</code> and <code>title</code></a> - IN PROGRESS</li>
     </ul>
     <p><a class="button-secondary small" href="support-help-error-messages.html">Help text and error message support chart</a></p>
   </section>
@@ -139,64 +147,64 @@
     <h2>Required field tests</h2>
     <p>Tests to determine how <code>required</code>, <code>aria-required</code> and other related options are announced.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="required01.html">&lt;input&gt; with "required" attribute</a></li>
-      <li>&rarr; <a href="required02.html">&lt;input&gt; with "aria-required" attribute</a></li>
-      <li>&rarr; <a href="required03.html">&lt;input&gt; with "required" and "aria-required" attributes</a></li>
-      <li>&rarr; <a href="required04.html">&lt;input&gt; with visual "required" indicator</a></li>
-      <li>&rarr; <a href="required05.html">&lt;input&gt; with visual "required" indicator, and aria-hidden</a></li>
+      <li>&rarr; <a href="required01.html"><code>&lt;input&gt;</code> with <code>required</code></a></li>
+      <li>&rarr; <a href="required02.html"><code>&lt;input&gt;</code> with <code>aria-required</code></a></li>
+      <li>&rarr; <a href="required03.html"><code>&lt;input&gt;</code> with <code>required</code> and <code>aria-required</code></a></li>
+      <li>&rarr; <a href="required04.html"><code>&lt;input&gt;</code> with visual <code>required</code> indicator</a></li>
+      <li>&rarr; <a href="required05.html"><code>&lt;input&gt;</code> with visual <code>required</code> indicator, and aria-hidden</a></li>
     </ul>
     <p><a class="button-secondary small" href="support-required-fields.html">Required field support chart</a></p>
   </section>
   <hr>
 
   <section id="accessible-button">
-    <h2>Button accessible name tests</h2>
+    <h2><code>&lt;button&gt;</code> accessible name tests</h2>
     <p>The purpose these tests is to show the cascade order of how accessible names are applied in the accessibility tree for the <code>&lt;button&gt;</code> element. <em>These examples should not be considered proper practice</em>.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="accessible-name-button01.html">&lt;button&gt; where "aria-labelledby" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-button02.html">&lt;button&gt; where "aria-label" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-button03.html">&lt;button&gt; where content should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-button04.html">&lt;button&gt; where "title" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-button05.html">&lt;button&gt; with no accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-button01.html"><code>&lt;button&gt;</code> where <code>aria-labelledby</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-button02.html"><code>&lt;button&gt;</code> where <code>aria-label</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-button03.html"><code>&lt;button&gt;</code> where content should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-button04.html"><code>&lt;button&gt;</code> where <code>title</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-button05.html"><code>&lt;button&gt;</code> with no accessible name</a></li>
     </ul>
   </section>
   <hr>
 
   <section id="accessible-link">
     <h2>Link accessible name tests</h2>
-    <p>The purpose these tests is to show the cascade order of how accessible names are applied in the accessibility tree for links. <em>These examples should not be considered proper practice</em>.</p>
+    <p>The purpose these tests is to show the cascade order of how accessible names are applied in the accessibility tree for the <code>&lt;a&gt;</code> element. <em>These examples should not be considered proper practice</em>.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="accessible-name-link01.html">link where "aria-labelledby" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-link02.html">link where "aria-label" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-link03.html">link where content should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-link04.html">link where "title" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-link05.html">link with no accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-link01.html"><code>&lt;a&gt;</code> where <code>aria-labelledby</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-link02.html"><code>&lt;a&gt;</code> where <code>aria-label</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-link03.html"><code>&lt;a&gt;</code> where content should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-link04.html"><code>&lt;a&gt;</code> where <code>title</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-link05.html"><code>&lt;a&gt;</code> with no accessible name</a></li>
     </ul>
   </section>
   <hr>
 
   <section id="accessible-input">
-    <h2>Input accessible name tests</h2>
+    <h2><code>&lt;input&gt;</code> accessible name tests</h2>
     <p>The purpose these tests is to show the cascade order of how accessible names are applied in the accessibility tree for <code>&lt;input&gt;</code> elements. <em>These examples should not be considered proper practice</em>.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="accessible-name-input01.html">&lt;input&gt; where "aria-labelledby" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-input02.html">&lt;input&gt; where "aria-label" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-input03.html">&lt;input&gt; where &lt;label&gt; should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-input04.html">&lt;input&gt; where "title" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-input05.html">&lt;input&gt; where "placeholder" should be accessible name</a></li>
-      <li>&rarr; <a href="accessible-name-input06.html">&lt;input&gt; with no accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-input01.html"><code>&lt;input&gt;</code> where <code>aria-labelledby</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-input02.html"><code>&lt;input&gt;</code> where <code>aria-label</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-input03.html"><code>&lt;input&gt;</code> where <code>&lt;label&gt;</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-input04.html"><code>&lt;input&gt;</code> where <code>title</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-input05.html"><code>&lt;input&gt;</code> where <code>placeholder</code> should be accessible name</a></li>
+      <li>&rarr; <a href="accessible-name-input06.html"><code>&lt;input&gt;</code> with no accessible name</a></li>
     </ul>
   </section>
   <hr>
 
   <section id="invalid">
-    <h2>Aria-invalid tests</h2>
+    <h2><code>aria-invalid</code> tests</h2>
     <p>Tests to determine how the <code>aria-invalid</code> attribute is announced.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="invalid01.html">&lt;input&gt; with aria-invalid="true" attribute</a></li>
-      <li>&rarr; <a href="invalid02.html">&lt;input&gt; with aria-invalid="false" attribute</a></li>
-      <li>&rarr; <a href="invalid03.html">&lt;input&gt; with aria-invalid="grammar" attribute</a></li>
-      <li>&rarr; <a href="invalid04.html">&lt;input&gt; with aria-invalid="spelling" attribute</a></li>
+      <li>&rarr; <a href="invalid01.html"><code>&lt;input&gt;</code> with <code>aria-invalid="true"</code></a></li>
+      <li>&rarr; <a href="invalid02.html"><code>&lt;input&gt;</code> with <code>aria-invalid="false"</code></a></li>
+      <li>&rarr; <a href="invalid03.html"><code>&lt;input&gt;</code> with <code>aria-invalid="grammar"</code></a></li>
+      <li>&rarr; <a href="invalid04.html"><code>&lt;input&gt;</code> with <code>aria-invalid="spelling"</code></a></li>
     </ul>
     <p><a class="button-secondary small" href="support-aria-invalid.html">aria-invalid support chart</a></p>
   </section>
@@ -206,33 +214,33 @@
     <h2>Form-based attribute tests</h2>
     <p>Tests to determine how <code>max</code>, <code>aria-valuemax</code>, <code>min</code>, <code>aria-valuemin</code>, <code>maxlength</code>, <code>minlength</code>, <code>multiple</code> and <code>pattern</code> attributes are announced.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="attributes01.html">&lt;input&gt; with "max" attribute</a></li>
-      <li>&rarr; <a href="attributes02.html">&lt;input&gt; with "aria-valuemax" attribute</a></li>
-      <li>&rarr; <a href="attributes03.html">&lt;input&gt; with "max" and "aria-valuemax" attribute</a></li>
-      <li>&rarr; <a href="attributes04.html">&lt;input&gt; with "min" attribute</a></li>
-      <li>&rarr; <a href="attributes05.html">&lt;input&gt; with "aria-valuemin" attribute</a></li>
-      <li>&rarr; <a href="attributes06.html">&lt;input&gt; with "min" and aria-valuemin" attribute</a></li>
-      <li>&rarr; <a href="attributes07.html">&lt;input&gt; with "maxlength" attribute</a></li>
-      <li>&rarr; <a href="attributes08.html">&lt;input&gt; with "minlength" attribute</a></li>
-      <li>&rarr; <a href="attributes09.html">&lt;input&gt; with "multiple" attribute</a></li>
-      <li>&rarr; <a href="attributes10.html">&lt;input&gt; with "pattern" attribute</a></li>
+      <li>&rarr; <a href="attributes01.html"><code>&lt;input&gt;</code> with <code>max</code></a></li>
+      <li>&rarr; <a href="attributes02.html"><code>&lt;input&gt;</code> with <code>aria-valuemax</code></a></li>
+      <li>&rarr; <a href="attributes03.html"><code>&lt;input&gt;</code> with <code>max</code> and <code>aria-valuemax</code></a></li>
+      <li>&rarr; <a href="attributes04.html"><code>&lt;input&gt;</code> with <code>min</code></a></li>
+      <li>&rarr; <a href="attributes05.html"><code>&lt;input&gt;</code> with <code>aria-valuemin</code></a></li>
+      <li>&rarr; <a href="attributes06.html"><code>&lt;input&gt;</code> with <code>min</code> and <code>aria-valuemin</code></a></li>
+      <li>&rarr; <a href="attributes07.html"><code>&lt;input&gt;</code> with <code>maxlength</code></a></li>
+      <li>&rarr; <a href="attributes08.html"><code>&lt;input&gt;</code> with <code>minlength</code></a></li>
+      <li>&rarr; <a href="attributes09.html"><code>&lt;input&gt;</code> with <code>multiple</code></a></li>
+      <li>&rarr; <a href="attributes10.html"><code>&lt;input&gt;</code> with <code>pattern</code></a></li>
     </ul>
     <p><a class="button-secondary small" href="support-form-attributes.html">Form attributes support chart</a></p>
   </section>
   <hr>
 
   <section id="disabled">
-    <h2>Disabled field tests</h2>
+    <h2><code>disabled</code> attribute tests</h2>
     <p>Tests to determine how the boolean <code>disabled</code> attribute is announced.</p>
     <ul class="main-list">
-      <li>&rarr; <a href="disabled01.html">&lt;button&gt; with "disabled" attribute</a></li>
-      <li>&rarr; <a href="disabled02.html">&lt;input with "disabled" attribute</a></li>
-      <li>&rarr; <a href="disabled03.html">&lt;textarea&gt; with "disabled" attribute</a></li>
-      <li>&rarr; <a href="disabled04.html">&lt;select&gt; with "disabled" attribute</a></li>
-      <li>&rarr; <a href="disabled05.html">&lt;option&gt; with "disabled" attribute</a></li>
-      <li>&rarr; <a href="disabled06.html">&lt;fieldset&gt; with "disabled" attribute</a></li>
+      <li>&rarr; <a href="disabled01.html"><code>&lt;button&gt;</code> with <code>disabled</code></a></li>
+      <li>&rarr; <a href="disabled02.html"><code>&lt;input</code> with <code>disabled</code></a></li>
+      <li>&rarr; <a href="disabled03.html"><code>&lt;textarea&gt;</code> with <code>disabled</code></a></li>
+      <li>&rarr; <a href="disabled04.html"><code>&lt;select&gt;</code> with <code>disabled</code></a></li>
+      <li>&rarr; <a href="disabled05.html"><code>&lt;option&gt;</code> with <code>disabled</code></a></li>
+      <li>&rarr; <a href="disabled06.html"><code>&lt;fieldset&gt;</code> with <code>disabled</code></a></li>
     </ul>
-    <p><a class="button-secondary small" href="support-disabled-fields.html">Disabled field support chart</a></p>
+    <p><a class="button-secondary small" href="support-disabled-fields.html"><code>disabled</code> attribute support chart</a></p>
   </section>
   <hr>
 
@@ -241,68 +249,68 @@
     <p>Tests to determine how various landmarks are announced.</p>
     <h3>Landmarks without labels</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="landmarks-article01.html">&lt;article&gt;</a></li>
-      <li>&rarr; <a href="landmarks-aside01.html">&lt;aside&gt;</a></li>
-      <li>&rarr; <a href="landmarks-aside02.html">role="complementary"</a></li>
-      <li>&rarr; <a href="landmarks-footer01.html">&lt;footer&gt;</a></li>
-      <li>&rarr; <a href="landmarks-footer02.html">role="contentinfo"</a></li>
-      <li>&rarr; <a href="landmarks-form.html">role="form"</a></li>
-      <li>&rarr; <a href="landmarks-banner01.html">&lt;header&gt;</a></li>
-      <li>&rarr; <a href="landmarks-banner02.html">role="banner"</a></li>
-      <li>&rarr; <a href="landmarks-main01.html">&lt;main&gt;</a></li>
-      <li>&rarr; <a href="landmarks-main02.html">role="main"</a></li>
-      <li>&rarr; <a href="landmarks-nav01.html">&lt;nav&gt;</a></li>
-      <li>&rarr; <a href="landmarks-nav02.html">role="navigation"</a></li>
-      <li>&rarr; <a href="landmarks-search.html">role="search"</a></li>
-      <li>&rarr; <a href="landmarks-section01.html">&lt;section&gt;</a></li>
-      <li>&rarr; <a href="landmarks-section02.html">role="region"</a></li>
+      <li>&rarr; <a href="landmarks-article01.html"><code>&lt;article&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-aside01.html"><code>&lt;aside&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-aside02.html"><code>role="complementary"</code></a></li>
+      <li>&rarr; <a href="landmarks-footer01.html"><code>&lt;footer&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-footer02.html"><code>role="contentinfo"</code></a></li>
+      <li>&rarr; <a href="landmarks-form.html"><code>role="form"</code></a></li>
+      <li>&rarr; <a href="landmarks-banner01.html"><code>&lt;header&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-banner02.html"><code>role="banner"</code></a></li>
+      <li>&rarr; <a href="landmarks-main01.html"><code>&lt;main&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-main02.html"><code>role="main"</code></a></li>
+      <li>&rarr; <a href="landmarks-nav01.html"><code>&lt;nav&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-nav02.html"><code>role="navigation"</code></a></li>
+      <li>&rarr; <a href="landmarks-search.html"><code>role="search"</code></a></li>
+      <li>&rarr; <a href="landmarks-section01.html"><code>&lt;section&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-section02.html"><code>role="region"</code></a></li>
     </ul>
-    <h3>Landmarks with aria-labelledby</h3>
+    <h3>Landmarks with <code>aria-labelledby</code></h3>
     <ul class="main-list">
-      <li>&rarr; <a href="landmarks-article02.html">&lt;article&gt; with aria-labelledby</a></li>
-      <li>&rarr; <a href="landmarks-aside03.html">&lt;aside&gt; with aria-labelledby</a></li>
-      <li>&rarr; <a href="landmarks-footer03.html">&lt;footer&gt; with aria-labelledby</a></li>
-      <li>&rarr; <a href="landmarks-banner23.html">&lt;header&gt; with aria-labelledby</a></li>
-      <li>&rarr; <a href="landmarks-main03.html">&lt;main&gt; with aria-labelledby</a></li>
-      <li>&rarr; <a href="landmarks-nav03.html">&lt;nav&gt; with aria-labelledby</a></li>
-      <li>&rarr; <a href="landmarks-section03.html">&lt;section&gt; with aria-labelledby</a></li>
+      <li>&rarr; <a href="landmarks-article02.html"><code>&lt;article&gt;</code> with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="landmarks-aside03.html"><code>&lt;aside&gt;</code> with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="landmarks-footer03.html"><code>&lt;footer&gt;</code> with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="landmarks-banner23.html"><code>&lt;header&gt;</code> with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="landmarks-main03.html"><code>&lt;main&gt;</code> with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="landmarks-nav03.html"><code>&lt;nav&gt;</code> with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="landmarks-section03.html"><code>&lt;section&gt;</code> with <code>aria-labelledby</code></a></li>
     </ul>
-    <h3>Landmarks with aria-label</h3>
+    <h3>Landmarks with <code>aria-label</code></h3>
     <ul class="main-list">
-      <li>&rarr; <a href="landmarks-article03.html">&lt;article&gt; with aria-label</a></li>
-      <li>&rarr; <a href="landmarks-aside04.html">&lt;aside&gt; with aria-label</a></li>
-      <li>&rarr; <a href="landmarks-footer04.html">&lt;footer&gt; with aria-label</a></li>
-      <li>&rarr; <a href="landmarks-banner24.html">&lt;header&gt; with aria-label</a></li>
-      <li>&rarr; <a href="landmarks-main04.html">&lt;main&gt; with aria-label</a></li>
-      <li>&rarr; <a href="landmarks-nav04.html">&lt;nav&gt; with aria-label</a></li>
-      <li>&rarr; <a href="landmarks-section04.html">&lt;section&gt; with aria-label</a></li>
+      <li>&rarr; <a href="landmarks-article03.html"><code>&lt;article&gt;</code> with <code>aria-label</code></a></li>
+      <li>&rarr; <a href="landmarks-aside04.html"><code>&lt;aside&gt;</code> with <code>aria-label</code></a></li>
+      <li>&rarr; <a href="landmarks-footer04.html"><code>&lt;footer&gt;</code> with <code>aria-label</code></a></li>
+      <li>&rarr; <a href="landmarks-banner24.html"><code>&lt;header&gt;</code> with <code>aria-label</code></a></li>
+      <li>&rarr; <a href="landmarks-main04.html"><code>&lt;main&gt;</code> with <code>aria-label</code></a></li>
+      <li>&rarr; <a href="landmarks-nav04.html"><code>&lt;nav&gt;</code> with <code>aria-label</code></a></li>
+      <li>&rarr; <a href="landmarks-section04.html"><code>&lt;section&gt;</code> with <code>aria-label</code></a></li>
     </ul>
     <p><a class="button-secondary small" href="support-landmarks.html">Landmark support chart</a></p>
   </section>
   <hr>
 
   <section id="header">
-    <h2>Header scope tests</h2>
+    <h2><code>&lt;header&gt;</code> scope tests</h2>
     <p>When the <code>&lt;header&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>banner</code>. Similarly, when the <code>&lt;footer&gt;</code> element is scoped to the <code>&lt;body&gt;</code> element, it will have an implicit ARIA role of <code>contentinfo</code>.</p>
     <p>However, these two elements will not have implicit ARIA roles if they are descendants of the following elements:<code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code></p>
     <p>These cases are designed to test whether the <code>&lt;header&gt;</code> element's implicit ARIA role is announced.</p>
-    <h3>&lt;header&gt; scoped to the &lt;body&gt; element - implicit ARIA role should be present</h3>
+    <h3><code>&lt;header&gt;</code> scoped to the <code>&lt;body&gt;</code> element - implicit ARIA role should be present</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="landmarks-banner01.html">&lt;header&gt;</a></li>
-      <li>&rarr; <a href="landmarks-banner02.html">role="banner"</a></li>
-      <li>&rarr; <a href="landmarks-banner05.html">&lt;header&gt; descendant of role="article"</a></li>
-      <li>&rarr; <a href="landmarks-banner09.html">&lt;header&gt; descendant of role="complementary"</a></li>
-      <li>&rarr; <a href="landmarks-banner13.html">&lt;header&gt; descendant of role="main"</a></li>
-      <li>&rarr; <a href="landmarks-banner17.html">&lt;header&gt; descendant of role="navigation"</a></li>
-      <li>&rarr; <a href="landmarks-banner21.html">&lt;header&gt; descendant of role="region"</a></li>
+      <li>&rarr; <a href="landmarks-banner01.html"><code>&lt;header&gt;</code></a></li>
+      <li>&rarr; <a href="landmarks-banner02.html"><code>role="banner"</code></a></li>
+      <li>&rarr; <a href="landmarks-banner05.html"><code>&lt;header&gt;</code> descendant of <code>role="article"</code></a></li>
+      <li>&rarr; <a href="landmarks-banner09.html"><code>&lt;header&gt;</code> descendant of <code>role="complementary"</code></a></li>
+      <li>&rarr; <a href="landmarks-banner13.html"><code>&lt;header&gt;</code> descendant of <code>role="main"</code></a></li>
+      <li>&rarr; <a href="landmarks-banner17.html"><code>&lt;header&gt;</code> descendant of <code>role="navigation"</code></a></li>
+      <li>&rarr; <a href="landmarks-banner21.html"><code>&lt;header&gt;</code> descendant of <code>role="region"</code></a></li>
     </ul>
     <h3>&lt;header&gt; scoped to other elements - implicit ARIA role should be absent</h3>
     <ul class="main-list">
-      <li>&rarr; <a href="landmarks-banner03.html">&lt;header&gt; descendant of &lt;article&gt;</a> scoped to the <code>&lt;article&gt;</code> element</li>
-      <li>&rarr; <a href="landmarks-banner07.html">&lt;header&gt; descendant of &lt;aside&gt;</a> scoped to the <code>&lt;aside&gt;</code> element</li>
-      <li>&rarr; <a href="landmarks-banner11.html">&lt;header&gt; descendant of &lt;main&gt;</a> scoped to the <code>&lt;main&gt;</code> element</li>
-      <li>&rarr; <a href="landmarks-banner15.html">&lt;header&gt; descendant of &lt;nav&gt;</a> scoped to the <code>&lt;nav&gt;</code> element</li>
-      <li>&rarr; <a href="landmarks-banner19.html">&lt;header&gt; descendant of &lt;section&gt;</a>scoped to the <code>&lt;section&gt;</code> element</li>
+      <li>&rarr; <a href="landmarks-banner03.html"><code>&lt;header&gt;</code> descendant of <code>&lt;article&gt;</code></a> scoped to the <code>&lt;article&gt;</code> element</li>
+      <li>&rarr; <a href="landmarks-banner07.html"><code>&lt;header&gt;</code> descendant of <code>&lt;aside&gt;</code></a> scoped to the <code>&lt;aside&gt;</code> element</li>
+      <li>&rarr; <a href="landmarks-banner11.html"><code>&lt;header&gt;</code> descendant of <code>&lt;main&gt;</code></a> scoped to the <code>&lt;main&gt;</code> element</li>
+      <li>&rarr; <a href="landmarks-banner15.html"><code>&lt;header&gt;</code> descendant of <code>&lt;nav&gt;</code></a> scoped to the <code>&lt;nav&gt;</code> element</li>
+      <li>&rarr; <a href="landmarks-banner19.html"><code>&lt;header&gt;</code> descendant of <code>&lt;section&gt;</code></a>scoped to the <code>&lt;section&gt;</code> element</li>
     </ul>
     <p><a class="button-secondary small" href="support-header-scope.html">Header scope support chart</a></p>
   </section>
@@ -314,14 +322,14 @@
     <ul class="main-list">
       <li>&rarr; <a href="voiceover01.html">VoiceOver test without ARIA roles</a></li>
       <li>&rarr; <a href="voiceover02.html">VoiceOver test with ARIA roles</a></li>
-      <li>&rarr; <a href="voiceover03.html">VoiceOver test with aria-labelledby</a></li>
-      <li>&rarr; <a href="voiceover04.html">VoiceOver test with aria-label</a></li>
+      <li>&rarr; <a href="voiceover03.html">VoiceOver test with <code>aria-labelledby</code></a></li>
+      <li>&rarr; <a href="voiceover04.html">VoiceOver test with <code>aria-label</code></a></li>
     </ul>
     <p><a class="button-secondary small" href="support-voiceover-rotor.html">VoiceOver Rotor support chart</a></p>
   </section>
   <hr>
 
-  <section>
+  <section aria-label="Other tests">
     <p><a href="x-other-tests/index.html">Other tests</a></p>
   </section>
   <hr>
