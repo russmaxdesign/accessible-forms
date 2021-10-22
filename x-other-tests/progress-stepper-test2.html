@@ -40,40 +40,40 @@
       <h2>Example 01: Step 1 active</h2>
       <div class="nav-indicators col-sm-12" id="progressBar">
         <div class="row">
-          <div class="col-xs-4 active" tabindex="0">
-            <span aria-hidden="true">Search</span>
-            <span aria-current="step" class="sr-only">You are currently on step 1 of 3. Search.</span>
+          <div class="col-xs-4 active">
+            <div tabindex="0">
+              <div aria-hidden="true" class="font-xs">Search</div>
+              <div aria-current="step" class="sr-only">You are currently on step 1 of 3. Search. Not completed</div>
+            </div>
           </div>
           <div class="col-xs-4">
-            <span aria-hidden="true">Confirm</span>
-            <span class="sr-only">Step 2 of 3. Confirm your details. Not completed.</span>
+            <div>
+              <div aria-hidden="true" class="font-xs">Confirm</div>
+              <div class="sr-only">You are not yet at step 2 of 3. Confirm.</div>
+            </div>
           </div>
           <div class="col-xs-4">
-            <span aria-hidden="true">Pay</span>
-            <span class="sr-only">Step 3 of 3. Make a payment. Not completed.</span>
+            <div>
+              <div aria-hidden="true" class="font-xs">Pay</div>
+              <div class="sr-only">You are not yet at step 3 of 3. Payment.</div>
+            </div>
           </div>
         </div>
       </div>
       <h3>Code</h3>
 <pre><code>&lt;div class="active" <span>tabindex="0"</span>&gt;
   &lt;span <span>aria-hidden="true"</span>&gt;Search&lt;/span&gt;
-  &lt;span <span>aria-current="step" class="sr-only"</span>&gt;
-    You are currently on step 1 of 3. Search.
-  &lt;/span&gt;
+  &lt;span class="sr-only"&gt;You are currently on step 1 of 3. Search&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
   &lt;span <span>aria-hidden="true"</span>&gt;Confirm&lt;/span&gt;
-  &lt;span <span>class="sr-only"</span>&gt;
-    Step 2 of 3. Confirm your details. Not completed.
-  &lt;/span&gt;
+  &lt;span class="sr-only"&gt;Step 2 of 3. Confirm your details. Not completed.&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
   &lt;span <span>aria-hidden="true"</span>&gt;Pay&lt;/span&gt;
-  &lt;span <span>class="sr-only"</span>&gt;
-    Step 3 of 3. Make a payment. Not completed.
-  &lt;/span&gt;
+  &lt;span class="sr-only"&gt;Step 3 of 3. Make a payment. Not completed.&lt;/span&gt;
 &lt;/div&gt;</code></pre>
       <p><a href="#">Dummy link after</a></p>
       <hr>
@@ -82,39 +82,39 @@
       <div class="nav-indicators col-sm-12" id="progressBar">
         <div class="row">
           <div class="col-xs-4">
-            <span aria-hidden="true">Search</span>
-            <span class="sr-only">Step 1 of 3. Search. Completed.</span>
+            <div>
+              <div aria-hidden="true" class="font-xs">Search</div>
+              <div class="sr-only">You have completed step 1 of 3. Search.</div>
+            </div>
           </div>
-          <div class="col-xs-4 active" tabindex="0">
-            <span aria-hidden="true">Confirm</span>
-            <span aria-current="step" class="sr-only">You are currently on step 2 of 3. Confirm your details.</span>
+          <div class="col-xs-4 active">
+            <div tabindex="0">
+              <div aria-hidden="true" class="font-xs">Confirm</div>
+              <div aria-current="step" class="sr-only">You are currently on step 2 of 3. Confirm. Not completed</div>
+            </div>
           </div>
           <div class="col-xs-4">
-            <span aria-hidden="true">Pay</span>
-            <span class="sr-only">Step 3 of 3. Make a payment. Not completed.</span>
+            <div>
+              <div aria-hidden="true" class="font-xs">Pay</div>
+              <div class="sr-only">You are not yet at step 3 of 3. Payment.</div>
+            </div>
           </div>
         </div>
       </div>
       <h3>Code</h3>
-<pre><code>&lt;div&gt;
+<pre><code>&lt;div class="active" <span>tabindex="0"</span>&gt;
   &lt;span <span>aria-hidden="true"</span>&gt;Search&lt;/span&gt;
-  &lt;span <span>class="sr-only"</span>&gt;
-    Step 1 of 3. Search. Completed.
-  &lt;/span&gt;
+  &lt;span class="sr-only"&gt;You are currently on step 1 of 3. Search&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;div class="active" <span>tabindex="0"</span>&gt;
+&lt;div&gt;
   &lt;span <span>aria-hidden="true"</span>&gt;Confirm&lt;/span&gt;
-  &lt;span <span>aria-current="step" class="sr-only"</span>&gt;
-    You are currently on step 2 of 3. Confirm your details.
-  &lt;/span&gt;
+  &lt;span class="sr-only"&gt;Step 2 of 3. Confirm your details. Not completed.&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
   &lt;span <span>aria-hidden="true"</span>&gt;Pay&lt;/span&gt;
-  &lt;span <span>class="sr-only"</span>&gt;
-    Step 3 of 3. Make a payment. Not completed.
-  &lt;/span&gt;
+  &lt;span class="sr-only"&gt;Step 3 of 3. Make a payment. Not completed.&lt;/span&gt;
 &lt;/div&gt;</code></pre>
       <p><a href="#">Dummy link after</a></p>
       <hr>
@@ -123,16 +123,22 @@
       <div class="nav-indicators col-sm-12" id="progressBar">
         <div class="row">
           <div class="col-xs-4">
-            <span aria-hidden="true">Search</span>
-            <span class="sr-only">Step 1 of 3. Search. Completed.</span>
+            <div>
+              <div aria-hidden="true" class="font-xs">Search</div>
+              <div class="sr-only">You have completed step 1 of 3. Search.</div>
+            </div>
           </div>
           <div class="col-xs-4">
-            <span aria-hidden="true">Confirm</span>
-            <span class="sr-only">Step 2 of 3. Confirm your details. Completed.</span>
+            <div>
+              <div aria-hidden="true" class="font-xs">Confirm</div>
+              <div aria-current="step" class="sr-only">You have completed step step 2 of 3. Confirm.</div>
+            </div>
           </div>
-          <div class="col-xs-4 active" tabindex="0">
-            <span aria-hidden="true">Pay</span>
-            <span aria-current="step" class="sr-only">You are currently on step 3 of 3. Make a payment.</span>
+          <div class="col-xs-4 active">
+            <div tabindex="0">
+              <div aria-hidden="true" class="font-xs">Pay</div>
+              <div aria-current="step" class="sr-only">You are currently on step 3 of 3. Payment. Not completed</div>
+            </div>
           </div>
         </div>
       </div>
@@ -140,27 +146,20 @@
 <pre><code>&lt;div&gt;
   &lt;div&gt;
     &lt;span <span>aria-hidden="true"</span>&gt;Search&lt;/span&gt;
-    &lt;span <span>class="sr-only"</span>&gt;
-      Step 1 of 3. Search. Completed.
-    &lt;/span&gt;
+    <span>&lt;span class="sr-only"&gt;Step 1 of 3. Search. Completed&lt;/span&gt;</span>
   &lt;/div&gt;
 
   &lt;div&gt;
     &lt;span <span>aria-hidden="true"</span>&gt;Confirm&lt;/span&gt;
-    &lt;span <span>class="sr-only"</span>&gt;
-      Step 2 of 3. Confirm your details. Completed.
-    &lt;/span&gt;
+    <span>&lt;span class="sr-only"&gt;Step 2 of 3. Confirm your details. Completed&lt;/span&gt;</span>
   &lt;/div&gt;
 
   &lt;div class="active" <span>tabindex="0"</span>&gt;
     &lt;span <span>aria-hidden="true"</span>&gt;Pay&lt;/span&gt;
-    &lt;span <span>aria-current="step" class="sr-only"</span>&gt;
-      You are currently on step 3 of 3. Make a payment.
-    &lt;/span&gt;
+   <span> &lt;span class="sr-only"&gt;You are currently on step 3 of 3. Make a payment.&lt;/span&gt;</span>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
       <p>&larr; <a href="index.html">Index page</a></p>
     </main>
   </body>
 </html>
-
