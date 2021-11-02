@@ -3,7 +3,7 @@
   <head>
     <link rel="shortcut icon" href="../favicon.ico">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Progress stepper tests</title>
+    <title>Progress stepper test 1</title>
     <link rel="stylesheet" href="assets/css/test.css">
 <style>
   .row {
@@ -32,26 +32,36 @@
   </head>
   <body>
     <main>
-      <h1>Progress stepper tests</h1>
+      <h1>Progress stepper test 1</h1>
       <p>This stepper example is to help resolve the <a href="https://pay.ami.co.nz/search" target="_blank">AMI Make a payment stepper</a> and uses the <a href="https://www.telerik.com/kendo-angular-ui/components/layout/stepper/step-types/" type="radio">Kendo stepper</a> as a starting point.</p>
       <p>&larr; <a href="index.html">Index page</a></p>
       <hr>
 
       <h2>Example 01: Step 1 active</h2>
-      <div class="nav-indicators col-sm-12" id="progressBar">
-        <div class="row">
-          <div class="col-xs-4 active" tabindex="0">
-            <span aria-hidden="true">Search</span>
-            <span aria-current="step" class="sr-only">You are currently on step 1 of 3. Search.</span>
+      <div class="col-sm-6 col-xs-12 nav-indicators" id="progressBar">
+        <div class="row titles">
+          <div class="col-sm-2 col-4 col-sm-2 active">
+            <div tabindex="0">
+              <div aria-hidden="true" class="font-xs">Search</div>
+              <div aria-current="step" class="sr-only">You are currently on step 1 of 3. Search.</div>
+            </div>
           </div>
-          <div class="col-xs-4">
-            <span aria-hidden="true">Confirm</span>
-            <span class="sr-only">Step 2 of 3. Confirm your details. Not completed.</span>
+          <div class="col-sm-2 col-4 col-sm-6">
+            <div>
+              <div aria-hidden="true" class="font-xs">Confirm</div>
+              <div class="sr-only">Step 2 of 3. Confirm your details. Not completed.</div>
+            </div>
           </div>
-          <div class="col-xs-4">
-            <span aria-hidden="true">Pay</span>
-            <span class="sr-only">Step 3 of 3. Make a payment. Not completed.</span>
+          <div class="col-sm-2 col-4 col-sm-2">
+            <div>
+              <div aria-hidden="true" class="font-xs">Pay</div>
+              <div class="sr-only">Step 3 of 3. Make a payment. Not completed.</div>
+            </div>
           </div>
+        </div>
+        <div class="row bars offset-2 offset-sm-1">
+          <div class="col-4 u-pad-l--4 active"></div>
+          <div class="col-4"></div>
         </div>
       </div>
       <h3>Code</h3>
