@@ -50,9 +50,12 @@ hr {
   border-top: 2px solid #ddd;
 }
 
+a,
 a:link {
   color: blue;
   background: #fff;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a:link code {
@@ -248,6 +251,10 @@ fieldset li input {
 
 .yellow {
   color: yellow;
+}
+
+.green {
+  color: green;
 }
 
 .bold {
