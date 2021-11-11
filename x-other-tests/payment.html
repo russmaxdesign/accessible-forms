@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Payment test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <main>
+      <h1>Payment test</h1>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <hr>
+
+      <h2>Example 1: Static</h2>
+      <div aria-live="polite">
+        <input class="input" id="encryptedCardNumber1" type="text" inputmode="numeric" maxlength="24" autocomplete="cc-number" placeholder="1234 5678 9012 3456" aria-label="Card number field" aria-invalid="true" aria-required="true" aria-describedby="ariaErrorField1">
+        <span class="aria-error" id="ariaErrorField1"></span>
+      </div>
+      <h3>Announced:</h3>
+      <ul>
+        <li>Accessible name: <i>"Card number field"</i></li>
+        <li>Placeholder: <i>"1234 5678 9012 3456"</i></li>
+        <li>Required true/false: <i>"Required"</i></li>
+        <li><span class="red">Invalid true/false: <i>"Invalid data"</i></span></li>
+        <li>Simple instructions: <i>"Edit text"</i></li>
+      </ul>
+      <hr>
+
+      <h2>Example 2: Error</h2>
+      <div aria-live="polite">
+        <input class="input" id="encryptedCardNumber2" type="text" inputmode="numeric" maxlength="24" autocomplete="cc-number" placeholder="1234 5678 9012 3456" aria-label="Card number field" aria-invalid="true" aria-required="true" aria-describedby="ariaErrorField2">
+        <span class="aria-error" id="ariaErrorField2">Incomplete field</span>
+      </div>
+      <h3>Announced:</h3>
+      <ul>
+        <li>Accessible name: <i>"Card number field"</i></li>
+        <li>Placeholder: <i>"1234 5678 9012 3456"</i></li>
+        <li>Required true/false: <i>"Required"</i></li>
+        <li>Invalid true/false: <i>"Invalid data"</i></li>
+        <li>Simple instructions: <i>"Edit text"</i></li>
+        <li><span class="green">Description: <i>"Incomplete field"</i></span></li>
+      </ul>
+
+      <h3>Suggestions:</h3>
+      <ul>
+        <li>Accessible name: "Card number" - remove "field" as this is annouced via role</li>
+        <li>Either remove <code>aria-invalid</code> or set to <code>false</code> initially as it is being announced as an invalid field as soon as it receives focus</li>
+      </ul>
+
+      <hr>
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>
+
