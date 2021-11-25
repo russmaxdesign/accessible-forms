@@ -13,8 +13,16 @@
         font-weight: bold;
       }
     </style>
+  <script>
+  "use strict";
+  function jumpForMe()
+  { //This function is called by the onload attribute in the body element
+	document.getElementById("two").focus();
+	//The previous line puts focus on the div with id of "two"
+}
+</script>
   </head>
-  <body>
+  <body onload="jumpForMe()">
     <main>
       <h1>Andrew test 2</h1>
       <p>&larr; <a href="index.html">Index page</a></p>
