@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Label in name test</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+<style>
+  .c-alert {
+    padding: 1em;
+    background: rgba(0,0,255,.1);
+  }
+
+  .c-alert h3 {
+    margin: 0 0 .5em;
+  }
+
+  .c-alert p {
+    margin: 0;
+  }
+
+</style>
+  </head>
+  <body>
+    <main>
+      <h1>Label in name test</h1>
+      <p>This page has a series of tests related to <a href="https://www.w3.org/TR/WCAG21/#label-in-name">Success Criterion 2.5.3 Label in Name</a>.</p>
+      <p>Keeping in mind that accessible names are generated in the following priority order:</p>
+      <ol>
+        <li>If present, use <code>aria-labelledby</code> value.</li>
+        <li>Otherwise, if present, use <code>aria-label</code> value.</li>
+        <li>Otherise, if present, use link content.</li>
+        <li>Otherwise, if present, use <code>title</code> value.</li>
+        <li>If none of the above are provided, there is no accessible name.</li>
+      </ol>
+      <p>In the examples below, the label (in this case the visible test associated with the link) may not match the accessible name - the name assigned in the accessibility tree.</p>
+      <p>&larr; <a href="index.html">Index page</a></p>
+      <hr>
+
+      <h2>Example 01:</h2>
+      <p>In the link below, the visible label is also the accessible name.</p>
+      <p>
+        <a href="#">More about fish</a>
+      </p>
+<pre><code>&lt;a href="#"&gt;More about fish&lt;/a&gt;</code></pre>
+      <hr>
+
+      <h2>Example 02:</h2>
+      <p>In the link below, the visible label "More" does not match the accessible name, generated via the <code>aria-label</code> "More about fish".</p>
+      <p>
+        <a href="#" aria-label="More about fish">More</a>
+      </p>
+<pre><code>&lt;a href="#" aria-label="More about fish"&gt;More&lt;/a&gt;</code></pre>
+      <hr>
+
+      <h2>Example 03:</h2>
+      <p>In the link below, the visible label "More" does not match the accessible name, generated via the <code>aria-label</code> "About fish".</p>
+      <p>
+        <a href="#" aria-label="About fish">More</a>
+      </p>
+<pre><code>&lt;a href="#" aria-label="About fish"&gt;More&lt;/a&gt;</code></pre>
+      <hr>
+
+      <h2>Example 04:</h2>
+      <p>In the link below, the visible label "More" does not match the accessible name, which includes content that is hidden off-screen "about fish". So, the accessible name is "More about fish".</p>
+      <p>
+        <a href="#">
+          More
+          <span class="sr-only">about fish</span>
+        </a>
+      </p>
+<pre><code>&lt;a href="#"&gt;
+  More
+  &lt;span class="sr-only"&gt;about fish&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+      <hr>
+
+      <h2>Example 04:</h2>
+      <p>In the link below, the visible label "fish" does not match the accessible name, which includes content that is hidden off-screen "More about". So, the accessible name is "More about fish".</p>
+      <p>
+        <a href="#">
+          <span class="sr-only">More about</span>
+          fish
+        </a>
+      </p>
+<pre><code>&lt;a href="#"&gt;
+  &lt;span class="sr-only"&gt;More about&lt;/span&gt;
+  fish
+&lt;/a&gt;</code></pre>
+      <hr>
+
+      <p>&larr; <a href="index.html">Index page</a></p>
+    </main>
+  </body>
+</html>
+
