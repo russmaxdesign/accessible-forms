@@ -19,6 +19,8 @@
     <li><a href="accessible-name-input05.html">Otherwise, if present, use <code>placeholder</code> value</a>.</li>
     <li><a href="accessible-name-input06.html">If none of the above are provided, there is no accessible name.</a></li>
   </ol>
+  <p>In examples 1 - 3, the <code>title</code> value of "Rabbit" is announced as a description rather than a name. This is based on the <a href="https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation" target="_blank">HTML Accessibility API Mappings 1.0</a>  which states that elements should use the aria-describedby value if present, or use the title attribute if it wasn't used as the accessible name. In example 4, the <code>title</code> should announced as the accessible name as it should take priority over the <code>placeholder</code>.</p>
+  <p>In examples 1-4, the <code>placeholder</code> value of "Fox" is incorrectly announced.</p>
   <p>This example should not be considered proper practice. Where possible the contents of the <code>&lt;label&gt;</code> should be used to define the accessible name.</p>
   <h2>Example</h2>
   <form action="#">
@@ -42,79 +44,25 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li>
-        <b>Chrome:</b> <span class="green">Dog</span>. Edit text. Fox. Rabbit.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
-      <li>
-        <b>Firefox:</b> Fish. Edit text. Rabbit.
-        <ul class="inner-list">
-          <li><span class="red">[aria-label not announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
-      <li>
-        <b>Safari:</b> <span class="green">Dog</span>. Edit text. Fox. Rabbit.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
+      <li><b>Chrome:</b> <span class="green">Dog</span>. Edit text. <span class="red">Fox</span>. Rabbit.</li>
+      <li><b>Firefox:</b> Fish. Edit text. Rabbit. <span class="red">[aria-label of "Dog" not announced]</span></li>
+      <li><b>Safari:</b> <span class="green">Dog</span>. Edit text. <span class="red">Fox</span>. Rabbit.</li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA</h3>
     <ul class="browser-list">
-      <li>
-        <b>Chrome:</b> <span class="green">Dog</span>. Edit. Rabbit. Fox. Blank.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
-      <li>
-        <b>Firefox:</b> <span class="green">Dog</span>. Edit. Has autocomplete. Rabbit. Fox. Blank.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
-      <li>
-        <b>Edge:</b> <span class="green">Dog</span>. Edit. Rabbit. Fox. Blank.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
+      <li><b>Chrome:</b> <span class="green">Dog</span>. Edit. Rabbit. <span class="red">Fox</span>. Blank.</li>
+      <li><b>Firefox:</b> <span class="green">Dog</span>. Edit. Has autocomplete. Rabbit. <span class="red">Fox</span>. Blank.</li>
+      <li><b>Edge:</b> <span class="green">Dog</span>. Edit. Rabbit. <span class="red">Fox</span>. Blank.</li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS</h3>
     <ul class="browser-list">
-      <li>
-        <b>Chrome:</b> <span class="green">Dog</span>. Edit. Fox. Rabbit. Type in text.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
-      <li>
-        <b>Firefox:</b> <span class="green">Dog</span>. Edit. Fox. Rabbit. Type in text.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
-      <li>
-        <b>Edge:</b> <span class="green">Dog</span>. Edit. Fox. Rabbit. Type in text.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder value ("Fox") incorrectly announced]</span></li>
-          <li><span class="red">[Title value ("Rabbit") announced as description]</span></li>
-        </ul>
-      </li>
+      <li><b>Chrome:</b> <span class="green">Dog</span>. Edit. <span class="red">Fox</span>. Rabbit. Type in text.</li>
+      <li><b>Firefox:</b> <span class="green">Dog</span>. Edit. <span class="red">Fox</span>. Rabbit. Type in text.</li>
+      <li><b>Edge:</b> <span class="green">Dog</span>. Edit. <span class="red">Fox</span>. Rabbit. Type in text.</li>
     </ul>
   </div>
   <p>&larr; <a href="index.html">Return to main list</a></p>

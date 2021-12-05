@@ -19,7 +19,8 @@
     <li><b>Otherwise, if present, use <code>placeholder</code> value (as per the "Fox" value below).</b></li>
     <li><a href="accessible-name-input06.html">If none of the above are provided, there is no accessible name.</a></li>
   </ol>
-  <p>In examples 1 - 3, the <code>title</code> value of "Rabbit" is announced as a description rather than a name, which is why is announced at the end of each string. In example 4, the title is announced as  the accessible name as no other accessible name is provided.</p>
+  <p>In examples 1 - 3, the <code>title</code> value of "Rabbit" is announced as a description rather than a name. This is based on the <a href="https://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-computation" target="_blank">HTML Accessibility API Mappings 1.0</a>  which states that elements should use the aria-describedby value if present, or use the title attribute if it wasn't used as the accessible name. In example 4, the <code>title</code> should announced as the accessible name as it should take priority over the <code>placeholder</code>.</p>
+  <p>In examples 1-4, the <code>placeholder</code> value of "Fox" is incorrectly announced.</p>
   <p>This example should not be considered proper practice. Where possible the contents of the <code>&lt;label&gt;</code> should be used to define the accessible name.</p>
   <h2>Example</h2>
   <form action="#">
@@ -37,11 +38,7 @@
     <ul class="browser-list">
       <li><b>Chrome:</b> <span class="green">Fox</span>. Edit text.</li>
       <li><b>Firefox:</b> <span class="green">Fox</span>. Edit text.</li>
-      <li><b>Safari:</b> <span class="green">Fox</span>. Edit text. Blank. Fox.
-        <ul class="inner-list">
-          <li><span class="red">[Placeholder incorrectly announced as the description as well as accessible name]</span></li>
-        </ul>
-      </li>
+      <li><b>Safari:</b> <span class="green">Fox</span>. Edit text. Blank. <span class="red">Fox</span>.</li>
     </ul>
   </div>
   <div class="note">
