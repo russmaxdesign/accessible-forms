@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Using role="alert"</title>
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/examples.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 40em;
+      margin: 0;
+      padding: 20px;
+      font-size: 1em;
+      line-height: 1;
+      font-family: helvetica, arial, sans-serif;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 1em;
+      line-height: 1.4;
+    }
+
+    #message > p {
+      background: yellow;
+      padding: 1em;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Using role="alert"</h1>
+  <p><a href="index.html">List of all exercises</a></p>
+  <h2>Example</h2>
+
+  <!-- EXAMPLE STARTS HERE -->
+  <div id="message" class="error"></div>
+  <!-- EXAMPLE ENDS HERE -->
+
+  <p>It was the best of times, it was the worst of times, it was the age 
+  of wisdom, it was the age of foolishness, it was the epoch of belief, 
+  it was the epoch of incredulity, it was the season of Light, it was 
+  the season of Darkness, it was the spring of hope, it was the winter 
+  of despair, we had everything before us, we had nothing before us, 
+  we were all going direct to Heaven, we were all going direct the 
+  other way.</p>
+  <p><a href="index.html">List of all exercises</a></p>
+
+<script type="text/javascript">
+  (function()
+  {
+    window.setTimeout(function()
+    {
+      document.getElementById('message').innerHTML = '<p><strong>Error:</strong> This is an error notification.</p>';
+    }, 10000);
+
+  })();
+</script>
+</body>
+</html>
