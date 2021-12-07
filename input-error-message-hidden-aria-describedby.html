@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>input with error message using hidden aria-describedby</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1><code>&lt;input&gt;</code> with error message using hidden <code>aria-describedby</code></h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine how an error message, associated with an <a href="https://html.spec.whatwg.org/multipage/input.html#the-input-element" target="_blank"><code>&lt;input&gt;</code></a> via a hidden <a href="https://www.w3.org/TR/wai-aria/#aria-describedby" target="_blank"><code>aria-describedby</code></a> attribute, is announced by various screen readers. The element is hidden using <code>display: none</code>.</p>
+  <h2>Example</h2>
+  <form action="#">
+    <div class="form-group">
+      <label class="label" for="name">Name</label>
+      <input class="input" type="text" id="name" aria-describedby="error-message">
+      <span style="display: none" id="error-message">Error: Make sure to include full name</span>
+    </div>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div&gt;
+  &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;input type="text" id="name" aria-describedby="error-message"&gt;
+  &lt;span style="display: none" id="error-message"&gt;Error: Make sure to include full name&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Name. Edit text. [Pause] <span class="green">Error: Make sure to include full name</span>.</li>
+      <li><b>Firefox:</b> Name. Edit text. [Pause] <span class="green">Error: Make sure to include full name</span>.</li>
+      <li><b>Safari:</b> Name. Edit text. [Pause] <span class="green">Error: Make sure to include full name</span>.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Name. Edit. <span class="green">Error: Make sure to include full name</span>. Blank.</li>
+      <li><b>Firefox:</b> Name. Edit. Has autocomplete. <span class="green">Error: Make sure to include full name</span>. Blank.</li>
+      <li><b>Edge:</b> Name. Edit. <span class="green">Error: Make sure to include full name</span>. Blank.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Name. Edit. <span class="green">Error. Colon. Make sure to include full name</span>. Type in text.</li>
+      <li><b>Firefox:</b> Name. Edit. <span class="green">Error. Colon. Make sure to include full name</span>. Type in text.</li>
+      <li><b>Edge:</b> Name. Edit. <span class="green">Error. Colon. Make sure to include full name</span>. Type in text.</li>
+    </ul>
+  </div>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+</body>
+</html>
