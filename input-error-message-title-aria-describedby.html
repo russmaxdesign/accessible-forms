@@ -11,7 +11,12 @@
   <h1><code>&lt;input&gt;</code> with error message using <code>aria-describedby</code> and <code>title</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
   <p>This is a test case designed to determine how an error message, associated with an <a href="https://html.spec.whatwg.org/multipage/input.html#the-input-element" target="_blank"><code>&lt;input&gt;</code></a> via the <a href="https://www.w3.org/TR/wai-aria/#aria-describedby" target="_blank"><code>aria-describedby</code></a> attribute, and with the <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute" target="_blank"><code>title</code></a> attribute present, are announced by various screen readers.</p>
-  <p>In this case, the <code>aria-describedby</code> attribute should take precedence over the <code>title</code> attribute.</p>
+  <p>In this case, the <code>aria-describedby</code> attribute should take precedence over the <code>title</code> attribute as the accessible description is defined in the following order:</p>
+  <ul>
+    <li>If present, use <code>aria-describedby</code> value (as per the "Cat" example below).</li>
+    <li>Otherwise, if present, use <code>title</code> value.</li>
+    <li>If none of the above are provided, there is no accessible description.</li>
+  </ul>
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
