@@ -119,6 +119,12 @@ table {
   border-collapse: collapse;
 }
 
+caption {
+  margin: 0 0 .3em;
+  font-weight: bold;
+  text-align: left;
+}
+
 tr.section {
   border-top: 2px solid black;
 }
