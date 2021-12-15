@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Table with no accessible name</title>
+  <title>table with no accessible description</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1><code>&lt;table&gt;</code> with no accessible name</h1>
+  <h1><code>&lt;table&gt;</code> with no accessible description</h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
-  <p>The purpose this test is to show the cascade order of how accessible names are applied in the accessibility tree for the <code>&lt;table&gt;</code> element. The priority order from highest to lowest is:</p>
-  <ul>
-    <li><a href="accessible-name-table01.html">If present, use <code>aria-labelledby</code></a></li>
-    <li><a href="accessible-name-table02.html">Otherwise, if present, use <code>aria-label</code></a></li>
-    <li><a href="accessible-name-table03.html">Otherwise, if present, use <code>&lt;caption&gt;</code></a></li>
-    <li><a href="accessible-name-table04.html">Otherwise, if present, use <code>title</code></a></li>
-    <li><b>Otherwise, there is no accessible name</b></li>
-  </ul>
+  <p>The purpose this test is to show the cascade order of how accessible descriptions are applied in the accessibility tree for tables. The priority order from highest to lowest is:</p>
+  <ol>
+    <li><a href="accessible-description-table01.html">If present, use <code>aria-describedby</code> value.</a></li>
+    <li><a href="accessible-description-table01.html">Otherwise, if present, use <code>title</code> value (as per the "Rabbit" example below)</a>.</li>
+    <li><b>If none of the above are provided, there is no accessible description</b>.</li>
+  </ol>
+  <p>This example should not be considered proper practice, and is for testing purposes only.</p>
   <h2>Example</h2>
   <table>
+    <caption>Animals</caption>
     <thead>
       <tr>
         <th>Fishes</th>
@@ -40,6 +40,7 @@
   <h2>Code</h2>
 <!-- start code -->
 <pre><code>&lt;table&gt;
+  &lt;caption&gt;Animals&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Fishes&lt;/th&gt;
@@ -62,9 +63,9 @@
   <div class="note">
     <h3>VoiceOver</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> Table. 2 Columns. 3 rows.</li>
-      <li><b>Firefox:</b> Table. 2 Columns. 3 rows.</li>
-      <li><b>Safari:</b> Table. 2 Columns. 3 rows.</li>
+      <li><b>Chrome:</b> Animals. Table. 2 Columns. 3 rows.</li>
+      <li><b>Firefox:</b> Animals. Table. 2 Columns. 3 rows.</li>
+      <li><b>Safari:</b> Animals. Table. 2 Columns. 3 rows.</li>
     </ul>
   </div>
   <div class="note">
