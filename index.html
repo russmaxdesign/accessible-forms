@@ -13,7 +13,7 @@
   <p><a class="button-secondary small" href="https://github.com/russmaxdesign/accessible-forms" aria-label="Git repository for all tests" target="_blank">Git repository</a></p>
 
   <section>
-    <h2>Page contents</h2>
+    <h2>Page content sections</h2>
     <ul class="page-contents-list" aria-label="Page contents">
       <li>&darr; <a href="#basic">Basic form control and label tests</a></li>
       <li>&darr; <a href="#fieldset"><code>&lt;fieldset&gt;</code> tests</a></li>
@@ -22,13 +22,13 @@
       <li>&darr; <a href="#help">Help text and error messages associated with form control tests</a></li>
       <li>&darr; <a href="#required">Required field tests</a></li>
       <li>&darr; <a href="#accessible-button"><code>&lt;button&gt;</code> accessible name and description tests</a></li>
-      <li>&darr; <a href="#accessible-link">Link accessible name and description tests</a></li>
+      <li>&darr; <a href="#accessible-link"><code>&lt;a&gt;</code> accessible name and description tests</a></li>
       <li>&darr; <a href="#accessible-input"><code>&lt;input&gt;</code> accessible name and description tests</a></li>
-      <li>&darr; <a href="#accessible-table"><code>&lt;table&gt;</code> accessible name and description tests</a></li>
+      <li>&darr; <a href="#accessible-table"><code>&lt;table&gt;</code> accessible name and description tests</a> <span class="badge">Added: 15/12/2021</span></li>
       <li>&darr; <a href="#invalid"><code>aria-invalid</code> tests</a></li>
       <li>&darr; <a href="#attributes">Form-based attribute tests</a></li>
       <li>&darr; <a href="#disabled"><code>disabled</code> attribute tests</a></li>
-      <li>&darr; <a href="#landmark">ARIA landmark tests</a> <span class="badge">Added: 10/07/2021</span></li>
+      <li>&darr; <a href="#landmark">ARIA landmark tests</a></li>
       <li>&darr; <a href="#header"><code>&lt;header&gt;</code> scope tests</a></li>
       <li>&darr; <a href="#rotor">VoiceOver Rotor tests</a></li>
       <li>&darr; <a href="#technology">Technology details</a></li>
@@ -180,7 +180,7 @@
   <hr>
 
   <section id="accessible-link">
-    <h2>Link accessible name and description tests</h2>
+    <h2><code>&lt;a&gt;</code> accessible name and description tests</h2>
     <p>The purpose these tests is to show the cascade order of how accessible names are applied in the accessibility tree for the <code>&lt;a&gt;</code> element. <em>These examples should not be considered proper practice</em>.</p>
     <ul class="main-list">
       <li>&rarr; <a href="accessible-name-link01.html"><code>&lt;a&gt;</code> where <code>aria-labelledby</code> should be accessible name</a></li>
