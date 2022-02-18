@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Two header elements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Two <code>&lt;header&gt;</code> elements</h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+  <p>This test case is designed to determine how two root-level <code>&lt;header&gt;</code> elements are announced by various screen readers.</p>
+  <p>In this case, the element <b>should be announced</b> as a <code>banner</code> landmark.</p>
+  <p>By default, the element being tested does not receive focus, so the only way to test how it is announced is via:</p>
+  <ul>
+    <li><b>VoiceOver</b>: Announce next item: <kbd>VO</kbd> + <kbd>Right Arrow</kbd></li>
+    <li><b>NVDA and JAWS</b>: Announce next line: <kbd>DOWN ARROW</kbd></li>
+  </ul>
+  <h2>Example</h2>
+  <div class="example">
+    <header class="inner-example">
+      <h4>Test content 1</h4>
+    </header>
+    <header class="inner-example">
+      <h4>Test content 2</h4>
+    </header>
+  </div>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;header&gt;
+  &lt;h4&gt;Test content 1&lt;/h4&gt;
+&lt;/header&gt;
+&lt;header&gt;
+  &lt;h4&gt;Test content 2&lt;/h4&gt;
+&lt;/header&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b><br>
+        <span class="green">Banner</span>. [Stop] Heading level 4. Test content 1. [Stop]. <span class="green">End of Banner</span>.<br>
+        <span class="green">Banner</span>. [Stop] Heading level 4. Test content 2. [Stop]. <span class="green">End of Banner</span>.
+      </li>
+      <li><b>Firefox:</b><br>
+        <span class="green">Banner</span>. [Stop] Heading level 4. Test content 1. [Stop]. <span class="green">End of Banner</span>.<br>
+        <span class="green">Banner</span>. [Stop] Heading level 4. Test content 2. [Stop]. <span class="green">End of Banner</span>.
+      </li>
+      <li><b>Safari:</b><br>
+        <span class="green">Banner</span>. [Stop] Heading level 4. Test content 1. [Stop]. <span class="green">End of Banner</span>.<br>
+        <span class="green">Banner</span>. [Stop] Heading level 4. Test content 2. [Stop]. <span class="green">End of Banner</span>.
+      </li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b><br>
+        <span class="green">Banner landmark</span>. Heading level 4. Test content 1.<br>
+        <span class="green">Banner landmark</span>. Heading level 4. Test content 2.
+      </li>
+      <li><b>Firefox:</b><br>
+        <span class="green">Banner landmark</span>. Heading level 4. Test content 1.<br>
+        <span class="green">Banner landmark</span>. Heading level 4. Test content 2.
+      </li>
+      <li><b>Edge:</b><br>
+        <span class="green">Banner landmark</span>. Heading level 4. Test content 1.<br>
+        <span class="green">Banner landmark</span>. Heading level 4. Test content 2.
+      </li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b><br>
+        Heading level 4. Test content 1. <span class="red">[Banner not announced]</span><br>
+        Heading level 4. Test content 2. <span class="red">[Banner not announced]</span>
+      </li>
+      <li><b>Firefox:</b><br>
+        Heading level 4. Test content 1. <span class="red">[Banner not announced]</span><br>
+        Heading level 4. Test content 2. <span class="red">[Banner not announced]</span>
+      </li>
+      <li><b>Edge:</b><br>
+        Heading level 4. Test content 1. <span class="red">[Banner not announced]</span><br>
+        Heading level 4. Test content 2. <span class="red">[Banner not announced]</span>
+      </li>
+    </ul>
+  </div>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+</body>
+</html>
