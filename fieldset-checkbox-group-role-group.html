@@ -2,54 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Checkbox group with list and role="presentation"</title>
+  <title>Checkbox group with role="group"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Checkbox group with list and <code>role="presentation"</code></h1>
+  <h1>Checkbox group with <code>role="group"</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
-  <p>This is a test case designed to determine how the <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element" target="_blank"><code>&lt;fieldset&gt;</code></a> and <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element" target="_blank"><code>&lt;legend&gt;</code></a> elements are announced in relation to a checkbox group by various screen readers. In this test, the checkbox group is presented inside a list, which has been set with <a href="https://www.w3.org/TR/wai-aria/#presentation" target="_blank"><code>role="presentation"</code></a>.</p>
+  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/wai-aria-1.1/#group" target="_blank"><code>group</code></a> role is announced in relation to a checkbox group by various screen readers.</p>
   <h2>Example</h2>
   <form action="#">
-    <fieldset>
-      <legend>Favourite animal</legend>
-      <ul class="form-list" role="presentation">
-        <li>
-          <input type="checkbox" id="dog">
-          <label for="dog">Dog</label>
-        </li>
-        <li>
-          <input type="checkbox" id="cat">
-          <label for="cat">Cat</label>
-        </li>
-        <li>
-          <input type="checkbox" id="rabbit">
-          <label for="rabbit">Rabbit</label>
-        </li>
-      </ul>
-    </fieldset>
+    <div role="group" aria-labelledby="group-heading">
+      <h3 id="group-heading">Favourite animal</h3>
+      <div class="form-group">
+        <input type="checkbox" id="dog">
+        <label for="dog">Dog</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="cat">
+        <label for="cat">Cat</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="rabbit">
+        <label for="rabbit">Rabbit</label>
+      </div>
+    </div>
   </form>
   <h2>Code</h2>
 <!-- start code -->
-<pre><code>&lt;fieldset&gt;
-  &lt;legend&gt;Favourite animal&lt;/legend&gt;
-  &lt;ul role="presentation"&gt;
-    &lt;li&gt;
-      &lt;input type="checkbox" id="dog"&gt;
-      &lt;label for="dog"&gt;Dog&lt;/label&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;input type="checkbox" id="cat"&gt;
-      &lt;label for="cat"&gt;Cat&lt;/label&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;input type="checkbox" id="rabbit"&gt;
-      &lt;label for="rabbit"&gt;Rabbit&lt;/label&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/fieldset&gt;</code></pre>
+<pre><code>&lt;div role="group" aria-labelledby="group-heading"&gt;
+  &lt;h3 id="group-heading"&gt;Favourite animal&lt;/h3&gt;
+  &lt;div class="form-group"&gt;
+    &lt;input type="checkbox" id="dog"&gt;
+    &lt;label for="dog"&gt;Dog&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;input type="checkbox" id="cat"&gt;
+    &lt;label for="cat"&gt;Cat&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;input type="checkbox" id="rabbit"&gt;
+    &lt;label for="rabbit"&gt;Rabbit&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <!-- end code -->
   <h2>Assistive technologies</h2>
   <div class="note">

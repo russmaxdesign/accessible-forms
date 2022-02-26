@@ -2,46 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Radio group with list and role="presentation"</title>
+  <title>Radio group using role="radiogroup"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Radio group with list and <code>role="presentation"</code></h1>
+  <h1>Radio group using <code>role="radiogroup"</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
-  <p>This is a test case designed to determine how the <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element" target="_blank"><code>&lt;fieldset&gt;</code></a> and <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element" target="_blank"><code>&lt;legend&gt;</code></a> elements are announced in relation to a radio group by various screen readers. In this test, the radio group is presented inside a list, which has been set with <a href="https://www.w3.org/TR/wai-aria/#presentation" target="_blank"><code>role="presentation"</code></a>.
+  <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/wai-aria-1.1/#radiogroup" target="_blank"><code>radiogroup</code></a> role is announced in relation to a radio group by various screen readers.</p>
   <h2>Example</h2>
   <form action="#">
-    <fieldset>
-      <legend>Do you like boats?</legend>
-      <ul class="form-list" role="presentation">
-        <li>
-          <input type="radio" id="boats-y" name="boats">
-          <label for="boats-y">Yes</label>
-        </li>
-        <li>
-          <input type="radio" id="boats-n" name="boats">
-          <label for="boats-n">No</label>
-        </li>
-      </ul>
-    </fieldset>
+    <div role="radiogroup" aria-labelledby="group-heading">
+      <h3 id="group-heading">Do you like boats?</h3>
+      <div class="form-group">
+        <input type="radio" id="boats-y" name="boats">
+        <label for="boats-y">Yes</label>
+      </div>
+      <div class="form-group">
+        <input type="radio" id="boats-n" name="boats">
+        <label for="boats-n">No</label>
+      </div>
+    </div>
   </form>
   <h2>Code</h2>
 <!-- start code -->
-<pre><code>&lt;fieldset&gt;
-  &lt;legend&gt;Do you like boats?&lt;/legend&gt;
-  &lt;ul role="presentation"&gt;
-    &lt;li&gt;
-      &lt;input type="radio" id="boats-y" name="boats"&gt;
-      &lt;label for="boats-y"&gt;Yes&lt;/label&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;input type="radio" id="boats-n" name="boats"&gt;
-      &lt;label for="boats-n"&gt;No&lt;/label&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/fieldset&gt;</code></pre>
+<pre><code>&lt;div role="radiogroup" aria-labelledby="group-heading&gt;
+  &lt;h3 id="group-heading"&gt;Do you like boats?&lt;/h3&gt;
+  &lt;div&gt;
+    &lt;input type="radio" id="boats-y" name="boats"&gt;
+    &lt;label for="boats-y"&gt;Yes&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="radio" id="boats-n" name="boats"&gt;
+    &lt;label for="boats-n"&gt;No&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <!-- end code -->
   <h2>Assistive technologies</h2>
   <div class="note">
