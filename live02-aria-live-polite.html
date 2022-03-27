@@ -11,7 +11,7 @@
   <h1><code>aria-live="polite"</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
   <p>This test case is designed to determine how <code>aria-live="polite"</code> is announced by various screen readers.</p>
-  <p>After a 10 second pause, an error message is injected onto the page. This error message should be announced immediately, even if the screen reader is in the process of reading other content.</p>
+  <p>After a 10 second pause, an error message is injected onto the page. This error message should be announced at the next gracefull opportinity, such as the end of a sentence, element etc.</p>
 
   <h2>Example</h2>
   <div id="message" class="warning" aria-live="polite"></div>
