@@ -16,7 +16,7 @@
     <h2>Page content sections</h2>
     <ul class="page-contents-list" aria-label="Page contents">
       <li>&darr; <a href="#basic">Basic form control and label tests</a></li>
-      <li>&darr; <a href="#fieldset"><code>&lt;fieldset&gt;</code> tests</a> <span class="badge">New tests added: 26/2/2022</span></li>
+      <li>&darr; <a href="#fieldset"><code>&lt;fieldset&gt;</code> tests</a></li>
       <li>&darr; <a href="#fieldset-error"><code>&lt;fieldset&gt;</code> with errors tests</a></li>
       <li>&darr; <a href="#nested">Nested <code>&lt;fieldset&gt;</code> tests</a></li>
       <li>&darr; <a href="#help">Help text and error messages associated with form control tests</a></li>
@@ -28,9 +28,10 @@
       <li>&darr; <a href="#invalid"><code>aria-invalid</code> tests</a></li>
       <li>&darr; <a href="#attributes">Form-based attribute tests</a></li>
       <li>&darr; <a href="#disabled"><code>disabled</code> attribute tests</a></li>
-      <li>&darr; <a href="#readonly"><code>readonly</code> and <code>aria-readonly</code> attribute tests</a> <span class="badge">New tests added: 21/2/2022</span></li>
-      <li>&darr; <a href="#landmark">ARIA landmark tests</a> <span class="badge">New tests added: 18/2/2022</span></li>
+      <li>&darr; <a href="#readonly"><code>readonly</code> and <code>aria-readonly</code> attribute tests</a></li>
+      <li>&darr; <a href="#landmark">ARIA landmark tests</a></li>
       <li>&darr; <a href="#header"><code>&lt;header&gt;</code> scope tests</a></li>
+      <li>&darr; <a href="#live">Live region tests</a> <span class="badge">New tests added: 27/3/2022</span></li>
       <li>&darr; <a href="#rotor">VoiceOver Rotor tests</a></li>
       <li>&darr; <a href="#technology">Technology details</a></li>
     </ul>
@@ -372,7 +373,21 @@
       <li>&rarr; <a href="landmarks-banner15.html"><code>&lt;header&gt;</code> descendant of <code>&lt;nav&gt;</code></a> scoped to the <code>&lt;nav&gt;</code> element</li>
       <li>&rarr; <a href="landmarks-banner19.html"><code>&lt;header&gt;</code> descendant of <code>&lt;section&gt;</code></a>scoped to the <code>&lt;section&gt;</code> element</li>
     </ul>
-    <p><a class="button-secondary small" href="support-header-scope.html">Header scope support chart</a></p>
+    <p><a class="button-secondary small" href="support-header-scope.html"><code>&lt;header&gt;</code> scope support chart</a></p>
+  </section>
+  <hr>
+
+  <section id="live">
+    <h2>Live region tests</h2>
+    <p>Tests to determine how live regions are announced.</p>
+    <ul class="main-list">
+      <li>&rarr; <a href="live01-aria-live-assertive.html"><code>aria-live="assertive"</code></a></li>
+      <li>&rarr; <a href="live02-aria-live-polite.html"><code>aria-live="polite"</code></a></li>
+      <li>&rarr; <a href="live03-aria-live-off.html"><code>aria-live="off"</code></a></li>
+      <li>&rarr; <a href="live04-role-alert.html"><code>role="alert"</code></a></li>
+      <li>&rarr; <a href="live05-role-status.html"><code>role="status"</code></a></li>
+    </ul>
+    <p><a class="button-secondary small" href="support-live-region.html">Live region support chart</a></p>
   </section>
   <hr>
 

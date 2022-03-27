@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>aria-live="polite"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1><code>aria-live="polite"</code></h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+  <p>This test case is designed to determine how <code>aria-live="polite"</code> is announced by various screen readers.</p>
+  <p>After a 10 second pause, an error message is injected onto the page. This error message should be announced immediately, even if the screen reader is in the process of reading other content.</p>
+
+  <h2>Example</h2>
+  <div id="message" class="warning" aria-live="polite"></div>
+  <p>Not all that Mrs. Bennet, however, with the assistance of her five daughters, could ask on the subject, was sufficient to draw from her husband any satisfactory description of Mr. Bingley. They attacked him in various ways. With barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all.</p>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div aria-live="polite"&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b><br>
+        When reading: <span class="green">Interrupts and announces at end of paragraph</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+      <li><b>Firefox:</b><br>
+        When reading: <span class="green">Interrupts and announces at end of paragraph</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+      <li><b>Safari:</b><br>
+        When reading: <span class="green">Interrupts and announces at end of paragraph</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b><br>
+        When reading: <span class="green">Interrupts and announces at end of paragraph</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+      <li><b>Firefox:</b><br>
+        When reading: <span class="green">Interrupts and announces at end of paragraph</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+      <li><b>Edge:</b><br>
+        When reading: <span class="green">Interrupts and announces at end of paragraph</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b><br>
+        When reading: <span class="red">Announces message at end of page</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+      <li><b>Edge:</b><br>
+        When reading: <span class="red">Message not announced</span>.<br>
+        When silent: <span class="green">Announces message immediately</span>.
+      </li>
+    </ul>
+  </div>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+
+<script type="text/javascript">
+  (function()
+  {
+    window.setTimeout(function()
+    {
+      document.getElementById('message').innerHTML = '<p><strong>Hello:</strong> This is an warning notification.</p>';
+    }, 10000);
+
+  })();
+</script>
+</body>
+</html>

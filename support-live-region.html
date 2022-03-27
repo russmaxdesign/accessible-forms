@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Live region support chart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body class="body-wide">
+  <h1>Live region support chart</h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+  <h2>When reading</h2>
+  <table>
+    <thead>
+     <tr>
+        <th>&nbsp;</th>
+        <th>VoiceOver Chrome</th>
+        <th>VoiceOver Firefox</th>
+        <th>VoiceOver Safari</th>
+        <th>NVDA Chrome</th>
+        <th>NVDA Firefox</th>
+        <th>NVDA Edge</th>
+        <th>JAWS Edge</th>
+        <th>JAWS Edge</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><a href="live01-aria-live-assertive.html"><code>aria-live="assertive"</code></a></th>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="partial-announced">Interrupts and announces at end of sentence</td>
+        <td class="partial-announced">Interrupts and announces at end of sentence</td>
+        <td class="partial-announced">Interrupts and announces at end of sentence</td>
+        <td class="not-announced">Announces at end of page</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live02-aria-live-polite.html"><code>aria-live="polite"</code></a></th>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="not-announced">Announces at end of page</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live03-aria-live-off.html"><code>aria-live="off"</code></a></th>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live04-role-alert.html"><code>role="alert"</code></a></th>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="partial-announced">Interrupts and announces at end of sentence</td>
+        <td class="announced">Interrupts and announces immediately</td>
+        <td class="partial-announced">Interrupts and announces at end of sentence</td>
+        <td class="not-announced">Announces at end of page</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live05-role-status.html"><code>role="status"</code></a></th>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="announced">Interrupts and announces at end of paragraph</td>
+        <td class="not-announced">Announces at end of page</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>When silent</h2>
+  <table>
+    <thead>
+     <tr>
+        <th>&nbsp;</th>
+        <th>VoiceOver Chrome</th>
+        <th>VoiceOver Firefox</th>
+        <th>VoiceOver Safari</th>
+        <th>NVDA Chrome</th>
+        <th>NVDA Firefox</th>
+        <th>NVDA Edge</th>
+        <th>JAWS Edge</th>
+        <th>JAWS Edge</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><a href="live01-aria-live-assertive.html"><code>aria-live="assertive"</code></a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live02-aria-live-polite.html"><code>aria-live="polite"</code></a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live03-aria-live-off.html"><code>aria-live="off"</code></a></th>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+        <td class="announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live04-role-alert.html"><code>role="alert"</code></a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+      <tr>
+        <th><a href="live05-role-status.html"><code>role="status"</code></a></th>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced</td>
+        <td class="not-announced">Not announced</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
