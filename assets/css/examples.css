@@ -384,6 +384,11 @@ legend {
   font-weight: bold;
 }
 
+.orange {
+  color: #B25F01;
+  font-weight: bold;
+}
+
 .green {
   color: #008000;
   font-weight: bold;
@@ -472,4 +477,24 @@ legend {
   margin: 0 0 0 1em;
   text-transform: uppercase;
   padding:  .2em .5em;
+}
+
+#message > p {
+  overflow: hidden;
+  padding: 1em;
+}
+
+#message.info > p {
+  border: 1px solid rgb(0,0,255);
+  background: rgba(0,0,255,.1);
+}
+
+#message.warning > p {
+  border: 1px solid rgb(255,165,0);
+  background: rgba(255,165,0,.2);
+}
+
+#message.error > p {
+  border: 1px solid rgb(255,0,0);
+  background: rgba(255,0,0,.1);
 }
