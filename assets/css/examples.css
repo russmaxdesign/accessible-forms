@@ -223,6 +223,10 @@ legend {
   border: 1px solid #bbb;
 }
 
+.input[aria-invalid="true"] {
+  border: 1px solid red;
+}
+
 .button {
   display: inline-block;
   padding: .75em 1em;
