@@ -10,6 +10,7 @@
 <body class="body-wide">
   <h1>Required field support chart</h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
+  <p>Tests to determine how <code>required</code> and <code>aria-required</code> are announced.</p>
   <table>
     <thead>
      <tr>
@@ -28,15 +29,15 @@
     <tbody>
       <tr>
         <th><a href="required01.html"><code>&lt;input&gt;</code> with <code>required</code></a></th>
+        <td class="announced">Announced <span class="red">(Invalid data)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid data)</span></td>
         <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
-        <td class="announced">Announced</td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
       </tr>
       <tr>
         <th><a href="required02.html"><code>&lt;input&gt;</code> with <code>aria-required</code></a></th>
@@ -52,6 +53,18 @@
       </tr>
       <tr>
         <th><a href="required03.html"><code>&lt;input&gt;</code> with <code>required</code> and <code>aria-required</code> attributes</a></th>
+        <td class="announced">Announced <span class="red">(Invalid data)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid data)</span></td>
+        <td class="announced">Announced</td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+        <td class="announced">Announced <span class="red">(Invalid entry)</span></td>
+      </tr>
+      <tr>
+        <th><a href="required06.html"><a href="required06.html"><code>&lt;input&gt;</code> with <code>required</code> and <code>aria-invalid</code></a></th>
         <td class="announced">Announced</td>
         <td class="announced">Announced</td>
         <td class="announced">Announced</td>
@@ -62,6 +75,25 @@
         <td class="announced">Announced</td>
         <td class="announced">Announced</td>
       </tr>
+    </tbody>
+  </table>
+  <p>Tests to determine how visually-displayed "required" options are announced.</p>
+  <table>
+    <thead>
+     <tr>
+        <th>&nbsp;</th>
+        <th>VoiceOver Chrome</th>
+        <th>VoiceOver Firefox</th>
+        <th>VoiceOver Safari</th>
+        <th>NVDA Chrome</th>
+        <th>NVDA Firefox</th>
+        <th>NVDA Edge</th>
+        <th>JAWS Edge</th>
+        <th>JAWS Firefox</th>
+        <th>JAWS Edge</th>
+     </tr>
+    </thead>
+    <tbody>
       <tr>
         <th><a href="required04.html"><code>&lt;input&gt;</code> with visual "required" indicator</a></th>
         <td class="partial-announced">Required information announced twice</td>
