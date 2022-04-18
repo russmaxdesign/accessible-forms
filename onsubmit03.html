@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>onsubmit error notification</title>
+  <title>onsubmit error notification with role="group"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>onsubmit error notification</h1>
+  <h1>onsubmit error notification with <code>role="group"</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
-  <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form.</p>
+  <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form - with the addition of <a href="https://www.w3.org/TR/wai-aria-1.1/#group" target="_blank"><code>role="group"</code></a>.</p>
   <h2>Example</h2>
   <div class="example">
     <h3 class="contact-details-heading">Contact details</h3>
@@ -39,9 +39,9 @@
   <div class="note">
     <h3>VoiceOver: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
-      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
-      <li><b>Safari:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
+      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form. Group</span>.</li>
+      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form. Group</span>.</li>
+      <li><b>Safari:</b> <span class="green">Error: Please fix the following two errors and resubmit the form. Group</span>.</li>
     </ul>
   </div>
   <div class="note">
@@ -71,6 +71,7 @@ function addError() {
   x.setAttribute("class", "error-notification");
   x.setAttribute("tabindex", "-1");
   x.setAttribute("id", "error");
+  x.setAttribute("role", "group");
   x.setAttribute("aria-labelledby", "f1-label");
   x.innerHTML += `
   <h4 id="f1-label">Error: Please fix the following two errors and resubmit the form</h4>
