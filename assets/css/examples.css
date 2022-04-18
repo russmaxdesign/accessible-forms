@@ -134,6 +134,7 @@ td {
   border: 1px solid #999;
   padding: .5em 1em;
   text-align: left;
+  vertical-align: top;
 }
 
 figure {
@@ -465,6 +466,10 @@ legend {
 
 .small {
   font-size: .9em;
+}
+
+.smaller {
+  font-size: 10px !important;
 }
 
 .badge {
