@@ -93,11 +93,10 @@ function addError() {
   } else {
   var x = document.createElement("div");
   x.setAttribute("class", "error-notification");
-  x.setAttribute("tabindex", "0");
+  x.setAttribute("tabindex", "-1");
   x.setAttribute("id", "error");
-  x.setAttribute("aria-labelledby", "f1-label");
   x.innerHTML += `
-  <h4 id="f1-label">Error: Please fix the following two errors and resubmit the form</h4>
+  <h4>Error: Please fix the following two errors and resubmit the form</h4>
   <ul>
     <li><a href="#name">Name: You must include a name</a></li>
     <li><a href="#email">Email: You must use a valid email address</a></li>
