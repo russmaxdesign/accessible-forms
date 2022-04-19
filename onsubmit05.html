@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>onsubmit error notification with tabindex="0"</title>
+  <title>onsubmit error notification with no label</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>onsubmit error notification with <code>tabindex="0"</code></h1>
+  <h1>onsubmit error notification with no label</h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
-  <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form - with the addition of <code>tabindex="0"</code>.</p>
+  <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form.</p>
   <h2>Example</h2>
   <div class="example">
     <h3 class="contact-details-heading">Contact details</h3>
@@ -39,41 +39,24 @@
   <div class="note">
     <h3>VoiceOver: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. <span class="green">Group</span>.</li>
-      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. <span class="green">Group</span>.</li>
-      <li><b>Safari:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. <span class="green">Group</span>.</li>
+      <li><b>Chrome:</b>
+        <ul>
+          <li>Error: Please fix the following two errors and resubmit the form.</li>
+          <li>Name: You must include a name.</li>
+          <li>Email: You must use a valid email address.</li>
+          <li>Group.</li>
+        </ul>
+      </li>
+      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. And one more item. <span class="green">Group</span>.</li>
+      <li><b>Safari:</b> </li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b>
-        <ul>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-          <li>List.</li>
-          <li>Name: You must include a name. Link.</li>
-          <li>Email: You must use a valid email address.</li>
-        </ul>
-      </li>
-      </li>
-      <li><b>Firefox:</b>
-        <ul>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-          <li>List.</li>
-          <li>Name: You must include a name. Link.</li>
-          <li>Email: You must use a valid email address.</li>
-        </ul>
-      </li>
-      </li>
-      <li><b>Edge:</b>
-        <ul>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-          <li>List.</li>
-          <li>Name: You must include a name. Link.</li>
-          <li>Email: You must use a valid email address.</li>
-        </ul>
-      </li>
-      </li>
+      <li><b>Chrome:</b></li>
+      <li><b>Firefox:</b></li>
+      <li><b>Edge:</b></li>
     </ul>
   </div>
   <div class="note">
