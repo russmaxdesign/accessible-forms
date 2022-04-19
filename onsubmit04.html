@@ -39,25 +39,43 @@
   <div class="note">
     <h3>VoiceOver: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form. Group</span>.</li>
-      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form. Group</span>.</li>
-      <li><b>Safari:</b> <span class="green">Error: Please fix the following two errors and resubmit the form. Group</span>.</li>
+      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. <span class="green">Group</span>.</li>
+      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. <span class="green">Group</span>.</li>
+      <li><b>Safari:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>. <span class="green">Group</span>.</li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
-      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
-      <li><b>Edge:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
+      <li><b>Chrome:</b>
+        <ul>
+          <li>Error: Please fix the following two errors and resubmit the form.</li>
+          <li>Name: You must include a name.</li>
+          <li>Email: You must use a valid email address.</li>
+        </ul>
+      </li>
+      <li><b>Firefox:</b>
+        <ul>
+          <li>Error: Please fix the following two errors and resubmit the form.</li>
+          <li>Name: You must include a name.</li>
+          <li>Email: You must use a valid email address.</li>
+        </ul>
+      </li>
+      <li><b>Edge:</b>
+        <ul>
+          <li>Error: Please fix the following two errors and resubmit the form.</li>
+          <li>Name: You must include a name.</li>
+          <li>Email: You must use a valid email address.</li>
+        </ul>
+      </li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
-      <li><b>Firefox:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
-      <li><b>Edge:</b> <span class="green">Error: Please fix the following two errors and resubmit the form</span>.</li>
+      <li><b>Chrome:</b></li>
+      <li><b>Firefox:</b></li>
+      <li><b>Edge:</b></li>
     </ul>
   </div>
   <p>&larr; <a href="index.html">Return to main list</a></p>
@@ -71,7 +89,6 @@ function addError() {
   x.setAttribute("class", "error-notification");
   x.setAttribute("tabindex", "0");
   x.setAttribute("id", "error");
-  x.setAttribute("role", "group");
   x.setAttribute("aria-labelledby", "f1-label");
   x.innerHTML += `
   <h4 id="f1-label">Error: Please fix the following two errors and resubmit the form</h4>
