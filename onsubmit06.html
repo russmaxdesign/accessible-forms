@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>onsubmit error with focus on the heading</title>
+  <title>onsubmit error with focus on the heading, inside role="group"</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>onsubmit error with focus on the heading</h1>
+  <h1>onsubmit error with focus on the heading, inside <code>role="group"</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
   <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form.</p>
   <h2>Example</h2>
@@ -36,7 +36,7 @@
   </div>
   <h2>Code</h2>
 <!-- start code -->
-<pre><code>&lt;div class="error-notification"&gt;
+<pre><code>&lt;div class="error-notification" role="group"&gt;
   &lt;h4 id="error" class="focus" tabindex="-1"&gt;
     Error: Please fix the following two errors and...
   &lt;/h4&gt;
@@ -80,6 +80,7 @@ function addError() {
   } else {
   var x = document.createElement("div");
   x.setAttribute("class", "error-notification");
+  x.setAttribute("role", "group");
   x.innerHTML += `
   <h4 id="error" class="focus" tabindex="-1">Error: Please fix the following two errors and resubmit the form</h4>
   <ul>
