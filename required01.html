@@ -11,6 +11,15 @@
   <h1><code>&lt;input&gt;</code> with <code>required</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
   <p>This is a test case designed to determine how the <a href="https://www.w3.org/TR/html52/sec-forms.html#the-required-attribute"><code>required</code></a> attribute, applied to the <a href="https://html.spec.whatwg.org/multipage/input.html#the-input-element" target="_blank"><code>&lt;input&gt;</code></a> element, is announced by various screen readers.</p>
+
+  <h2>Note on <code>required</code> usage</h2>
+  <p>If the <code>required</code> attribute is applied, the invalid state is also set in accessibility APIs. So, form controls with <code>required</code> applied are announced as "Invalid entry" or "Invalid data", even before users have interacted with the control. <a href="https://github.com/w3c/aria/issues/1488" target="_blank">More details on the issue</a>.</p>
+  <p>Even though native HTML attributes should be used where possible, authors could choose to use <code>aria-required="true"</code> instead. However, authors should not use <code>aria-invalid="false"</code> to solve this issue.</p>
+  <blockquote>
+    <p><i>However, if the user has not attempted to submit the form, authors SHOULD NOT set the aria-invalid attribute on required widgets simply because the user has not yet entered data.</i></p>
+    <p><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-invalid" target="_blank">Source</a>.</p>
+  </blockquote>
+
   <h2>Example</h2>
   <form action="#">
     <div class="form-group">
