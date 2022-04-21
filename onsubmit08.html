@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>onsubmit error with focus on the heading, inside role="group" with a label</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1>onsubmit error with focus on the heading, inside <code>role="group"</code> with a label</h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form.</p>
+  <h2>Example</h2>
+  <div class="example">
+    <h3 class="contact-details-heading">Contact details</h3>
+    <div id="error-notification-container">
+    </div>
+    <form action="#" class="unstyled">
+      <div class="form-container">
+        <label class="label" for="name">Name</label>
+        <input class="input" type="text" id="name">
+        <span id="name-error-container"></span>
+      </div>
+      <div class="form-container">
+        <label class="label" for="address">Address</label>
+        <input class="input" type="text" id="address">
+      </div>
+      <div class="form-container">
+        <label class="label" for="email">Email</label>
+        <input class="input" type="email" id="email">
+        <span id="email-error-container"></span>
+      </div>
+    </form>
+    <button class="button" onclick="addError()">Submit</button>  
+  </div>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div
+  class="error-notification"
+  role="group"
+  aria-labelledby="error"
+&gt;
+  &lt;h4 id="error" class="focus" tabindex="-1"&gt;
+    Error: Please fix the following two errors...
+  &lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#name"&gt;Name: You must include a name&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#email"&gt;Email: You must use a valid...&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver: onsubmit</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b>
+        <ul>
+          <li>Heading level 4. Error: Please fix the following two errors and resubmit the form.</li>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Group.</span></li>
+        </ul>
+      </li>
+      <li><b>Firefox:</b>
+        <ul>
+          <li>Heading level 4. Error: Please fix the following two errors and resubmit the form.</li>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Group.</span></li>
+        </ul>
+      </li>
+      <li><b>Safari:</b>
+        <ul>
+          <li>Heading level 4. Error: Please fix the following two errors and resubmit the form.</li>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Group.</span></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA: onsubmit</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b>
+        <ul>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Grouping.</span></li>
+          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
+        </ul>
+      </li>
+      <li><b>Firefox:</b>
+        <ul>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Grouping.</span></li>
+          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
+        </ul>
+      </li>
+      <li><b>Edge:</b>
+        <ul>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Grouping.</span></li>
+          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS: onsubmit</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b>
+        <ul>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form.</span></li>
+          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
+        </ul>
+      </li>
+      <li><b>Firefox:</b>
+        <ul>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form.</span></li>
+          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
+        </ul>
+      </li>
+      <li><b>Edge:</b>
+        <ul>
+          <li><span class="green">Error: Please fix the following two errors and resubmit the form.</span></li>
+          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+
+<script>
+function addError() {
+   if(document.getElementById("error") != null){
+     
+  } else {
+  var x = document.createElement("div");
+  x.setAttribute("class", "error-notification");
+  x.setAttribute("role", "group");
+  x.setAttribute("aria-label", "Error");
+  x.innerHTML += `
+  <h4 id="error" class="focus" tabindex="-1">Please fix the following two errors and resubmit the form</h4>
+  <ul>
+    <li><a href="#name">Name: You must include a name</a></li>
+    <li><a href="#email">Email: You must use a valid email address</a></li>
+  </ul>
+  `;
+  document.getElementById("error-notification-container").appendChild(x);
+  document.getElementById("error").focus();
+  }
+  var t = document.getElementById("name");
+  t.setAttribute("aria-describedby", "name-error");
+  t.setAttribute("aria-invalid", "true");
+  if(document.getElementById("name-error") != null){
+     
+  } else {
+  var y = document.createElement("span");
+  y.setAttribute("class", "error-message");
+  y.setAttribute("id", "name-error");
+  y.innerHTML += `You must include a name`;
+  document.getElementById("name-error-container").appendChild(y);
+  }
+  var q = document.getElementById("email");
+  q.setAttribute("aria-describedby", "email-error");
+  q.setAttribute("aria-invalid", "true");
+  
+  if(document.getElementById("email-error") != null){
+     
+  } else {
+    
+  var z = document.createElement("span");
+  z.setAttribute("class", "error-message");
+  z.setAttribute("id", "email-error");
+  z.innerHTML += `You must use a valid email address`;
+  document.getElementById("email-error-container").appendChild(z);
+  }
+}
+</script>
+
+</body>
+</html>
