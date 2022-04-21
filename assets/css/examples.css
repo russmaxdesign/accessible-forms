@@ -543,6 +543,14 @@ legend {
   padding:  .2em .5em;
 }
 
+.focus:focus {
+  color: #000;
+  outline: 0;
+  box-shadow:
+    0 0 0 1px #fff,
+    0 0 0 4px #000;
+}
+
 .contact-details-heading {
   margin: 0 0 1em;
 }
