@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>onsubmit error with focus on the heading, inside role="group" with a label</title>
+  <title>onsubmit error with focus on the heading, inside <code>role="group"</code> with a aria-label</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="assets/css/examples.css" rel="stylesheet">
 </head>
 <body>
-  <h1>onsubmit error with focus on the heading, inside <code>role="group"</code> with a label</h1>
+  <h1>onsubmit error with focus on the heading, inside <code>role="group"</code> with a <code>aria-label</code></h1>
   <p>&larr; <a href="index.html">Return to main list</a></p>
   <p>This is a test case designed to determine whether assistive technologies announce an error message injected above a form.</p>
   <h2>Example</h2>
@@ -39,10 +39,10 @@
 <pre><code>&lt;div
   class="error-notification"
   role="group"
-  aria-labelledby="error"
+  aria-label="Error"
 &gt;
   &lt;h4 id="error" class="focus" tabindex="-1"&gt;
-    Error: Please fix the following two errors...
+    Please fix the following two errors...
   &lt;/h4&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="#name"&gt;Name: You must include a name&lt;/a&gt;&lt;/li&gt;
@@ -54,70 +54,25 @@
   <div class="note">
     <h3>VoiceOver: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b>
-        <ul>
-          <li>Heading level 4. Please fix the following two errors and resubmit the form.</li>
-          <li><span class="green">Error. Group.</span></li>
-        </ul>
-      </li>
-      <li><b>Firefox:</b>
-        <ul>
-          <li>Heading level 4. Please fix the following two errors and resubmit the form.</li>
-          <li><span class="green">Error. Group.</span></li>
-        </ul>
-      </li>
-      <li><b>Safari:</b>
-        <ul>
-          <li>Heading level 4. Please fix the following two errors and resubmit the form.</li>
-          <li><span class="green">Error. Group.</span></li>
-        </ul>
-      </li>
+      <li><b>Chrome:</b> <span class="green">Heading level 4. Please fix the following two errors and resubmit the form. Error. Group.</span></li>
+      <li><b>Firefox:</b> <span class="green">Heading level 4. Please fix the following two errors and resubmit the form. Error. Group.</span></li>
+      <li><b>Safari:</b> <span class="green">Heading level 4. Please fix the following two errors and resubmit the form. Error. Group.</span></li>
     </ul>
   </div>
   <div class="note">
     <h3>NVDA: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b>
-        <ul>
-          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Grouping.</span></li>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-        </ul>
-      </li>
-      <li><b>Firefox:</b>
-        <ul>
-          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Grouping.</span></li>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-        </ul>
-      </li>
-      <li><b>Edge:</b>
-        <ul>
-          <li><span class="green">Error: Please fix the following two errors and resubmit the form. Grouping.</span></li>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-        </ul>
-      </li>
+      <li><b>Chrome:</b> <span class="green">Please fix the following two errors and resubmit the form. Grouping. Error. Heading level 4.</li>
+      <li><b>Firefox:</b> <span class="green">Please fix the following two errors and resubmit the form. Grouping. Error. Heading level 4.</li>
+      <li><b>Edge:</b> <span class="green">Please fix the following two errors and resubmit the form. Grouping. Error. Heading level 4.</li>
     </ul>
   </div>
   <div class="note">
     <h3>JAWS: onsubmit</h3>
     <ul class="browser-list">
-      <li><b>Chrome:</b>
-        <ul>
-          <li><span class="green">Error: Please fix the following two errors and resubmit the form.</span></li>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-        </ul>
-      </li>
-      <li><b>Firefox:</b>
-        <ul>
-          <li><span class="green">Error: Please fix the following two errors and resubmit the form.</span></li>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-        </ul>
-      </li>
-      <li><b>Edge:</b>
-        <ul>
-          <li><span class="green">Error: Please fix the following two errors and resubmit the form.</span></li>
-          <li>Error: Please fix the following two errors and resubmit the form. Heading level 4.</li>
-        </ul>
-      </li>
+      <li><b>Chrome:</b> <span class="green">Error. Please fix the following two errors and resubmit the form. Heading level 4.</span></li>
+      <li><b>Firefox:</b> <span class="green">Error. Please fix the following two errors and resubmit the form. Heading level 4.</span></li>
+      <li><b>Edge:</b> <span class="green">Error. Please fix the following two errors and resubmit the form. Heading level 4.</span></li>
     </ul>
   </div>
   <p>&larr; <a href="index.html">Return to main list</a></p>
