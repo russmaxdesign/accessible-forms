@@ -1,0 +1,162 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ARIA Dialog - Test 5: initial focus on container - with role="dialog" and aria-labelledby</title>
+    <link rel="stylesheet" href="https://russmaxdesign.github.io/accessible-forms/assets/css/examples.css">
+    <style>
+      /* Custom dialog */
+      [role=dialog] {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 1em;
+        border: 3px solid #000;
+      }
+
+      [role=dialog][open] {
+        display: block;
+      }
+
+      [role=dialog]:focus {
+        outline: 1px solid transparent;
+        box-shadow: 0 0 0 1px #fff, 0 0 0 4px #000;
+      }
+
+      [role=dialog] h2 {
+        margin-top: 0;
+      }
+
+      .dialog-backdrop {
+        background: rgba(0, 0, 0, 0.75);
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      }
+
+      .dialog-backdrop[hidden] {
+        display: none;
+      }
+
+      dialog::-webkit-backdrop {
+        background: rgba(0, 0, 0, 0.75);
+      }
+
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.75);
+      }
+
+      @media (min-width: 42em) {
+        [role=dialog] {
+          width: 50%;
+        }
+      }
+
+      /* Inert */
+      [inert] {
+        pointer-events: none;
+        cursor: default;
+      }
+
+      [inert], [inert] * {
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+      }
+    </style>
+    <script>
+      window.console = window.console || function(t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+  <body translate="no">
+    <div class="wrapper">
+      <h1>ARIA Dialog - Test 5: initial focus on container - with <code>role="dialog"</code> and <code>aria-labelledby</code></h1>
+      <p><a href="https://cdpn.io/pen/debug/OJQMewj" target="_blank">Debug version</a></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatibus, animi ratione et voluptate assumenda harum, ipsa dignissimos aliquam perspiciatis suscipit ipsam, similique labore voluptates itaque temporibus provident qui laboriosam.</p>
+      <button id="open-btn" class="button">Open Dialog</button>
+      <p><a href="https://cdpn.io/pen/debug/OJQMewj" target="_blank">Debug version</a></p>
+    </div>
+
+    <div class="dialog-backdrop" hidden=""></div>
+    <div role="dialog" aria-labelledby="dialog-heading" tabindex="-1" hidden="">
+      <h2 id="dialog-heading">Wombats</h2>
+      <p id="dialog-description">Short-legged, Australian marsupials.</p>
+      <p>Wombats are <a href="https://en.wikipedia.org/wiki/Marsupial" target="_blank">marsupials</a> with brown, tan or grey fur and from head to tail. They are expert diggers with short, muscular legs and sharp claws.</p>
+      <button id="close-btn" class="button">Close</button>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    <script src="https://assets.codepen.io/15309/inert-polyfill-3.1.1.js"></script>
+<script id="rendered-js">
+let openBtn = document.getElementById('open-btn'),
+closeBtn = document.getElementById('close-btn'),
+wrapper = document.querySelectorAll('.wrapper')[0],
+dialog = document.querySelector('[role="dialog"]'),
+dialogBackgrop = document.querySelector('.dialog-backdrop');
+
+// event listeners for open/close buttons & backdrop click
+openBtn.addEventListener('click', openDialog);
+closeBtn.addEventListener('click', closeDialog);
+dialogBackgrop.addEventListener('click', closeDialog);
+
+// open dialog
+function openDialog() {
+  // toggle backdrop
+  dialogBackgrop.hidden = false;
+  // show dialog
+  dialog.hidden = false;
+  // handle inert
+  wrapper.setAttribute('inert', '');
+  // move focus to heading
+  setTimeout(function () {
+    dialog.focus();
+  }, 200);
+}
+
+// close dialog
+function closeDialog() {
+  // toggle backdrop
+  dialogBackgrop.hidden = true;
+  // show dialog
+  dialog.hidden = true;
+  // handle inert
+  wrapper.removeAttribute('inert');
+  // move focus back to trigger button
+  setTimeout(function () {
+    openBtn.focus();
+  });
+}
+
+// handle escape key close
+document.addEventListener('keydown', e => {
+  if ((e.keyCode || e.which) === 27) {
+    closeDialog();
+  }
+});
+
+// listen for click outside dialog to close 
+dialog.addEventListener("click", e => {
+  var rect = e.target.getBoundingClientRect();
+  var minX = rect.left + e.target.clientLeft;
+  var minY = rect.top + e.target.clientTop;
+  if (e.clientX < minX || e.clientX >= minX + e.target.clientWidth ||
+  e.clientY < minY || e.clientY >= minY + e.target.clientHeight) {
+    closeDialog();
+  }
+});
+//# sourceURL=pen.js
+</script>
+  </body>
+</html>
