@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>input with aria-required and "(Required)" added to label text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="assets/css/examples.css" rel="stylesheet">
+</head>
+<body>
+  <h1><code>&lt;input&gt;</code> with <code>aria-required</code> and "(Required)" added to label text</h1>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+  <p>This is a test case designed to determine how a visual "required" indicator is announced by various screen readers.</p>
+
+  <h2>Note on <code>required</code> usage</h2>
+  <p>If the <code>required</code> attribute is applied, the invalid state is also set in accessibility APIs. So, form controls with <code>required</code> applied are announced as "Invalid entry" or "Invalid data", even before users have interacted with the control. <a href="https://github.com/w3c/aria/issues/1488" target="_blank">More details on the issue</a>.</p>
+  <p>Even though native HTML attributes should be used where possible, authors could choose to use <code>aria-required="true"</code> instead. However, authors should not use <code>aria-invalid="false"</code> to solve this issue.</p>
+  <blockquote>
+    <p><i>However, if the user has not attempted to submit the form, authors SHOULD NOT set the aria-invalid attribute on required widgets simply because the user has not yet entered data.</i></p>
+    <p><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-invalid" target="_blank">Source</a>.</p>
+  </blockquote>
+
+  <h2>Example</h2>
+  <form action="#">
+    <div class="form-group">
+      <label class="label" for="name">Full name <span class="required">(Required)</span></label>
+      <input aria-required="true" class="input" type="text" id="name">
+    </div>
+  </form>
+  <h2>Code</h2>
+<!-- start code -->
+<pre><code>&lt;div&gt;
+  &lt;label for="name"&gt;Full name (Required)&lt;/label&gt;
+  &lt;input aria-required="true" type="text" id="name"&gt;
+&lt;/div&gt;</code></pre>
+<!-- end code -->
+  <h2>Assistive technologies</h2>
+  <div class="note">
+    <h3>VoiceOver</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Full name. (Required). <span class="green">Required</span>. Edit text.</li>
+      <li><b>Firefox:</b> Full name. (Required). <span class="green">Required</span>. Edit text.</li>
+      <li><b>Safari:</b> Full name. (Required). <span class="green">Required</span>. Edit text.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>NVDA</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Full name. (Required). Edit. <span class="green">Required</span>. Blank.</li>
+      <li><b>Firefox:</b> Full name. (Required). Edit. <span class="green">Required</span>. Has autocomplete. Blank.</li>
+      <li><b>Edge:</b> Full name. (Required). Edit. <span class="green">Required</span>. Blank.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>JAWS</h3>
+    <ul class="browser-list">
+      <li><b>Chrome:</b> Full name. Left parent. Required. Right parent. Edit. <span class="green">Required</span>. Type in text.</li>
+      <li><b>Firefox:</b> Full name. Left parent. Required. Right parent. Edit. <span class="green">Required</span>. Type in text.</li>
+      <li><b>Edge:</b> Full name. Left parent. Required. Right parent. Edit. <span class="green">Required</span>. Type in text.</li>
+    </ul>
+  </div>
+  <p>&larr; <a href="index.html">Return to main list</a></p>
+</body>
+</html>
